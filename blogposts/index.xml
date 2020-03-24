@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blogposts on Rust in Blockchain</title>
+    <title>Blog posts on Rust in Blockchain</title>
     <link>https://rustinblockchain.org/blogposts/</link>
-    <description>Recent content in blogposts on Rust in Blockchain</description>
+    <description>Recent content in Blog posts on Rust in Blockchain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rustinblockchain.org/blogposts/index.xml" rel="self" type="application/rss+xml" />
     
