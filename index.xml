@@ -226,10 +226,10 @@ gMorph in practice, see the &lt;a href=&#34;https://github.com/golemfactory/gudo
     
     <item>
       <title>RiB Newsletter #8 - Looking Forward to 2020</title>
-      <link>https://rustinblockchain.org/newsletters/2020-02-05-looking-fowrward-to-2020/</link>
+      <link>https://rustinblockchain.org/newsletters/2020-02-05-looking-forward-to-2020/</link>
       <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rustinblockchain.org/newsletters/2020-02-05-looking-fowrward-to-2020/</guid>
+      <guid>https://rustinblockchain.org/newsletters/2020-02-05-looking-forward-to-2020/</guid>
       <description>&lt;p&gt;Welcome to the #8 edition of Rust in Blockchain, the hypest newsletter about the hypest tech. &lt;a href=&#34;./newsletters/2020-01-02&#34;&gt;Previous: #7&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This month — even with the holidays and world events — saw strong momentum in the big Rust blockchain projects: Solana is moving toward two new testnets, one of which is expected to evolve into their mainnet; Zcash has been blogging technical details about their Rust implementation, Zebra; Nervos has initiated a grants program to solicit advancements to its platform from the community; COMIT and NEAR are maintaining a rapid development velocity; and Parity as always has so much going on its hard to summarize.&lt;/p&gt;
 &lt;p&gt;There are multiple hackathons coming up, which several of our projects are involved in (see &amp;ldquo;Events&amp;rdquo; below). There are new job openings (&amp;ldquo;Careers&amp;rdquo;), and &lt;a href=&#34;https://hackernoon.com/alternative-avenues-to-raise-funds-as-a-dapp-developer-in-2020-ixjq36vb&#34;&gt;multiple grants programs&lt;/a&gt;. Lots of opportunities to get involved with Rust blockchain development lately.&lt;/p&gt;
@@ -1495,10 +1495,10 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
     
     <item>
       <title>About us</title>
-      <link>https://rustinblockchain.org/about/</link>
+      <link>https://rustinblockchain.org/about-us/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rustinblockchain.org/about/</guid>
+      <guid>https://rustinblockchain.org/about-us/</guid>
       <description>&lt;p&gt;Rust in Blockchain is a monthly newsletter focused on Rust programming and blockchain development, bringing engineering insight and experience to the Rust blockchain community.&lt;/p&gt;
 &lt;p&gt;If you are interested in contributing to this newsletter, or would like a feature published regarding Rust, please visit us on GitHub or tweet us.&lt;/p&gt;
 &lt;p&gt;Rust in Blockchain is edited by&lt;/p&gt;
