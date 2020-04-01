@@ -6,10 +6,226 @@
     <description>Recent content in Newsletters on Rust in Blockchain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rustinblockchain.org/newsletters/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RiB Newsletter #10 – Keep Calm and Hack More</title>
+      <link>https://rustinblockchain.org/newsletters/2020-04-01-keep-calm-and-hack-more/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/newsletters/2020-04-01-keep-calm-and-hack-more/</guid>
+      <description>&lt;p&gt;Welcome to the #10 edition of Rust in Blockchain, the hypest newsletter about the hypest tech. &lt;a href=&#34;../newsletters/2020-03-04-the-month-of-working-from-home&#34;&gt;Previous: #9&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;How are you doing from working at home so far? What do you spend time on? We hope you find something fun, create interesting hacks and enjoy yourself.&lt;/p&gt;
+&lt;p&gt;This month, we changed the website theme, and moved the hosting from wordpress to GitHub Pages, with hugo framework. So now it should be more straightforward to contribute to the website as well as the content. We still need a RSS, maybe also an event calendar ;)&lt;/p&gt;
+&lt;p&gt;Several offline events have been moved online &amp;ndash; more podcasts, online workshops, and video meetings have been scheduled. We encourage you to share your ideas, practice, and experience with our audience. So if you want to do an online workshop for our Rust and blockchain developers, please tweet at us, or submit a PR to the next draft of your event.&lt;/p&gt;
+&lt;p&gt;Stay at home, chill and hack harder.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;This edition of RiB was produced with contributions from &lt;a href=&#34;https://github.com/somniumism&#34;&gt;SeungMin Lee&lt;/a&gt;, &lt;a href=&#34;https://github.com/mat7ias&#34;&gt;Mattias Nystrom&lt;/a&gt;, Paulii Good, &lt;a href=&#34;https://github.com/brson&#34;&gt;Brian Anderson&lt;/a&gt;, and &lt;a href=&#34;https://github.com/Aimeedeer&#34;&gt;Aimee Zhu&lt;/a&gt;. Thank you for your help!&lt;/p&gt;
+&lt;p&gt;RiB needs help to keep up with Rust blockchain projects. If you follow a particular project, or otherwise find information that is beneficial to the Rust &amp;amp; blockchain community, please contribute to the next issue. Either submit a PR to the &lt;a href=&#34;../draft&#34;&gt;#11 draft&lt;/a&gt;, or Tweet &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;project-spotlight&#34;&gt;Project spotlight&lt;/h2&gt;
+&lt;p&gt;Each month we like to shine a light on a notable Rust blockchain project. This month that project is…&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/CodeChain-io/intertrait&#34;&gt;intertrait&lt;/a&gt; crate.&lt;/p&gt;
+&lt;p&gt;This clever crate provides a feature missing from Rust project — the
+ability to cast from one object type to another. Perhaps not directly blockchain
+related, but it comes from &lt;a href=&#34;https://github.com/CodeChain-io/intertrait&#34;&gt;CodeChain&lt;/a&gt;, so is another example of the
+contributions that the Rust blockchain community provide to the greater Rust
+ecosystem.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;most-active-in-march&#34;&gt;Most Active in March&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt;: 240 merged &lt;a href=&#34;https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;PRs&lt;/a&gt;, 30 closed &lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/CodeChain-io/intertrait&#34;&gt;CodeChain&lt;/a&gt;: 81 merged PRs (&lt;a href=&#34;https://github.com/CodeChain-io/foundry/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-rpc-js/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-primitives-js/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-keystore-js/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-keystore-cli/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;5&lt;/a&gt;), 22 closed &lt;a href=&#34;https://github.com/CodeChain-io/foundry/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt;: 47 merged &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;PRs&lt;/a&gt;, 56 closed &lt;a href=&#34;https://github.com/nearprotocol/nearcore/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/paritytech&#34;&gt;Parity&lt;/a&gt;: 70 merged PRs (&lt;a href=&#34;https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/wasmi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;), 9 closed issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/parity-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;project-updates&#34;&gt;Project updates&lt;/h2&gt;
+&lt;h4 id=&#34;codechainhttpsgithubcomcodechain-io&#34;&gt;&lt;a href=&#34;https://github.com/codeChain-io/&#34;&gt;&lt;strong&gt;CodeChain&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;81 merged PRs(&lt;a href=&#34;https://github.com/CodeChain-io/foundry/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-rpc-js/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-primitives-js/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-keystore-js/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/CodeChain-io/foundry-keystore-cli/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;5&lt;/a&gt;), &lt;a href=&#34;https://github.com/CodeChain-io/foundry/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;22 closed issues&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/codechain/foundry-ics-poc-proof-of-concept-implementation-c92a8b4757da&#34;&gt;CodeChain Foundry ICS Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;R&amp;amp;D: &lt;a href=&#34;https://medium.com/codechain/adapting-bls-signature-aggregation-to-codechain-foundry-7767d6656e5b&#34;&gt;Adapting BLS Signature Aggregation to CodeChain Foundry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PRs: &lt;a href=&#34;https://github.com/CodeChain-io/foundry/pulls?q=is%3Apr+label%3Aics+is%3Aclosed&#34;&gt;ICS Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PRs: &lt;a href=&#34;https://github.com/CodeChain-io/foundry/issues?q=is%3Aissue+is%3Aclosed+label%3Alight-client&#34;&gt;Foundry light client implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/CodeChain-io/foundry/pull/219&#34;&gt;Hot events for Informer API &lt;/a&gt; by &lt;a href=&#34;https://github.com/MSNTCS&#34;&gt;@MSNTCS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/CodeChain-io/foundry/pull/154&#34;&gt;Replace ECDSA and Schnorr with Ed25519&lt;/a&gt; by &lt;a href=&#34;https://github.com/HoOngEe&#34;&gt;@HoOngEe&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/CodeChain-io/foundry/pull/257&#34;&gt;Modify logic related to the Tx type for checking whether a Tx is verified or not&lt;/a&gt; by &lt;a href=&#34;https://github.com/somniumism&#34;&gt;@somniumism&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/CodeChain-io/foundry/pull/210&#34;&gt;Implement basics of ICS 04&lt;/a&gt; by &lt;a href=&#34;https://github.com/junha1&#34;&gt;@junha1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/CodeChain-io/foundry/pull/241&#34;&gt;Implement module db for coordinator Context&lt;/a&gt; by &lt;a href=&#34;https://github.com/HoOngEe&#34;&gt;@HoOngEe&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;golemhttpsgolemnetwork&#34;&gt;&lt;a href=&#34;https://golem.network/&#34;&gt;&lt;strong&gt;Golem&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;37 merged PRs (&lt;a href=&#34;https://github.com/golemfactory/golem/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/golemfactory/mandelbrot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/golemfactory/sp-wasm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/golemfactory/gudot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/golemfactory/golem-client/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;5&lt;/a&gt;), 1 closed &lt;a href=&#34;https://github.com/golemfactory/golem/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.golemproject.net/summary-of-the-golem-ama-march-2020-getting-closer-to-clay-and-headed-towards-a-new-paradigm/&#34;&gt;Summary of the Golem AMA March 2020: getting closer to Clay and headed towards a new paradigm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.golemproject.net/scaling-golem-research-on-scalability-alternatives-update/&#34;&gt;Scaling Golem: research on scalability alternatives update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.golemproject.net/gwebinars-part-1-building-on-top-of-golem-with-gwasm/&#34;&gt;gWebinars Part 1: Building on top of Golem with gWASM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.golemproject.net/golem-hive/&#34;&gt;Golem Hive - building a cloud with the Task API (and then some more)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=tBbJYs4zlGY&#34;&gt;Building on top of Golem with gWASM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/golemfactory/golem/pull/5109&#34;&gt;BroadcastProtocol introduction&lt;/a&gt; by &lt;a href=&#34;https://github.com/jiivan&#34;&gt;@jiivan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/golemfactory/golem/pull/5127&#34;&gt;add an integration test that runs two simultanous tasks&lt;/a&gt; by &lt;a href=&#34;https://github.com/shadeofblue&#34;&gt;@shadeofblue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/golemfactory/golem/pull/5114&#34;&gt;Load app definition files from Golem releases CDN&lt;/a&gt; by &lt;a href=&#34;https://github.com/zakaprov&#34;&gt;@zakaprov&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;grinhttpsgithubcommimblewimblegrin&#34;&gt;&lt;a href=&#34;https://github.com/mimblewimble/grin&#34;&gt;&lt;strong&gt;Grin&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;16 merged &lt;a href=&#34;https://github.com/mimblewimble/grin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;PRs&lt;/a&gt;, 8 closed &lt;a href=&#34;https://github.com/mimblewimble/grin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://grinnews.substack.com/p/91-new-core-team-member-&#34;&gt;91: New core team member&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://grinnews.substack.com/p/90-grin-node-challenge-&#34;&gt;90: Grin Node Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://grinnews.substack.com/p/89-grin-wallet-v311-out-&#34;&gt;89: Grin wallet v3.1.1 out&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://grinnews.substack.com/p/88-add-more-scheduled-hard-forks&#34;&gt;88: Add more scheduled hard forks?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mimblewimble/grin/pull/3256&#34;&gt;API: don&amp;rsquo;t error on missing output&lt;/a&gt; by &lt;a href=&#34;https://github.com/jaspervdm&#34;&gt;@jaspervdm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mimblewimble/grin/pull/3260&#34;&gt;no need to rehash with index to compare output with input spending it&lt;/a&gt; by &lt;a href=&#34;https://github.com/antiochp&#34;&gt;@antiochp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mimblewimble/grin/pull/3253&#34;&gt;simplify when block_sums and spent_index are added to the db&lt;/a&gt; by &lt;a href=&#34;https://github.com/antiochp&#34;&gt;@antiochp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;holochainhttpsgithubcomholochain&#34;&gt;&lt;a href=&#34;https://github.com/holochain/&#34;&gt;&lt;strong&gt;Holochain&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;29 merged &lt;a href=&#34;https://github.com/holochain/holochain-rust/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;PRs&lt;/a&gt;, 1 closed &lt;a href=&#34;https://github.com/holochain/holochain-rust/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://www.youtube.com/watch?v=FJ33frirb0c&#34;&gt;Holo AMA No. 36 w/ Art Brock, David Atkinson, and Mary Camacho&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/h-o-l-o/monthly-roundup-for-holo-holochain-71fddb9b2619&#34;&gt;Monthly Roundup for Holo &amp;amp; Holochain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/holochain/bootstrap-a-happ-in-one-command-654ee2c417df&#34;&gt;Bootstrap a hApp in One Command&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/holochain/the-story-of-7500-nodes-5-live-happs-to-try-c36f0f075e37&#34;&gt;The Story of 7500 Nodes, 5 Live hApps To Try&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/h-o-l-o/maintaining-focus-in-a-rapidly-changing-world-e52b609f190d&#34;&gt;Maintaining Focus in a Rapidly Changing World&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.holochain.org/holochain-community-hackathons/&#34;&gt;Holochain Community Hackathons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Forum: &lt;a href=&#34;https://forum.holochain.org/c/projects/acorn/106&#34;&gt;hAppyStory - Acorn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2123&#34;&gt;trycp_manager&lt;/a&gt; by &lt;a href=&#34;https://github.com/zippy&#34;&gt;@zippy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2132&#34;&gt;Basic start to tokio trace&lt;/a&gt; by &lt;a href=&#34;https://github.com/freesig&#34;&gt;@freesig&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2153&#34;&gt;Fix update aspects&lt;/a&gt; by &lt;a href=&#34;https://github.com/maackle&#34;&gt;@maackle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2159&#34;&gt;Key fixes for validation&lt;/a&gt; by &lt;a href=&#34;https://github.com/neonphog&#34;&gt;@neonphog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2128&#34;&gt;Sim2h space data remote debugging&lt;/a&gt; by &lt;a href=&#34;https://github.com/lucksus&#34;&gt;@lucksus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nearhttpsgithubcomnearprotocolnearcore&#34;&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;&lt;strong&gt;NEAR&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;47 merged &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;PRs&lt;/a&gt;, 56 closed &lt;a href=&#34;https://github.com/nearprotocol/nearcore/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://nearprotocol.com/blog/near-community-update-march-27th-2020/&#34;&gt;NEAR Community Update: March 27th, 2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://nearprotocol.com/blog/near-community-update-march-13th-2020/&#34;&gt;NEAR Community Update: March 13th, 2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=8xpOUqdoyp0&#34;&gt;Whiteboard Series with NEAR | Ep: 33 Justin Drake from Ethereum Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://commonwealth.im/near/proposal/discussion/367-proofofspacetime-without-vdfs&#34;&gt;Proof-of-Space-Time without VDFs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://podcasts.apple.com/us/podcast/near-protocol-open-web-collective-lessons-learned-building/id1497307664?i=1000468017907&#34;&gt;Near Protocol + Open Web Collective - Lessons learned building a new blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/2084&#34;&gt;GC major update&lt;/a&gt; by &lt;a href=&#34;https://github.com/Kouprin&#34;&gt;@Kouprin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/2272&#34;&gt;feat(runtime): switch to state staking&lt;/a&gt; by &lt;a href=&#34;https://github.com/ilblackdragon&#34;&gt;@ilblackdragon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/2274&#34;&gt;fix(chain): fix garbage collection stop height&lt;/a&gt; by &lt;a href=&#34;https://github.com/bowenwang1996&#34;&gt;@bowenwang1996&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/2053&#34;&gt;feat(runtime): Expose epoch height to WASM runtime&lt;/a&gt; by &lt;a href=&#34;https://github.com/ilblackdragon&#34;&gt;@ilblackdragon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/2136&#34;&gt;feat(runtime): Add Helper Methods and Types for Mock VM&lt;/a&gt; by &lt;a href=&#34;https://github.com/willemneal&#34;&gt;@willemneal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nervoshttpsgithubcomnervosnetwork&#34;&gt;&lt;a href=&#34;https://github.com/nervosnetwork&#34;&gt;&lt;strong&gt;Nervos&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;6 merged PRs (&lt;a href=&#34;https://github.com/nervosnetwork/ckb/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/rfcs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;), 2 closed issues (&lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/rfcs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/nervosnetwork/nervos-ckb-development-update-31-7b253fdb464&#34;&gt;Nervos CKB Development Update #31&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/nervosnetwork/nervos-ckb-development-update-30-e05a4ddb6ab1&#34;&gt;Nervos CKB Development Update #30&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/nervosnetwork/ecosystem-grants-lay2-project-awarded-6th-nervos-grant-c2ee081e3c5b&#34;&gt;Lay2 Project Awarded Ecosystem Grant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/nervosnetwork/three-new-ecosystem-grants-awarded-892b97e8bc06&#34;&gt;Three New Ecosystem Grants Awarded&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/nervosnetwork/nervos-foundation-joins-cross-chain-group-ac2e6e6af9d9&#34;&gt;Nervos Foundation Joins Cross-Chain Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/nervosnetwork/overlord-a-new-consensus-algorithm-3cc51690d269&#34;&gt;Overlord — A new consensus algorithm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/nervosnetwork/ckbs-hash-function-eaglesong-built-for-the-mining-ecosystem-c7457a52a163&#34;&gt;CKB’s Hash Function Eaglesong: Built for the Mining Ecosystem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/nervosnetwork/bitcoin-is-still-a-store-of-value-despite-the-fact-that-everybody-has-abandoned-its-greatest-971a845ed6ae&#34;&gt;Bitcoin as a Store of Value is Still its Greatest Narrative&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/nervosnetwork/whats-animagus-part-2-running-it-for-real-17a48608389d&#34;&gt;What’s Animagus Part 2: Running it For Real&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://xuejie.space/2020_03_20_what_do_we_mean_when_we_say_account_model/&#34;&gt;What Do We Mean When We Say Account Model?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://xuejie.space/2020_03_19_cycle_reduction_in_duktape/&#34;&gt;Introduction to CKB Script Programming 9: Cycle Reductions in Duktape Script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://xuejie.space/2020_03_16_lets_build_a_minimal_blockchain_what_is_a_blockchain/&#34;&gt;Let&amp;rsquo;s Build a Minimal Blockchain 3: What Is A Blockchain?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://chinarelaynode.substack.com/p/evolution-path-to-decentralized-asics&#34;&gt;Evolution Path to Decentralized ASICs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: Programming CKB &lt;a href=&#34;https://www.youtube.com/watch?v=HyYXzEIdF90&#34;&gt;Part 1&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=Co-rzOhwuHs&#34;&gt;Part 2&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/watch?v=13w6Wvu9ff0&#34;&gt;Part 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=Uh1uGDWLyiw&#34;&gt;Story of DeFi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=Bh7GpFerpJw&#34;&gt;CKB P Wallet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/1940&#34;&gt;feat: add a feature to enable jemalloc profiling&lt;/a&gt; by &lt;a href=&#34;https://github.com/yangby-cryptape&#34;&gt;@yangby-cryptape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/1960&#34;&gt;test: add options for integration tests and fix a bug&lt;/a&gt; by &lt;a href=&#34;https://github.com/yangby-cryptape&#34;&gt;@yangby-cryptape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm/pull/100&#34;&gt;Revert &amp;ldquo;perf: Tweak slot calculation algorithm&amp;rdquo;&lt;/a&gt; by &lt;a href=&#34;https://github.com/xxuejie&#34;&gt;@xxuejie&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/rfcs/pull/180&#34;&gt;0022: add links to molecule and schema file&lt;/a&gt; by &lt;a href=&#34;https://github.com/doitian&#34;&gt;@doitian&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;parity-httpsgithubcomparitytech&#34;&gt;&lt;a href=&#34;https://github.com/paritytech&#34;&gt;&lt;strong&gt;Parity&lt;/strong&gt; &lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;70 merged PRs (&lt;a href=&#34;https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/wasmi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;), 9 closed issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/parity-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://www.parity.io/announcing-substrate-delivery-partners/&#34;&gt;Announcing Substrate Delivery Partners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://www.parity.io/06-03-2020-alert-impersonated-emails/&#34;&gt;Alert - impersonated emails&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://www.parity.io/announcing-the-initial-participants-in-the-substrate-builders-program/&#34;&gt;Announcing the initial participants in the Substrate Builders Program&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://www.coindesk.com/iot-app-nodle-moves-from-stellar-blockchain-to-polkadot&#34;&gt;Another blockchain project is heading to the Polkadot Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=rwzvRi1JkWU&#34;&gt;Intro to Substrate Off-Chain Workers with Joe Petrowski and Tomasz Drwięga&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=ejgPSwdLj5o&#34;&gt;Polkadot validator node setup with Joe Petrowski and Will Pankiewicz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=FBPKgkC9RCo&#34;&gt;Build a proof of existence blockchain in 30 minutes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=lXw6GTNh73Y&#34;&gt;The EVM Pallet and Purestake&amp;rsquo;s Moonbeam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=Z-ZH7wKW094&#34;&gt;sr-tool and Proof of Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=D5oeAwuqGDQ&#34;&gt;PolkaHub and Totem Live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=eAXbcgWSzqc&#34;&gt;VuePolkadot, CLE Coin, Staking Demo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://relaychain.fm/16-innovating-blockchain-based-accounting-with-totem&#34;&gt;Innovating Blockchain-Based Accounting with Totem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://relaychain.fm/17-investing-in-the-future-of-web3&#34;&gt;Investing in the Future of Web 3.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/substrate/pull/4517&#34;&gt;Offchain Phragmén BREAKING.&lt;/a&gt; by &lt;a href=&#34;https://github.com/kianenigma&#34;&gt;@kianenigma&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/polkadot/pull/840&#34;&gt;Parachains double vote handler initial implementation.&lt;/a&gt; by &lt;a href=&#34;https://github.com/montekki&#34;&gt;@montekki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/substrate/pull/5448&#34;&gt;Implements mocking of runtime apis&lt;/a&gt; by &lt;a href=&#34;https://github.com/bkchr&#34;&gt;@bkchr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/polkadot/pull/930&#34;&gt;PoV-block gossip&lt;/a&gt; by &lt;a href=&#34;https://github.com/rphmeier&#34;&gt;@rphmeier&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;solanahttpsgithubcomsolana-labssolana&#34;&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;&lt;strong&gt;Solana&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;240 merged &lt;a href=&#34;https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;PRs&lt;/a&gt;, 30 closed &lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;issues&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/solana-labs/solana-raises-1-76-million-in-sold-out-coinlist-auction-92f71c6fec7d&#34;&gt;Solana Raises 1.76 Million in Sold-Out Coinlist Auction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/solana-labs/chainlink-and-solana-integration-high-quality-price-oracle-data-cd9fa41f6ecb&#34;&gt;Chainlink and Solana Integration: High-Speed Price Oracle Data for Better DeFi Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/solana-labs/solanas-community-token-sale-is-now-live-2c724f9df447&#34;&gt;Solana’s Community Token Sale is Now LIVE!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://blocktribune.com/blockchain-startup-bison-trails-adds-support-for-solana-protocol/&#34;&gt;Blockchain Startup Bison Trails Adds Support For Solana Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://decrypt.co/23598/bison-trails-add-solana-blockchain-mainnet-goes-live&#34;&gt;Bison Trails to add Solana blockchain when mainnet goes live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/solana-labs/tour-de-sol-weekly-recaps-a8ce2e91e1d&#34;&gt;Tour de SOL Weekly Recaps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/solana-labs/sol-bandits-on-the-run-696e044d20ed&#34;&gt;SOL Bandits On The Run&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/solana-labs/validator-feature-series-6f1c479d70b3&#34;&gt;Validator Feature Series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://medium.com/solana-labs/elastic-circuit-breakers-9229097e6acf&#34;&gt;Elastic Circuit Breakers: A Proposal for More Robust Crypto Market Infrastructure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=-7c7HeMyVVM&#34;&gt;5G Use Case Explainer Video (Anatoly Yakovenko / CEO of Solana)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=TNJoRvshJn0&#34;&gt;Proof of History Explainer (Updated)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=5gy8bWPB0JE&#34;&gt;Vinny Lingham - CEO of Civic &amp;amp; General Partner at Multicoin Capital&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=EJv4TlMBUJc&#34;&gt;CoinList Chats: Solana and Scaling Solution Trade-offs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://podcasts.apple.com/us/podcast/kyle-samani-managing-partner-at-multicoin-capital-ep-18/id1476353378?i=1000469672403&#34;&gt;Kyle Samani - Managing Partner at Multicoin Capital Ep #18&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://podcasts.apple.com/us/podcast/amir-haleem-ceo-of-helium-ep-17/id1476353378?i=1000468823066&#34;&gt;Amir Haleem - CEO of Helium Ep #17&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://podcasts.apple.com/us/podcast/coinlist-auction-staker-price-guarantee-ft-coinlist/id1476353378?i=1000468695817&#34;&gt;Coinlist Auction &amp;amp; Staker Price Guarantee ft. Coinlist President Andy Bromberg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast: &lt;a href=&#34;https://podcasts.apple.com/us/podcast/vinny-lingham-ceo-civic-general-partner-at-multicoin/id1476353378?i=1000467276111&#34;&gt;Vinny Lingham - CEO of Civic / General Partner at Multicoin Capital Ep #16&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/8989&#34;&gt;Add frozen account support&lt;/a&gt; by &lt;a href=&#34;https://github.com/mvines&#34;&gt;@mvines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/8959&#34;&gt;Strictly validate the contents of snapshot/genesis&lt;/a&gt; by &lt;a href=&#34;https://github.com/ryoqun&#34;&gt;@ryoqun&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/9131&#34;&gt;Ledger cleanup fix&lt;/a&gt; by &lt;a href=&#34;https://github.com/sakridge&#34;&gt;@sakridge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/9164&#34;&gt;Add solana-stake-accounts CLI tool&lt;/a&gt; by &lt;a href=&#34;https://github.com/garious&#34;&gt;@garious&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;zcashhttpszcash&#34;&gt;&lt;a href=&#34;https://z.cash/&#34;&gt;&lt;strong&gt;Zcash&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;24 merged PRs (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;), 15 closed issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-03-01..2020-03-31&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://news.zfnd.org/archive/zcash-foundation-update-march-2020/&#34;&gt;Zcash Foundation Update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://www.zfnd.org/blog/design-tradeoffs-in-private-contact-tracing/&#34;&gt;Design Tradeoffs in Privacy-Preserving Contact Tracing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://www.zfnd.org/blog/decentralized-contact-tracing/&#34;&gt;Let&amp;rsquo;s Develop Decentralized, Privacy-Preserving Contact Tracing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://electriccoin.co/blog/explaining-flyclient/&#34;&gt;Explaining FlyClient&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://electriccoin.co/blog/introducing-heartwood/&#34;&gt;Introducing Heartwood&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/zcash/zips/pull/220&#34;&gt;[ZIP 221] FlyClient - Consensus-Layer Changes&lt;/a&gt; by &lt;a href=&#34;https://github.com/therealyingtong&#34;&gt;@therealyingtong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pull/317&#34;&gt;Sprout keys and addresses&lt;/a&gt; by &lt;a href=&#34;https://github.com/dconnolly&#34;&gt;@dconnolly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pull/280&#34;&gt;TransparentAddress&lt;/a&gt; by &lt;a href=&#34;https://github.com/dconnolly&#34;&gt;@dconnolly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/zcash/librustzcash/pull/214&#34;&gt;Update manifest for zcash_history&lt;/a&gt; by &lt;a href=&#34;https://github.com/ebfull&#34;&gt;@ebfull&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/zcash/zips/pull/335&#34;&gt;ZIP 221: strengthen caveat about FlyClient security in chains with rapid difficulty adjustment, and change pseudocode so that CONSENSUS_BRANCH_ID doesn&amp;rsquo;t look like a constant&lt;/a&gt; by &lt;a href=&#34;https://github.com/daira&#34;&gt;@daira&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://a16z.com/2019/10/04/commercializing-open-source/&#34;&gt;Open Source: From Community to Commercialization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/&#34;&gt;Progressive Decentralization: A Playbook for Building Crypto Applications&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;interesting-things&#34;&gt;Interesting Things&lt;/h2&gt;
+&lt;p&gt;Thread: &lt;a href=&#34;https://twitter.com/felix2feng/status/1130268154742026241&#34;&gt; whether we&amp;rsquo;d build SetProtocol on other chains&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;events&#34;&gt;Events&lt;/h2&gt;
+&lt;p&gt;April-May, 2020&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://zkproof.org/&#34;&gt;ZKProof Standards&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;May 1-2 | Online&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://defi-discussions.dystopialabs.com/&#34;&gt;DeFi Discussions: Virtual Summit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aug 3-6, 2020 | Oxford, UK&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ieeedapps.net/&#34;&gt;IEEE DAPPS 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;careers&#34;&gt;Careers&lt;/h2&gt;
+&lt;p&gt;Layertwo | London, UK&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://angel.co/company/layertwo/jobs/687465-senior-backend-engineer&#34;&gt;Senior Backend Engineer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://angel.co/company/layertwo/jobs/702600-junior-full-stack-engineer&#34;&gt;Junior Backend Engineer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Mythical Games | Los Angeles, CA&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.indeed.com/viewjob?jk=67ef27adc1ed8c84&#34;&gt;Software Engineer - Blockchain&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nervos | Remote&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://angel.co/company/nervos-1/jobs/710826-developer-relations&#34;&gt;Developer Relations&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Nervos | Hangzhou, China; Remote&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://angel.co/company/nervos-1/jobs/589230-senior-blockchain-engineer&#34;&gt;Senior blockchain Engineer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Offchain Labs | NYC, US&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jobs.lever.co/offchainlabs/9b024e89-1cb7-43f3-b6f8-c7a2d78636b5&#34;&gt;Senior Software Engineer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Want to be included in the next issue? Feel free to submit a PR to the &lt;a href=&#34;../draft&#34;&gt;#11 draft&lt;/a&gt;, or Tweet &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Join the discussion on&lt;/strong&gt; &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;&lt;strong&gt;RiB telegram group&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;❤️&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>RiB Newsletter #9 – The Month of Working from Home</title>
