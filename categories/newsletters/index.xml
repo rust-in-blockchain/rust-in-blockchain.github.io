@@ -25,7 +25,7 @@
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;/h2&gt;
 &lt;p&gt;This edition of RiB was produced with contributions from &lt;a href=&#34;https://github.com/somniumism&#34;&gt;SeungMin Lee&lt;/a&gt;, &lt;a href=&#34;https://github.com/mat7ias&#34;&gt;Mattias Nystrom&lt;/a&gt;, Paulii Good, &lt;a href=&#34;https://github.com/brson&#34;&gt;Brian Anderson&lt;/a&gt;, and &lt;a href=&#34;https://github.com/Aimeedeer&#34;&gt;Aimee Zhu&lt;/a&gt;. Thank you for your help!&lt;/p&gt;
-&lt;p&gt;RiB needs help to keep up with Rust blockchain projects. If you follow a particular project, or otherwise find information that is beneficial to the Rust &amp;amp; blockchain community, please contribute to the next issue. Either submit a PR to the &lt;a href=&#34;../../draft&#34;&gt;#11 draft&lt;/a&gt;, or Tweet &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;RiB needs help to keep up with Rust blockchain projects. If you follow a particular project, or otherwise find information that is beneficial to the Rust &amp;amp; blockchain community, please contribute to the next issue. Either submit a PR to the &lt;a href=&#34;https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft&#34;&gt;#11 draft&lt;/a&gt;, or Tweet &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;project-spotlight&#34;&gt;Project spotlight&lt;/h2&gt;
 &lt;p&gt;Each month we like to shine a light on a notable Rust blockchain project. This month that project is…&lt;/p&gt;
