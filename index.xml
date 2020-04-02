@@ -1711,10 +1711,10 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
     
     <item>
       <title>About us</title>
-      <link>https://rustinblockchain.org/about-us/</link>
+      <link>https://rustinblockchain.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rustinblockchain.org/about-us/</guid>
+      <guid>https://rustinblockchain.org/about/</guid>
       <description>&lt;p&gt;Rust in Blockchain is a monthly newsletter focused on Rust programming and blockchain development, bringing engineering insight and experience to the Rust blockchain community.&lt;/p&gt;
 &lt;p&gt;If you are interested in contributing to this newsletter, or would like a feature published regarding Rust, please visit us on GitHub or tweet us.&lt;/p&gt;
 &lt;p&gt;Rust in Blockchain is edited by&lt;/p&gt;
