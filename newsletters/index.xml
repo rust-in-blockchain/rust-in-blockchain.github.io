@@ -181,14 +181,14 @@ Further information: &lt;a href=&#34;https://medium.com/codechain/adapting-bls-s
 &lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2179&#34;&gt;fix Async Zome Calls&lt;/a&gt; by &lt;a href=&#34;https://github.com/zippy&#34;&gt;@zippy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2175&#34;&gt;Redux synced Future Wakers&lt;/a&gt; by &lt;a href=&#34;https://github.com/lucksus&#34;&gt;@lucksus&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;librahttpslibraorg&#34;&gt;&lt;a href=&#34;https://libra.org&#34;&gt;Libra&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;librahttpslibraorg&#34;&gt;&lt;a href=&#34;https://libra.org&#34;&gt;&lt;strong&gt;Libra&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;0 merged PRs, 49 closed issues (&lt;a href=&#34;https://github.com/libra/libra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-04-01..2020-05-05&#34;&gt;1&lt;/a&gt;),
 36 open issues (&lt;a href=&#34;https://github.com/libra/libra/issues?q=is%3Aissue+is%3Aopen+created%3A2020-04-01..2020-05-05&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Blog: &lt;a href=&#34;https://libra.org/en-US/blog/libra-developers-the-path-forward/&#34;&gt;Libra developers: The path forward&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Blog: &lt;a href=&#34;https://voxeu.org/article/libra-still-needs-more-baking&#34;&gt;Libra still needs more baking&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;lighthousehttpslighthousesigmaprimeio&#34;&gt;&lt;a href=&#34;https://lighthouse.sigmaprime.io/&#34;&gt;Lighthouse&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;lighthousehttpslighthousesigmaprimeio&#34;&gt;&lt;a href=&#34;https://lighthouse.sigmaprime.io/&#34;&gt;&lt;strong&gt;Lighthouse&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;86 merged PRs (&lt;a href=&#34;https://github.com/sigp/lighthouse/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-04-01..2020-05-05&#34;&gt;1&lt;/a&gt;), 44 closed issues (&lt;a href=&#34;https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-04-01..2020-05-05&#34;&gt;1&lt;/a&gt;),
 34 open issues (&lt;a href=&#34;https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aopen+created%3A2020-04-01..2020-05-05&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
 &lt;ul&gt;
