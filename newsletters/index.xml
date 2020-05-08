@@ -40,7 +40,7 @@ function, with a Rust implementation.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://ethresear.ch/t/introducing-distaff-a-stark-based-vm-written-in-rust/7318&#34;&gt;Distaff&lt;/a&gt;, a STARK VM that runs
 encrypted computations.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/crypto-com/chain&#34;&gt;Crypto.com Chain&lt;/a&gt;, a new chain
-using Tinderment consensus.&lt;/li&gt;
+using Tendermint consensus.&lt;/li&gt;
 &lt;li&gt;Both IPFS and FileCoin have ongoing Rust implementations: &lt;a href=&#34;https://github.com/ipfs-rust/rust-ipfs&#34;&gt;ipfs-rust&lt;/a&gt;
 and &lt;a href=&#34;https://github.com/ChainSafe/forest&#34;&gt;forest&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/KomodoPlatform/atomicDEX-API&#34;&gt;Komodo&amp;rsquo;s AtomicDEX&lt;/a&gt;, seemingly one of the most functional
