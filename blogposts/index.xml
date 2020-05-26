@@ -6,10 +6,70 @@
     <description>Recent content in Blog posts on Rust in Blockchain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rustinblockchain.org/blogposts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How RiB Newsletter is Generated</title>
+      <link>https://rustinblockchain.org/blogposts/how-rib-newsletter-is-generated/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/blogposts/how-rib-newsletter-is-generated/</guid>
+      <description>&lt;p&gt;Rust in Blockchain publishes a monthly newsletter that shares relevant technical content to the Rust blockchain development community.&lt;/p&gt;
+&lt;p&gt;In this post, we will introduce how our monthly newsletter is generated, the content structure and the workflow.&lt;/p&gt;
+&lt;p&gt;We hope it will be easier for you to contribute to the &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/tree/master/draft&#34;&gt;next issue&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;rib-newsletter-structure&#34;&gt;RiB Newsletter Structure&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Each month introduction: summary of the month&amp;rsquo;s events&lt;/li&gt;
+&lt;li&gt;Thanks: a list of all the contributors to this issue&lt;/li&gt;
+&lt;li&gt;Project Spotlight: one cool project each month, per our preference&lt;/li&gt;
+&lt;li&gt;Interesting Things:
+&lt;ul&gt;
+&lt;li&gt;Interesting Rust &amp;amp; blockchain projects, GitHub repos&lt;/li&gt;
+&lt;li&gt;Articles, particularly on cross-cutting technical topics&lt;/li&gt;
+&lt;li&gt;Twitter threads&lt;/li&gt;
+&lt;li&gt;Anything that you think is interesting to the community&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Most Active in each month: a list of projects with the most GitHub activities&lt;/li&gt;
+&lt;li&gt;Project Updates:
+&lt;ul&gt;
+&lt;li&gt;GitHub activity numbers&lt;/li&gt;
+&lt;li&gt;News&lt;/li&gt;
+&lt;li&gt;Blog posts&lt;/li&gt;
+&lt;li&gt;Videos and podcasts&lt;/li&gt;
+&lt;li&gt;Important or interesting GitHub PRs and issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Events: developer related blockchain events&lt;/li&gt;
+&lt;li&gt;Careers: a list of developer jobs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;content-generation&#34;&gt;Content Generation&lt;/h2&gt;
+&lt;p&gt;Every month we&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Call for contribution one week ahead of the publish date (will introduce publish date in the next section)&lt;/li&gt;
+&lt;li&gt;Accept contribution from GitHub, deal with PRs and issues&lt;/li&gt;
+&lt;li&gt;Accept contribution from other channels. e.g. &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;Twitter&lt;/a&gt;, &lt;a href=&#34;n3wh4x0rs@gmail.com&#34;&gt;Email&lt;/a&gt;, &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;Telegram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Generate newsfeed from projects&amp;rsquo; RSS subscription&lt;/li&gt;
+&lt;li&gt;Run Ribbot one day ahead to calculate GitHub data from projects in rib-bible&lt;/li&gt;
+&lt;li&gt;Discuss on Introduction, Spotlight, Interesting Things sections (we gather some of the content from reading news randomly)&lt;/li&gt;
+&lt;li&gt;Review the final draft&lt;/li&gt;
+&lt;li&gt;Create the next draft file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;publishing&#34;&gt;Publishing&lt;/h2&gt;
+&lt;p&gt;The RiB Newsletter publishes on the first Wednesday of each month (Pacific time), towards the end of the day.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Publish the newsletter. Technically, we move the current issue from draft folder to content folder, build and deploy it&lt;/li&gt;
+&lt;li&gt;Copy the published page to Mailchimp and send newsletter to email subscriptions&lt;/li&gt;
+&lt;li&gt;Share the published page to Twitter, Reddit, Hacker News, and some related groups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the future, we will optimize our workflow to make it more efficient and easier to contribute to. The &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/tree/master/draft&#34;&gt;next draft&lt;/a&gt; is ready to accept contributions ;)&lt;/p&gt;
+&lt;p&gt;Please let us know your thoughts and suggestions anytime.&lt;/p&gt;
+&lt;p&gt;Join RiB &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;Telegram group&lt;/a&gt; for community discussions.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Call for Contributors</title>

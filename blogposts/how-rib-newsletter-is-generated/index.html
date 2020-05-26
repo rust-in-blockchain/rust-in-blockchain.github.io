@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.71.1" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Rust in Blockchain</title>
+	<title>How RiB Newsletter is Generated - Rust in Blockchain</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="A monthly newsletter for Rust and blockchain developers.">
-	<meta property="og:title" content="Rust in Blockchain" />
-<meta property="og:description" content="A monthly newsletter for Rust and blockchain developers." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://rustinblockchain.org/" />
-<meta property="og:updated_time" content="2020-05-26T00:00:00+00:00" />
+	<meta name="description" content="How RiB Newsletter is Generated">
+	<meta property="og:title" content="How RiB Newsletter is Generated" />
+<meta property="og:description" content="How RiB Newsletter is Generated" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rustinblockchain.org/blogposts/how-rib-newsletter-is-generated/" />
+<meta property="article:published_time" content="2020-05-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-26T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Rust in Blockchain"/>
-<meta name="twitter:description" content="A monthly newsletter for Rust and blockchain developers."/>
+<meta name="twitter:title" content="How RiB Newsletter is Generated"/>
+<meta name="twitter:description" content="How RiB Newsletter is Generated"/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="../../index.xml" title="Rust in Blockchain">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i">
 	<link rel="stylesheet" href="../../css/style.css">
 	<link rel="stylesheet" href="../../css/custom.css">
@@ -90,58 +89,113 @@ if (!doNotTrack) {
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="../../newsletters/2019-07-04/" rel="bookmark">
-			Rust in Blockchain Newsletter #1
-			</a>
-		</h3>
-		<div class="list__meta meta">
+
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">How RiB Newsletter is Generated</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-07-04T00:00:00Z">July 04, 2019</time>
+	<time class="meta__text" datetime="2020-05-26T00:00:00Z">May 26, 2020</time>
 </div>
 
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="../../categories/newsletters/" rel="category">newsletters</a>
+	<span class="meta__text"><a class="meta__link" href="../../categories/blogposts/" rel="category">blogposts</a>
 	</span>
 </div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Rust in Blockchain starts a series of offline events in San Francisco, Berlin, and Hangzhou, the first meetup will be held in San Francisco on 17th July. If you are interested in speaking at our events, please apply here, we will be super happy to receive your contributions. Libra might be the hypest news in June, follows with non-stoping blog posts.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="../../newsletters/2019-06-06/" rel="bookmark">
-			Rust in Blockchain Newsletter #0
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-06-06T00:00:00Z">June 06, 2019</time>
-</div>
+		</header><div class="content post__content clearfix">
+			<p>Rust in Blockchain publishes a monthly newsletter that shares relevant technical content to the Rust blockchain development community.</p>
+<p>In this post, we will introduce how our monthly newsletter is generated, the content structure and the workflow.</p>
+<p>We hope it will be easier for you to contribute to the <a href="https://github.com/rust-in-blockchain/rust-in-blockchain/tree/master/draft">next issue</a>.</p>
+<h2 id="rib-newsletter-structure">RiB Newsletter Structure</h2>
+<ul>
+<li>Each month introduction: summary of the month&rsquo;s events</li>
+<li>Thanks: a list of all the contributors to this issue</li>
+<li>Project Spotlight: one cool project each month, per our preference</li>
+<li>Interesting Things:
+<ul>
+<li>Interesting Rust &amp; blockchain projects, GitHub repos</li>
+<li>Articles, particularly on cross-cutting technical topics</li>
+<li>Twitter threads</li>
+<li>Anything that you think is interesting to the community</li>
+</ul>
+</li>
+<li>Most Active in each month: a list of projects with the most GitHub activities</li>
+<li>Project Updates:
+<ul>
+<li>GitHub activity numbers</li>
+<li>News</li>
+<li>Blog posts</li>
+<li>Videos and podcasts</li>
+<li>Important or interesting GitHub PRs and issues</li>
+</ul>
+</li>
+<li>Events: developer related blockchain events</li>
+<li>Careers: a list of developer jobs</li>
+</ul>
+<h2 id="content-generation">Content Generation</h2>
+<p>Every month we</p>
+<ul>
+<li>Call for contribution one week ahead of the publish date (will introduce publish date in the next section)</li>
+<li>Accept contribution from GitHub, deal with PRs and issues</li>
+<li>Accept contribution from other channels. e.g. <a href="https://twitter.com/rust_blockchain">Twitter</a>, <a href="n3wh4x0rs@gmail.com">Email</a>, <a href="https://t.me/rustinblockchain">Telegram</a></li>
+<li>Generate newsfeed from projects&rsquo; RSS subscription</li>
+<li>Run Ribbot one day ahead to calculate GitHub data from projects in rib-bible</li>
+<li>Discuss on Introduction, Spotlight, Interesting Things sections (we gather some of the content from reading news randomly)</li>
+<li>Review the final draft</li>
+<li>Create the next draft file</li>
+</ul>
+<h2 id="publishing">Publishing</h2>
+<p>The RiB Newsletter publishes on the first Wednesday of each month (Pacific time), towards the end of the day.</p>
+<ul>
+<li>Publish the newsletter. Technically, we move the current issue from draft folder to content folder, build and deploy it</li>
+<li>Copy the published page to Mailchimp and send newsletter to email subscriptions</li>
+<li>Share the published page to Twitter, Reddit, Hacker News, and some related groups</li>
+</ul>
+<p>In the future, we will optimize our workflow to make it more efficient and easier to contribute to. The <a href="https://github.com/rust-in-blockchain/rust-in-blockchain/tree/master/draft">next draft</a> is ready to accept contributions ;)</p>
+<p>Please let us know your thoughts and suggestions anytime.</p>
+<p>Join RiB <a href="https://t.me/rustinblockchain">Telegram group</a> for community discussions.</p>
 
-<div class="meta__item-categories meta__item">
-	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="../../categories/newsletters/" rel="category">newsletters</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Blockchain technology brings together cryptography, mathematics, game theory, and economics to create distributed systems with uniquely powerful security properties. Rust is a high-performance programming language uniquely suited to creating secure distributed systems. Every edition we bring you the latest developer news related to blockchain technology in Rust, with the ambition of building a greater developer community around this family of projects.
-	</div>
-</article>
+		</div>
+	</article>
 </main>
 
-<div class="pagination">
-	<a class="pagination__item pagination__item--prev btn" href="../../page/2/">«</a>
-	<span class="pagination__item pagination__item--current">3/3</span>
-</div>
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../blogposts/call-for-contributors/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Call for Contributors</p>
+		</a>
+	</div>
+</nav>
+
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rustinblockchain" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
 
 			</div>
 			<aside class="sidebar"><div class="widget-search widget">
@@ -243,5 +297,7 @@ if (!doNotTrack) {
 
 	</div>
 <script async defer src="../../js/menu.js"></script>
-<script src="../../js/custom.js"></script></body>
+<script src="../../js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
 </html>
