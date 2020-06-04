@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rustinblockchain.org/categories/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rustinblockchain.org/newsletters/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rustinblockchain.org/categories/newsletters/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rustinblockchain.org/newsletters/2020-06-03-zk-rustups/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rustinblockchain.org/</loc>
+    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rustinblockchain.org/blogposts/</loc>
     <lastmod>2020-05-26T00:00:00+00:00</lastmod>
   </url>
@@ -13,28 +38,8 @@
   </url>
   
   <url>
-    <loc>https://rustinblockchain.org/categories/</loc>
-    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rustinblockchain.org/blogposts/how-rib-newsletter-is-generated/</loc>
     <lastmod>2020-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rustinblockchain.org/</loc>
-    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rustinblockchain.org/newsletters/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rustinblockchain.org/categories/newsletters/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
