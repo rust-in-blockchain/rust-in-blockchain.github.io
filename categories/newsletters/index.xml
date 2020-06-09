@@ -48,9 +48,9 @@ of them.&lt;/p&gt;
 and containing several other interesting in-tree Rust crypto projects.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/dusk-network&#34;&gt;dusk-network&lt;/a&gt;, a blockchain written in Go, has multiple Rust crypto projects, &lt;a href=&#34;https://github.com/dusk-network/phoenix&#34;&gt;phoenix&lt;/a&gt;, a ZK transaction model,
 &lt;a href=&#34;https://github.com/dusk-network/Poseidon252&#34;&gt;Poseidon252&lt;/a&gt;, a hash function, and many more. It apears that they support smart contracts written in Rust.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/golemfactory&#34;&gt;Golem&lt;/a&gt;. A non-Rust blockchain with a large number of Rust projects, including &lt;a href=&#34;https://github.com/golemfactory/gMorph&#34;&gt;gMorph&lt;/a&gt;,
+&lt;li&gt;&lt;a href=&#34;https://github.com/golemfactory&#34;&gt;Golem&lt;/a&gt;. A decentralized computation network for Ethereum with a large number of Rust projects, including &lt;a href=&#34;https://github.com/golemfactory/gMorph&#34;&gt;gMorph&lt;/a&gt;,
 a homomorphic encryption library, and several WASM-related projects. Their &lt;a href=&#34;https://github.com/golemfactory/yagna&#34;&gt;yagna&lt;/a&gt;
-project looks like it might be a reimplementation of Golem in Rust.&lt;/li&gt;
+project is a new implementation in Rust with a different approach from the original project.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tendermint&#34;&gt;Tendermint&lt;/a&gt;, another Go blockchain, also has many Rust crypto and security projects.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/KomodoPlatform/&#34;&gt;Komodo&lt;/a&gt;, uses Rust for their cross-chain &lt;a href=&#34;https://github.com/KomodoPlatform/atomicDEX-API&#34;&gt;AtomixDEX&lt;/a&gt; matchmaking network.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/IOTAledger&#34;&gt;IOTA&lt;/a&gt; is &lt;a href=&#34;https://github.com/tendermint&#34;&gt;developing some new projects in Rust&lt;/a&gt;.&lt;/li&gt;
