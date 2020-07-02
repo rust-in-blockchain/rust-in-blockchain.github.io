@@ -66,7 +66,7 @@ uses &lt;code&gt;electrs&lt;/code&gt; in its block explorer, &lt;a href=&#34;htt
 &lt;li&gt;&lt;a href=&#34;https://github.com/filecoin-project/neptune&#34;&gt;Neptune&lt;/a&gt;. Neptune is a Rust implementation of the Poseidon hash function tuned for Filecoin.&lt;/li&gt;
 &lt;li&gt;Nervos CKB
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb-std&#34;&gt;ckb-std&lt;/a&gt; contains serveral modules that help you write CKB contract with Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb-std&#34;&gt;ckb-std&lt;/a&gt; contains several modules that help you write CKB contract with Rust.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/sec-bit/ckb-zkp&#34;&gt;ckb-zkp&lt;/a&gt;. Zero Knowledge Proofs Toolkit for CKB.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
