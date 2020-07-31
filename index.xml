@@ -2758,6 +2758,7 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;li&gt;&lt;a href=&#34;https://github.com/HuobiGroup/huobi-chain&#34;&gt;Huobi Chain&lt;/a&gt; The next generation high performance public chain for financial infrastructure.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/interledger-rs/interledger-rs&#34;&gt;Interledger&lt;/a&gt; An easy-to-use, high-performance Interledger implementation written in Rust.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/libra/libra&#34;&gt;Libra&lt;/a&gt; global currency and financial infrastructure that empowers billions of people;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sigp/lighthouse&#34;&gt;Lighthouse&lt;/a&gt; Fast and secure Ethereum 2.0 client;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt; NEAR Protocol - scalable and usable blockchain;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;Nervos CKB&lt;/a&gt; Nervos CKB is a public permissionless blockchain, the common knowledge layer of Nervos network;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-bitcoin&#34;&gt;Parity Bitcoin&lt;/a&gt; The Parity Bitcoin client;&lt;/li&gt;
@@ -2769,6 +2770,7 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;li&gt;&lt;a href=&#34;https://github.com/tari-project&#34;&gt;Tari&lt;/a&gt; The Tari Digital Assets Protocol;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tendermint/rust-abci&#34;&gt;Tendermint&lt;/a&gt; Though, Tendermint blockchain layer is implemented in Go, they have ABCI interface for Rust;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/witnet/witnet-rust&#34;&gt;Witnet&lt;/a&gt; Open source implementation of Witnet decentralized oracle network protocol in Rust;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ZcashFoundation/zebra&#34;&gt;Zebra&lt;/a&gt; An ongoing Rust implementation of a Zcash node.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/LayerXcom/zero-chain&#34;&gt;Zero-chain&lt;/a&gt; A privacy-preserving blockchain on Substrate.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zksync&#34;&gt;zkSync&lt;/a&gt; Matter Labs&amp;rsquo; scaling L2 engine secured by zero-knowledge proofs.&lt;/li&gt;
 &lt;/ul&gt;
