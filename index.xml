@@ -1709,7 +1709,7 @@ A blockchain explorer for geth PoAs.&lt;/p&gt;
 &lt;p&gt;This month we see a trend, in blockchain and across the Rust ecosystem, of projects quickly picking up stable async/await support and migrating to tokio 0.2.&lt;/p&gt;
 &lt;p&gt;For those interested in a great overview of the future distributed-web landscape, Kyle Samani of Multicoin Capital published a new edition of their &lt;a href=&#34;https://multicoin.capital/2019/12/13/the-web3-stack-2019-edition/&#34;&gt;&amp;ldquo;The Web3 Stack&amp;rdquo;&lt;/a&gt;. Not Rust-specific, but an evocative, illustrated, piece describing their vision of what a distributed world-wide-web, built on blockchain technology, could look like.&lt;/p&gt;
 &lt;p&gt;Rust in Blockchain has been expanding our coverage steadily over the months, and this month we begin covering &lt;a href=&#34;https://z.cash/&#34;&gt;Zcash&lt;/a&gt;, and &lt;a href=&#34;https://comit.network/&#34;&gt;COMIT&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;With so many Rust blockchain projects of note it is increasingly challenging to report on all of them. If you are a passionate observer of any Rust blockchain project we need your help to gather the monthly updates. Please contact us on the &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;Telegram group&lt;/a&gt;, or email us directly at &lt;a href=&#34;mailto:hello@rustinblockchain.org&#34;&gt;hello@rustinblockchain.org&lt;/a&gt; if you are willing to donate an hour of your time each month.&lt;/p&gt;
+&lt;p&gt;With so many Rust blockchain projects of note it is increasingly challenging to report on all of them. If you are a passionate observer of any Rust blockchain project we need your help to gather the monthly updates. Please contact us on the &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;Telegram group&lt;/a&gt;, or email us directly at &lt;a href=&#34;mailto:n3wh4x0rs@gmail.com&#34;&gt;n3wh4x0rs@gmail.com&lt;/a&gt; if you are willing to donate an hour of your time each month.&lt;/p&gt;
 &lt;p&gt;Happy blockchain new year, Rustaceans!&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;project-spotlight&#34;&gt;Project spotlight&lt;/h2&gt;
@@ -2472,7 +2472,7 @@ were there. We held Rust in Blockchain events in Berlin as well as in Hangzhou, 
 &lt;p&gt;&lt;a href=&#34;https://github.com/solana-labs/solana/issues/5251&#34;&gt;Unnecessary protobuf requirement in Libra #5251&lt;/a&gt; @garious found the problem that the libra codebase uses Google protobuf to send data to its metrics server. They stuffed Golang and protobuf into our Docker containers to move forward, but neither is actually used. Furthermore, those dependencies aren&amp;rsquo;t on our benchmarking servers and not on developer machines. Until they get those dependencies out, they can&amp;rsquo;t integrate Move into our top-level build.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;challenges&#34;&gt;Challenges&lt;/h2&gt;
-&lt;p&gt;[Substrate]&lt;a href=&#34;https://github.com/paritytech/substrate/issues/3124&#34;&gt;Websocket protocol errors cause full node halt/stall/crash #3124&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[Substrate] &lt;a href=&#34;https://github.com/paritytech/substrate/issues/3124&#34;&gt;Websocket protocol errors cause full node halt/stall/crash #3124&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
 &lt;p&gt;VM on Blockchain&lt;/p&gt;
@@ -2482,7 +2482,7 @@ were there. We held Rust in Blockchain events in Berlin as well as in Hangzhou, 
 &lt;p&gt;[Video] &lt;a href=&#34;https://www.youtube.com/watch?v=_9o6RTYG_xk&amp;amp;t=678s&#34;&gt;Pierre Krieger from Parity discuss Libp2p library with Maksym Zavershynskyi from Near&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[Video] &lt;a href=&#34;https://www.youtube.com/watch?v=e_QOMBZS5gs&amp;amp;list=PL9tzQn_TEuFWbiHCvul76ZyiG6C_0180f&#34;&gt;Decentralized App Development&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[Video] &lt;a href=&#34;https://www.youtube.com/watch?v=EBoTUw4MI0k&#34;&gt;Cell Model - A programming model that generalizes Bitcoin&amp;rsquo;s UTXO model&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;[Video] &lt;a href=&#34;https://www.youtube.com/watch?v=02oVI_2zDcI&amp;amp;list=PLRke1-EE4VWGLXPbcpxn8fPmXlvRuZGIw&#34;&gt;In Rust We Trust Meetup 17th July, San Francisco&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;[Video] &lt;a href=&#34;https://www.youtube.com/watch?v=02oVI_2zDcI&amp;amp;list=PLRke1-EE4VWGLXPbcpxn8fPmXlvRuZGIw&#34;&gt;In Rust We Trust Meetup. 17th July, San Francisco&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Rust is for Blockchain - Brian Anderson&lt;/li&gt;
 &lt;li&gt;Towards a True Programmable Blockchain World: An Introduction to CKB VM - Xiao Xuejie&lt;/li&gt;
@@ -2550,7 +2550,7 @@ support from people all over the world, including Germany, Italy, England, the U
 &lt;li&gt;Rust blockchain organizations who will donate space and resources for meetups&lt;/li&gt;
 &lt;li&gt;web developers to help with the maintenance of this newsletter&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I don&amp;rsquo;t know exactly where we are going yet, but I have ideas, and I bet you have ideas too. If you want to work together on making Rust and blockchain the best they can be, a good place to start is by joining the Rust in Blockchain &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;Telegram&lt;/a&gt;. And you can always email me, Aimee, at &lt;a href=&#34;mailto:aimeedeer@gmail.com&#34;&gt;aimeedeer@gmail.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know exactly where we are going yet, but I have ideas, and I bet you have ideas too. If you want to work together on making Rust and blockchain the best they can be, a good place to start is by joining the Rust in Blockchain &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;Telegram&lt;/a&gt;. And you can always email me, Aimee, at &lt;a href=&#34;mailto:aimeez@pm.me&#34;&gt;aimeez@pm.me&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m looking forward to hearing from you. Let&amp;rsquo;s build the future together.&lt;/p&gt;
 </description>
     </item>
@@ -2596,15 +2596,15 @@ support from people all over the world, including Germany, Italy, England, the U
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;challenges&#34;&gt;Challenges&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pull/2&#34;&gt;Project needs sweet zebra logo&lt;/a&gt; 😉&lt;/p&gt;
-&lt;p&gt;[][RFC] CKB Consensus Protocol](&lt;a href=&#34;https://github.com/nervosnetwork/rfcs/pull/124&#34;&gt;https://github.com/nervosnetwork/rfcs/pull/124&lt;/a&gt;) &lt;a href=&#34;https://github.com/nirenzang&#34;&gt;@Ren&lt;/a&gt; submitted the consensus protocol and is calling for comments.
+&lt;p&gt;&lt;a href=&#34;https://github.com/nervosnetwork/rfcs/pull/124&#34;&gt;RFC: CKB Consensus Protocol&lt;/a&gt; &lt;a href=&#34;https://github.com/nirenzang&#34;&gt;@Ren&lt;/a&gt; submitted the consensus protocol and is calling for comments.
 Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and low communication overhead. The CKB consensus protocol is a variant of NC that raises its performance limit and selfish mining resistance while keeping its merits. By identifying and eliminating the bottleneck in NC’s block propagation latency, our protocol supports very short block interval without sacrificing security. The shortened block interval not only raises the throughput, but also lowers the transaction confirmation latency. By incorporating all valid blocks in the difficulty adjustment, selfish mining is no longer profitable in this protocol.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;learning&#34;&gt;Learning&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.parity.io/people-of-parity-wei-tang/&#34;&gt;People of Parity: Wei Tang&lt;/a&gt; Wei is the author of &lt;a href=&#34;https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1283.md&#34;&gt;EIP-1283&lt;/a&gt;, he wrote SputnikVM, an EVM implementation in Rust. Wei shares his programming experience from working in Parity.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://thenewstack.io/rust-creator-graydon-hoare-talks-about-security-history-and-rust&#34;&gt;Rust Creator Graydon Hoare Talks About Security, History, and Rust&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://hackernoon.com/lessons-learned-from-bitcoins-and-ethereum-s-programming-models-f9fdbe1a3fdb&#34;&gt;Lessons Learned from Bitcoin’s and Ethereum’s Programming Models&lt;/a&gt; – Zhang Yaning&lt;/p&gt;
-&lt;p&gt;[Video] &lt;a href=&#34;https://www.youtube.com/watch?v=bjWxwTA2KLw&#34;&gt;Build Your Own Blockchain with Substrate and Rust&lt;/a&gt; – Bill Laboon
-[Video] &lt;a href=&#34;https://avc.com/2019/06/video-of-the-week-what-is-web3/&#34;&gt;What Is Web3?&lt;/a&gt; &lt;a href=&#34;https://twitter.com/juanbenet&#34;&gt;@Juan Benet&lt;/a&gt;, founder and CEO of our portfolio company &lt;a href=&#34;https://protocol.ai/&#34;&gt;Protocol Labs&lt;/a&gt;, developer of the &lt;a href=&#34;https://ipfs.io/&#34;&gt;IPFS&lt;/a&gt; and &lt;a href=&#34;http://filecoin.io/&#34;&gt;Filecoin&lt;/a&gt; protocols, gave this talk last fall.&lt;/p&gt;
+&lt;p&gt;[Video] &lt;a href=&#34;https://www.youtube.com/watch?v=bjWxwTA2KLw&#34;&gt;Build Your Own Blockchain with Substrate and Rust&lt;/a&gt; – Bill Laboon&lt;/p&gt;
+&lt;p&gt;[Video] &lt;a href=&#34;https://avc.com/2019/06/video-of-the-week-what-is-web3/&#34;&gt;What Is Web3?&lt;/a&gt; &lt;a href=&#34;https://twitter.com/juanbenet&#34;&gt;@Juan Benet&lt;/a&gt;, founder and CEO of our portfolio company &lt;a href=&#34;https://protocol.ai/&#34;&gt;Protocol Labs&lt;/a&gt;, developer of the &lt;a href=&#34;https://ipfs.io/&#34;&gt;IPFS&lt;/a&gt; and &lt;a href=&#34;http://filecoin.io/&#34;&gt;Filecoin&lt;/a&gt; protocols, gave this talk last fall.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;events&#34;&gt;Events&lt;/h2&gt;
 &lt;p&gt;July 17 | San Francisco&lt;/p&gt;
@@ -2654,7 +2654,7 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;h4 id=&#34;nervos-httpsgithubcomnervosnetworkckb&#34;&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;&lt;strong&gt;Nervos&lt;/strong&gt; &lt;/a&gt;&lt;/h4&gt;
 &lt;h4 id=&#34;ckbhttpsgithubcomnervosnetworkckb&#34;&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;&lt;strong&gt;CKB&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues/903&#34;&gt;Cross compile x86_64-unknown-linux-musl #903&lt;/a&gt; Rocksdb depends on C++ standard library heavily, which might need a real C++ for musl to work.&lt;/p&gt;
-&lt;p&gt;Static Build CKB on CentOS 7 for exchanges #626](&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues/626&#34;&gt;https://github.com/nervosnetwork/ckb/issues/626&lt;/a&gt;) A centos 7 install guide.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues/626&#34;&gt;Static Build CKB on CentOS 7 for exchanges #626&lt;/a&gt;. A centos 7 install guide.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues/562&#34;&gt;Write a tool to dump well known hashes into a readable file #562&lt;/a&gt; D&lt;a href=&#34;https://github.com/doitian&#34;&gt;oitian&lt;/a&gt; made a tool to dump various hashes into a file and commit that file into the repository.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues/549&#34;&gt;Memorize hash #549&lt;/a&gt; &lt;a href=&#34;https://github.com/zhangsoledad&#34;&gt;Zhangsoledad&lt;/a&gt; suggests fetching hashes from the database instead of computing them.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/859&#34;&gt;Feat: Use snappy to compress large messages #859&lt;/a&gt; Use snappy to compress large messages (&lt;a href=&#34;https://github.com/driftluo&#34;&gt;Driftluo&lt;/a&gt;), which saves bandwidth with CPU overhead.&lt;/p&gt;
@@ -2698,9 +2698,9 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;p&gt;June 6-14 | Online&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://workfork.io/hackathon_dutchblockchainweek&#34;&gt;The WorkFork Online Hackathon&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;June 8-9 Breaking Bitcoin, Amsterdam&lt;/p&gt;
-&lt;p&gt;[Breaking Bitcoin &lt;a href=&#34;https://breaking-bitcoin.com/&#34;&gt;Training &amp;amp; Hackathon]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://breaking-bitcoin.com/&#34;&gt;Breaking Bitcoin (Training &amp;amp; Hackathon)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;June 14-16 | San Francisco&lt;/p&gt;
-&lt;p&gt;[BUIDL San Francisco &lt;a href=&#34;https://www.eventbrite.com/e/buidl-san-francisco-blockchain-hackathon-tickets-56603971001&#34;&gt;Blockchain Hackathon]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.eventbrite.com/e/buidl-san-francisco-blockchain-hackathon-tickets-56603971001&#34;&gt;BUIDL San Francisco (Blockchain Hackathon&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;June 20 | Zurich Switzerland&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://hackathon.trustsquare.ch&#34;&gt;Swiss Blockchain Hackathon&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;June 24th - 26th | Zug, Switzerland&lt;/p&gt;
@@ -2717,12 +2717,12 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;p&gt;&lt;a href=&#34;https://www.parity.io/jobs/#berlin-blockchain-runtime-engineer&#34;&gt;Blockchain Runtime Engineers&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Target&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/adeebahmed26/status/1133843502465462274&#34;&gt;Blockchain Engineer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;##Interesting things&lt;/p&gt;
+&lt;h2 id=&#34;interesting-things&#34;&gt;Interesting things&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/bascule/status/1131266407499309056?s=21&#34;&gt;Rust Cryptography Working Group&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/crypto_raiturk/status/1130947989692985344&#34;&gt;Thread: wins, missteps, and next steps at Holochain and Holo.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;acknowledgments&#34;&gt;Acknowledgments&lt;/h2&gt;
-&lt;p&gt;A huge thank you to Mike, &lt;a href=&#34;https://twitter.com/ashchan&#34;&gt;Ash&lt;/a&gt;, &lt;a href=&#34;https://brson.github.io/&#34;&gt;Brian&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/a13xndra&#34;&gt;Alexandra&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gnunicornBen&#34;&gt;Ben&lt;/a&gt; for your contributions and helping bring this newsletter to fruition. We finally made it!&lt;/p&gt;
+&lt;p&gt;A huge thank you to Mike, &lt;a href=&#34;https://twitter.com/ashchan&#34;&gt;Ash&lt;/a&gt;, &lt;a href=&#34;https://brson.github.io/&#34;&gt;Brian&lt;/a&gt;, &lt;a href=&#34;https://alexandraheller.com/about/&#34;&gt;Alexandra&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/gnunicornBen&#34;&gt;Ben&lt;/a&gt; for your contributions and helping bring this newsletter to fruition. We finally made it!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Join the action on our&lt;/strong&gt; &lt;a href=&#34;https://www.reddit.com/r/RustInBlockchain/&#34;&gt;&lt;strong&gt;subreddit&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;❤️&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
