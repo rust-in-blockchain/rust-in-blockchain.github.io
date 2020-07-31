@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rustinblockchain.org/blogposts/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rustinblockchain.org/categories/blogposts/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rustinblockchain.org/categories/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rustinblockchain.org/blogposts/2020-07-30-rib-is-one-year-old/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rustinblockchain.org/</loc>
+    <lastmod>2020-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,23 +43,8 @@
   </url>
   
   <url>
-    <loc>https://rustinblockchain.org/</loc>
-    <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://rustinblockchain.org/newsletters/2020-06-03-zk-rustups/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rustinblockchain.org/blogposts/</loc>
-    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rustinblockchain.org/categories/blogposts/</loc>
-    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -6,10 +6,148 @@
     <description>Recent content in blogposts on Rust in Blockchain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rustinblockchain.org/categories/blogposts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RiB is One Year Old!</title>
+      <link>https://rustinblockchain.org/blogposts/2020-07-30-rib-is-one-year-old/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/blogposts/2020-07-30-rib-is-one-year-old/</guid>
+      <description>&lt;p&gt;Hey, RiB community!&lt;/p&gt;
+&lt;p&gt;We are happy to announce that RiB is one year old &amp;ndash;
+happy birthday to RiB!
+This is a late celebration.&lt;/p&gt;
+&lt;p&gt;Since we released &lt;a href=&#34;https://rustinblockchain.org/newsletters/2019-06-06/&#34;&gt;Rust in Blockchain #0&lt;/a&gt; on June 6th, 2019,
+we have published 14 issues, along with 2 additional blog posts.
+With more than 20 contributors participating!&lt;/p&gt;
+&lt;p&gt;The next issue is on the way, and we will publish it on next Wednesday.
+Contributions to the &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/tree/master/draft&#34;&gt;next draft&lt;/a&gt; are welcome.&lt;/p&gt;
+&lt;p&gt;In the meantime,
+let&amp;rsquo;s take this opportunity to look back at what we accomplished,
+and recognize those who helped along the way.&lt;/p&gt;
+&lt;h2 id=&#34;why-we-started-rib&#34;&gt;Why we started RiB&lt;/h2&gt;
+&lt;p&gt;We thought that,
+although the Rust community is vibrant,
+and although there were many Rust blockchain projects,
+those Rust blockchain projects didn&amp;rsquo;t seem to have a strong voice in the Rust community.&lt;/p&gt;
+&lt;p&gt;While talking to &lt;a href=&#34;https://twitter.com/Argorak&#34;&gt;Florian&lt;/a&gt; about how to create
+spaces within the official Rust infrastructure for people to discuss
+blockchain subjects,
+he suggested that we first create a newsletter,
+like &lt;a href=&#34;https://this-week-in-rust.org/&#34;&gt;This Week in Rust&lt;/a&gt;,
+specifically for Rust blockchain subjects.&lt;/p&gt;
+&lt;p&gt;So we did that,
+and we created a Telegram group,
+and a Twitter handle,
+and invited other people to participate.&lt;/p&gt;
+&lt;p&gt;Several people helped create RiB:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The newsletter idea for RiB came from &lt;a href=&#34;https://twitter.com/Argorak&#34;&gt;Florian&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The first issue was made with help from &lt;a href=&#34;https://alexandraheller.com/about/&#34;&gt;Alexandra&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/gnunicornBen&#34;&gt;Benjamin&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/ashchan&#34;&gt;James Chen&lt;/a&gt;, and Mike, who also manages the RiB Telegram group.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sunhuachuang&#34;&gt;Sun&lt;/a&gt; created and maintains &lt;a href=&#34;https://github.com/rust-in-blockchain/awesome-blockchain-rust&#34;&gt;Awesome Blockchain Rust&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://echoqi.net/&#34;&gt;Echo&lt;/a&gt; designed the RiB logo and other related graphics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributors-to-rib-community&#34;&gt;Contributors to RiB Community&lt;/h2&gt;
+&lt;p&gt;Since then, many people have contributed to the newsletter:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/adria0&#34;&gt;Adria Massanet&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/gluk64&#34;&gt;Alex Gluchowski&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/oxarbitrage&#34;&gt;Alfredo Garcia&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/AnaisUrlichs&#34;&gt;Anais Urlichs&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/calvinlauco&#34;&gt;Calvin Lau&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/da-kami&#34;&gt;Daniel Karzel&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/darosior&#34;&gt;Darosior&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/jlwaugh&#34;&gt;James Waugh&lt;/a&gt;,
+Ken Shamir,
+&lt;a href=&#34;https://github.com/lrettig&#34;&gt;Lane Rettig&lt;/a&gt;,
+&lt;a href=&#34;https://twitter.com/MPtherealMVP&#34;&gt;María Paula&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/mat7ias&#34;&gt;Mattias Nystrom&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/nearmax&#34;&gt;Maksym Zavershynskyi&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/mfaulk&#34;&gt;mfaulk&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/michaelsproul&#34;&gt;Michael Sproul&lt;/a&gt;,
+Mike,
+&lt;a href=&#34;https://github.com/majecty&#34;&gt;Park Juhyung&lt;/a&gt;,
+Paulii Good,
+&lt;a href=&#34;https://github.com/somniumism&#34;&gt;SeungMin Lee&lt;/a&gt;,
+Taylor Lee,
+&lt;a href=&#34;https://github.com/tarcieri&#34;&gt;Tony Arcieri&lt;/a&gt;,
+&lt;a href=&#34;https://brson.github.io/&#34;&gt;Brian Anderson&lt;/a&gt;, and
+&lt;a href=&#34;https://impl.dev/about/&#34;&gt;Aimee Zhu&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks for your contributions.
+You made the RiB community great!&lt;/p&gt;
+&lt;h2 id=&#34;sponsors-and-supporters&#34;&gt;Sponsors and Supporters&lt;/h2&gt;
+&lt;p&gt;In the last year, RiB got two cups-of-coffee donations in ETH! Thanks!&lt;/p&gt;
+&lt;p&gt;With &lt;a href=&#34;https://www.nervos.org/&#34;&gt;Nervos Network&lt;/a&gt;&amp;lsquo;s sponsoring, we organized RiB meetups, In Rust We Trust,
+in &lt;a href=&#34;https://www.meetup.com/Rust-in-Blockchain-San-Francisco/events/262773260/&#34;&gt;SF&lt;/a&gt;, &lt;a href=&#34;https://www.meetup.com/Rust-in-Blockchain-Berlin/events/263526816/&#34;&gt;Berlin&lt;/a&gt;, and in &lt;a href=&#34;https://www.meetup.com/Rust-in-Blockchain-Hangzhou/events/264778357/&#34;&gt;Hangzhou, China&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to SF Blockchain community,
+and sponsors Nervos, Polkadot, Oasis, NEAR, Xpring, Insight,
+we made full-day workshops &lt;a href=&#34;https://www.eventbrite.com/e/rust-in-blockchain-workshop-day-sfbw19-tickets-75088875849&#34;&gt;Rust in Blockchain Workshop Day&lt;/a&gt;
+during &lt;a href=&#34;https://sfblockchainweek.io/&#34;&gt;SF Blockchain Week&lt;/a&gt; 2019.&lt;/p&gt;
+&lt;p&gt;Thanks for all your support!&lt;/p&gt;
+&lt;h2 id=&#34;numbers&#34;&gt;Numbers&lt;/h2&gt;
+&lt;p&gt;Ours is a relatively small community,
+perhaps reflecting the niche interests we serve,
+or perhaps that we haven&amp;rsquo;t put in enough effort to find our audience.&lt;/p&gt;
+&lt;p&gt;Until now, RiB has 200+ unique visitors on average per day &amp;ndash; unfortunately, we lost the early data while moving the hosting from WordPress
+to GitHub + Cloudflare. The screenshot shows the data from Cloudflare.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../images/numbers-cloudflare-2020-07-30.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;227 Telegram members,&lt;/li&gt;
+&lt;li&gt;485 Twitter followers,&lt;/li&gt;
+&lt;li&gt;592 email subscriptions,&lt;/li&gt;
+&lt;li&gt;No data for RSS subscriptions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;RiB GitHub repos &lt;a href=&#34;https://rustinblockchain.org/&#34;&gt;RiB Newsletter&lt;/a&gt; and &lt;a href=&#34;https://github.com/rust-in-blockchain/awesome-blockchain-rust&#34;&gt;Awesome Blockchain Rust&lt;/a&gt; got 166 stars in total.&lt;/p&gt;
+&lt;h2 id=&#34;changes-in-rib&#34;&gt;Changes in RiB&lt;/h2&gt;
+&lt;p&gt;The newsletter changes as we gain experience,
+and is getting longer, with more project coverage.&lt;/p&gt;
+&lt;p&gt;The regular project coverage has grown from 5 projects in the first issue to
+14 projects in the latest issue: &lt;a href=&#34;https://rustinblockchain.org/newsletters/2020-07-01-stuck-inside-hacking-away/&#34;&gt;RiB Newsletter #13 – Stuck inside, hacking away&lt;/a&gt;.
+For more and new Rust blockchain projects,
+we add them to the &amp;ldquo;Interesting Things&amp;rdquo; section.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org/awesome-blockchain-rust/&#34;&gt;Awesome RiB&lt;/a&gt; page shows almost all the projects.&lt;/p&gt;
+&lt;p&gt;RiB is intended not to be just a newsletter,
+but a community where people interested in Rust blockchain subjects,
+across projects,
+can come together to discuss technical subjects.&lt;/p&gt;
+&lt;p&gt;This has not turned out exactly as anticipated:
+our Telegram group is relatively small and inactive,
+though the population and volume of discussion do seem
+to trend slowly higher.&lt;/p&gt;
+&lt;p&gt;The group has not been a great driver of technical discussion &amp;ndash;
+those discussions seem to happen in project-specific venues.
+Most of the discussion in-group stems from project representatives
+posting project news.
+This is good for the newsletter,
+but we&amp;rsquo;re not sure what to make of RiB as a community.&lt;/p&gt;
+&lt;p&gt;Anyway, communities have a life of their own,
+and ours does seem to be serving a purpose.&lt;/p&gt;
+&lt;p&gt;One notable trend that we didn&amp;rsquo;t anticipate,
+though we probably should have,
+is that recruiters sometimes use our Telegram group
+as a way to get access to candidates.&lt;/p&gt;
+&lt;p&gt;Our attitude toward posting recruiting messages in the group
+has been inconsistent &amp;ndash;
+we do have a policy of keeping discussion to technical topics,
+and sometimes shut down recruiting and marketing talk,
+but sometimes go with it,
+perhaps steering the discussion toward project-specifics,
+for the sake of encouraging discussion.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re not sure what to think about this.
+In any case, job listings are always welcome in the newsletter. We&amp;rsquo;ll help retweet as well.&lt;/p&gt;
+&lt;h2 id=&#34;what-to-expect-in-the-future&#34;&gt;What to Expect in the Future&lt;/h2&gt;
+&lt;p&gt;For the second year of RiB, we hope to add more original technical content,
+as well as expand to cover topics on cryptography, security, consensus, VMs, and crypto-economics.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s it for now.
+Thanks for your time.
+Keep hacking.&lt;/p&gt;
+&lt;p&gt;Follow us on Twitter &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;, or join in the &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;RiB Telegram discussion&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How RiB Newsletter is Generated</title>
