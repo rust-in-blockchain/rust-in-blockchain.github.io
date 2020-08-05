@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Rust in Blockchain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rustinblockchain.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>newsletters</title>
+      <link>https://rustinblockchain.org/categories/newsletters/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/categories/newsletters/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blogposts</title>
@@ -17,15 +26,6 @@
       <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://rustinblockchain.org/categories/blogposts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>newsletters</title>
-      <link>https://rustinblockchain.org/categories/newsletters/</link>
-      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://rustinblockchain.org/categories/newsletters/</guid>
       <description></description>
     </item>
     

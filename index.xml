@@ -6,10 +6,423 @@
     <description>Recent content on Rust in Blockchain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rustinblockchain.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RiB Newsletter #14 – Are We Smart (Contract) Yet?</title>
+      <link>https://rustinblockchain.org/newsletters/2020-08-05-are-we-smart-contract-yet/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/newsletters/2020-08-05-are-we-smart-contract-yet/</guid>
+      <description>&lt;p&gt;Welcome to the #14 edition of Rust in Blockchain, the hypest newsletter about the hypest tech. &lt;a href=&#34;./newsletters/2020-07-01-stuck-inside-hacking-away/&#34;&gt;Previous: #13&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re seeing a bunch of interesting Rust blockchain and crypto projects,
+so this month the &amp;ldquo;Interesting Things&amp;rdquo; section is loaded up with
+news, papers, and project links.&lt;/p&gt;
+&lt;p&gt;This month, &lt;a href=&#34;https://github.com/elrondnetwork&#34;&gt;Elrond&lt;/a&gt;, appeared on our radar with the launch of their mainnet.
+Although not written in Rust,
+it runs Rust smart contracts on its &lt;a href=&#34;https://github.com/ElrondNetwork/arwen-wasm-vm&#34;&gt;Arwen WASM VM&lt;/a&gt;,
+which itself is based on the Rust &lt;a href=&#34;https://github.com/wasmerio/wasmer/&#34;&gt;Wasmer VM&lt;/a&gt;.
+Along with &lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/capsule&#34;&gt;Nervos&lt;/a&gt;,
+and &lt;a href=&#34;https://github.com/enigmampc/secret-template&#34;&gt;Enigma&lt;/a&gt; (and probably others),
+this continues an encouraging trend of blockchains
+enabling smart contracts in Rust.
+See the &amp;ldquo;Interesting Things&amp;rdquo; section for examples of Elrond&amp;rsquo;s Rust contracts.&lt;/p&gt;
+&lt;p&gt;Rust continues to be popular for research into zero-knowledge proofs,
+with Microsoft releasing &lt;a href=&#34;https://github.com/microsoft/Spartan&#34;&gt;Spartan&lt;/a&gt;,
+a zk-SNARK system without trusted setup.&lt;/p&gt;
+&lt;p&gt;In RiB news, we published a late &lt;a href=&#34;https://rustinblockchain.org/blogposts/2020-07-30-rib-is-one-year-old/&#34;&gt;one-year anniversary blog post&lt;/a&gt;.
+It has some reflection on the changes to, and growth of, RiB over the last year.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/rust-in-blockchain/awesome-blockchain-rust&#34;&gt;Awesome Blockchain Rust&lt;/a&gt; project,
+which is maintained by &lt;a href=&#34;https://github.com/sunhuachuang&#34;&gt;Sun&lt;/a&gt; under the &lt;a href=&#34;https://github.com/rust-in-blockchain/&#34;&gt;rust-in-blockchain GitHub org&lt;/a&gt;,
+has received a stream of updates recently,
+and is now published as &lt;a href=&#34;https://rustinblockchain.org/awesome-blockchain-rust/&#34;&gt;the Awesome-RiB page on rustinblockchain.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a pretty good resource for finding blockchain-related Rust projects,
+with links to many of the more prominant and mature projects noted in the RiB newsletter.
+It could use more eyes on it though.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;This edition of RiB was produced with contributions from &lt;a href=&#34;https://github.com/calvinlauco&#34;&gt;Calvin Lau&lt;/a&gt;, &lt;a href=&#34;https://github.com/darosior&#34;&gt;Darosior&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/SysEnfor&#34;&gt;EnforSys&lt;/a&gt;, Paulii Good, &lt;a href=&#34;https://twitter.com/Sol68635937&#34;&gt;Sol&lt;/a&gt;, &lt;a href=&#34;https://github.com/tarcieri&#34;&gt;Tony Arcieri&lt;/a&gt;, &lt;a href=&#34;https://github.com/brson&#34;&gt;Brian Anderson&lt;/a&gt;, and &lt;a href=&#34;https://github.com/Aimeedeer&#34;&gt;Aimee Zhu&lt;/a&gt;. Thank you for your help!&lt;/p&gt;
+&lt;p&gt;Also, &lt;a href=&#34;https://github.com/rust-in-blockchain/awesome-blockchain-rust&#34;&gt;Awesome Blockchain Rust&lt;/a&gt; has been updated. Thanks to the &lt;strong&gt;awesome&lt;/strong&gt; contributors: &lt;a href=&#34;https://github.com/oxarbitrage&#34;&gt;Alfredo Garcia&lt;/a&gt;, &lt;a href=&#34;https://github.com/andynog&#34;&gt;Andy Nogueira&lt;/a&gt;, &lt;a href=&#34;https://github.com/ChainSafeSystems&#34;&gt;ChainSafe Systems&lt;/a&gt;, &lt;a href=&#34;https://github.com/lrettig&#34;&gt;Lane Rettig&lt;/a&gt;, &lt;a href=&#34;https://github.com/michaelsproul&#34;&gt;Michael Sproul&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;RiB needs help to keep up with Rust blockchain projects. If you follow a particular project, or otherwise find information that is beneficial to the Rust &amp;amp; blockchain community, please contribute to the next issue. Either submit a PR to the &lt;a href=&#34;https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft&#34;&gt;#15 draft&lt;/a&gt;, or Tweet &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;project-spotlight&#34;&gt;Project Spotlight&lt;/h2&gt;
+&lt;p&gt;Each month we like to shine a light on a notable Rust blockchain project. This month that project is…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/gakonst/ethers-rs&#34;&gt;ethers.rs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ethers.rs is an Ethereum &amp;amp; &lt;a href=&#34;https://github.com/celo-org/celo-blockchain&#34;&gt;Celo&lt;/a&gt; library and wallet implementation,
+implemented as a port of the &lt;a href=&#34;https://docs.ethers.io/v5/&#34;&gt;ethers.js&lt;/a&gt; library to Rust.&lt;/p&gt;
+&lt;p&gt;Ethereum client programming is usually done in JavaScript with either &lt;a href=&#34;https://web3js.readthedocs.io/&#34;&gt;web3.js&lt;/a&gt; or &lt;a href=&#34;https://docs.ethers.io/v5/&#34;&gt;ethers.js&lt;/a&gt;,
+with ethers.js being the newer of the two.
+These clients communicate to an Ethereum node, typically via JSON-RPC
+(or, when in the browser, via an &amp;ldquo;injected&amp;rdquo; client provider that follows &lt;a href=&#34;https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md&#34;&gt;EIP-1193&lt;/a&gt;, like &lt;a href=&#34;https://metamask.io/&#34;&gt;MetaMask&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;ethers.rs then provides a strongly-typed alternative for
+writing software that interacts with the Ethereum network.&lt;/p&gt;
+&lt;p&gt;As of now it is only suited for non-browser use cases,
+but if you prefer hacking in Rust to JavaScript,
+as some of us surely do,
+it is worth looking into for your next Ethereum project.&lt;/p&gt;
+&lt;p&gt;The author of ethers.rs, &lt;a href=&#34;https://github.com/gakonst&#34;&gt;Georgios Konstantopoulos&lt;/a&gt;,
+&lt;a href=&#34;https://twitter.com/gakonst/status/1278216215345889286&#34;&gt;accepts donations&lt;/a&gt; to sponsor their work.&lt;/p&gt;
+&lt;p&gt;Note that there is also a Rust alternative to web3.js, &lt;a href=&#34;https://github.com/tomusdrw/rust-web3/&#34;&gt;rust-web3&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;interesting-things&#34;&gt;Interesting Things&lt;/h2&gt;
+&lt;h4 id=&#34;news&#34;&gt;News&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.nist.gov/news-events/news/2020/07/nists-post-quantum-cryptography-program-enters-selection-round&#34;&gt;NIST’s Post-Quantum Cryptography Program Enters ‘Selection Round’&lt;/a&gt;.
+Not Rust, but relevant to the future of cryptography.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/rust/comments/hz7dfp/rust_is_now_a_top_20_language_in_all_of_the_5/&#34;&gt;Rust is now a top 20 language in all of the 5 most major language popularity listings&lt;/a&gt;.
+Looks like we bet on the right horse.&lt;/li&gt;
+&lt;li&gt;Microsoft open sources &lt;a href=&#34;https://github.com/microsoft/Spartan&#34;&gt;Spartan&lt;/a&gt;: High-speed zkSNARKs without trusted setup.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/elrondnetwork&#34;&gt;Elrond&lt;/a&gt;, a sharded blockchain, whose mainnet went live in July, has several Rust projects.
+&lt;ul&gt;
+&lt;li&gt;Tutorial: The Crowdfunding Smart Contract &lt;a href=&#34;https://docs.elrond.com/developers/dev-tutorials/the-crowdfund-smartcontract&#34;&gt;(part 1)&lt;/a&gt;,
+&lt;a href=&#34;https://docs.elrond.com/developers/dev-tutorials/the-crowdfunding-smart-contract-part-2&#34;&gt;(part 2)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://hiddentao.com/archives/2020/07/17/my-first-smart-contract-in-rust-on-elrond-vm&#34;&gt;My first smart contract in Rust on Elrond VM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/matter-labs/worlds-first-practical-hardware-for-zero-knowledge-proofs-acceleration-72bf974f8d6e&#34;&gt;World’s first practical hardware for zero-knowledge proofs acceleration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;From &lt;a href=&#34;https://twitter.com/RustCryptoOrg/status/1282847432787685376&#34;&gt;Rust Crypto&lt;/a&gt; &amp;ndash; The &lt;code&gt;k256&lt;/code&gt; crate (pure Rust secp256k1 elliptic curve implementation) just landed an impressive new scalar/field arithmetic backend inspired by bitcoin-core&amp;rsquo;s libsecp256k1 Party popper.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;blog-posts&#34;&gt;Blog Posts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/matter-labs/zkporter-composable-scalability-in-l2-beyond-zkrollup-2a30c4d69a75&#34;&gt;zkPorter: Composable Scalability in L2 Beyond zkRollup&lt;/a&gt;. A scaling architecture proposal.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.etherean.org/blockchain/web3/software/2020/07/25/whats-it-good-for.html&#34;&gt;What&amp;rsquo;s It Good For?&lt;/a&gt;.
+Lane&amp;rsquo;s take on the blockchain tech:
+&amp;ldquo;blockchain is very good at a narrow set of applications and pretty bad at just about everything else. When you get past the hype, it’s really just a slow, expensive, distributed, permissionless, append-only ledger, nothing more and nothing less.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ethresear.ch/t/distaff-vm-approaching-turing-completeness/7757&#34;&gt;Distaff VM: approaching Turing-completeness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dev.to/gnunicorn/hunting-down-a-non-determinism-bug-in-our-rust-wasm-build-4fk1&#34;&gt;Hunting down a non-determinism-bug in our Rust Wasm build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vitalpoint.ai/near-textile-integration/&#34;&gt;NEAR Accounts and Access Keys as Identities for Textile Integration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;papers&#34;&gt;Papers&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/2008.00881.pdf&#34;&gt;Demystifying the Role of zk-SNARKs in Zcash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/938.pdf&#34;&gt;Performance Trade-offs in Design of MimbleWimble Proofs of Reserves&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;projects&#34;&gt;Projects&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Elrond&amp;rsquo;s Rust smart contracts:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ElrondNetwork/elrond-wasm-rs&#34;&gt;elrond-wasm-rs&lt;/a&gt;. Rust smart contract library designed for Elrond&amp;rsquo;s Arwen VM. Also provides a debugging mode with mocks.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ElrondNetwork/sc-bitswing-rs&#34;&gt;sc-bitswing-rs&lt;/a&gt;. BitSwing smart contract by Band Protocol.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ElrondNetwork/sc-busd-rs&#34;&gt;sc-busd-rs&lt;/a&gt;. BUSD stablecoin smart contract implementation and tests.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ElrondNetwork/sc-delegation-rs&#34;&gt;sc-delegation-rs&lt;/a&gt;. Smart contract for managing staking delegation in Elrond.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ElrondNetwork/sc-dns-rs&#34;&gt;sc-dns-rs&lt;/a&gt;. Elrond DNS smart contract, written in Rust.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fluxprotocol/flux-protocol&#34;&gt;flux-protocol&lt;/a&gt;, the open market protocol build on NEAR protocol, is launching their Beta Program. Check their latest &lt;a href=&#34;https://flux.substack.com/p/flux-update-july-2020&#34;&gt;Flux Community Update&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ChainSafe/forest&#34;&gt;Forest&lt;/a&gt;. Rust Filecoin Node Implementation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/graphprotocol/graph-node&#34;&gt;Graph Node&lt;/a&gt; indexes data from blockchains such as Ethereum and serves it over GraphQL.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shesek/minsc&#34;&gt;Minsc&lt;/a&gt;, a Miniscript-based scripting language for Bitcoin contracts.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/filecoin-project/neptune&#34;&gt;Neptune&lt;/a&gt; is a Rust implementation of the Poseidon hash function tuned for Filecoin.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PolymathNetwork/Polymesh&#34;&gt;Polymesh&lt;/a&gt;. Polymesh is a blockchain for regulated securities and open finance.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/radicle-dev/radicle-link&#34;&gt;Radicle Link&lt;/a&gt;. A secure, p2p network for code collaboration.
+It has many Rust projects under its &lt;a href=&#34;https://github.com/radicle-dev?q=&amp;amp;type=source&amp;amp;language=rust&#34;&gt;GitHub organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcarq/rusty-blockparser&#34;&gt;rusty-blockparser&lt;/a&gt;. Bitcoin Blockchain Parser written in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/filecoin-project/rust-fil-proofs&#34;&gt;rust-fil-proofs&lt;/a&gt;. The Filecoin Proving Subsystem (or FPS) provides the storage proofs required by the Filecoin protocol. It is implemented entirely in Rust, as a series of partially inter-dependent crates – some of which export C bindings to the supported API.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/roynalnaruto/shuffler&#34;&gt;Shuffler&lt;/a&gt; uses StarkWare&amp;rsquo;s VeeDo VDF to seed a seedable RNG, and shuffle a randomisable list of items.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rust-blockchain/evm&#34;&gt;SputnikVM&lt;/a&gt;: Rust Ethereum Virtual Machine Implementation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/blockstack/stacks-blockchain&#34;&gt;Stacks 2.0&lt;/a&gt; is an open-membership replicated state machine produced by the coordination of a non-enumerable set of peers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/simplestaking/tezedge&#34;&gt;Tezos node/shell in Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yewstack/yew&#34;&gt;Yew&lt;/a&gt;. Rust / Wasm framework for building client web apps. Perhaps we&amp;rsquo;ll we writing our dapps completely in Rust soon.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/iqlusioninc/crates/tree/develop/zeroize&#34;&gt;zeroize.rs&lt;/a&gt;. Securely zero memory while avoiding compiler optimizations.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Zokrates/ZoKrates&#34;&gt;ZoKrates&lt;/a&gt;. A toolbox for zkSNARKs on Ethereum.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zksync&#34;&gt;zkSync&lt;/a&gt; is a fully trustless, secure, user-centric protocol for scaling payments and smart contracts on Ethereum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;podcasts-and-videos&#34;&gt;Podcasts and Videos&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://thebitcoinpodcast.com/hashing-it-out-87/&#34;&gt;Hashing It Out #87-Informal Systems Ethan Buchman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://epicenter.tv/episodes/346&#34;&gt;Trail of Bits (Dan Guido) – The Evolution of Smart Contract Security&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;most-active-in-july&#34;&gt;Most Active in July&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/paritytech&#34;&gt;Parity&lt;/a&gt;:
+275 merged PRs (&lt;a href=&#34;https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/wasmi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;), 105 closed issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/parity-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;),
+87 open issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/parity-bitcoin/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt;:
+252 merged PRs (&lt;a href=&#34;https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;), 24 closed issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+43 open issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://z.cash/&#34;&gt;Zcash&lt;/a&gt;:
+144 merged PRs (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;), 74 closed issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;),
+58 open issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://chain.crypto.com&#34;&gt;Crypto.com Chain&lt;/a&gt;:
+118 merged PRs (&lt;a href=&#34;https://github.com/crypto-com/chain/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/crypto-com/chain-nodelib/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/crypto-com/sample-chain-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;), 89 closed issues (&lt;a href=&#34;https://github.com/crypto-com/chain/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+33 open issues (&lt;a href=&#34;https://github.com/crypto-com/chain/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/crypto-com/chain-nodelib/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;project-updates&#34;&gt;Project Updates&lt;/h2&gt;
+&lt;h4 id=&#34;comithttpsgithubcomcomit-network&#34;&gt;&lt;a href=&#34;https://github.com/comit-network&#34;&gt;COMIT&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;152 merged PRs (&lt;a href=&#34;https://github.com/comit-network/comit-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/comit-js-sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/create-comit-app/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/comit.network/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;4&lt;/a&gt;), 22 closed issues (&lt;a href=&#34;https://github.com/comit-network/comit-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/comit-js-sdk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/create-comit-app/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/comit.network/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;4&lt;/a&gt;),
+8 open issues (&lt;a href=&#34;https://github.com/comit-network/comit-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/comit-js-sdk/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/create-comit-app/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/comit-network/comit-rs/pull/2938&#34;&gt;Add request/response take order NB&lt;/a&gt; by &lt;a href=&#34;https://github.com/tcharding&#34;&gt;@tcharding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/comit-network/comit-rs/pull/2917&#34;&gt;Enable cnd to run over Tor&lt;/a&gt; by &lt;a href=&#34;https://github.com/tcharding&#34;&gt;@tcharding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/comit-network/comit-rs/pull/2952&#34;&gt;Add configurable ledger to ordebook&lt;/a&gt; by &lt;a href=&#34;https://github.com/tcharding&#34;&gt;@tcharding&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cryptocom-chainhttpschaincryptocom&#34;&gt;&lt;a href=&#34;https://chain.crypto.com&#34;&gt;Crypto.com Chain&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;118 merged PRs (&lt;a href=&#34;https://github.com/crypto-com/chain/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/crypto-com/chain-nodelib/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/crypto-com/sample-chain-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;), 89 closed issues (&lt;a href=&#34;https://github.com/crypto-com/chain/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+33 open issues (&lt;a href=&#34;https://github.com/crypto-com/chain/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/crypto-com/chain-nodelib/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://blog.crypto.com/crypto-com-chain-dev-update-10&#34;&gt;Crypto.com Chain Dev Update #10&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Open sourcing &lt;a href=&#34;https://github.com/crypto-com/chain-index&#34;&gt;Chain Indexing Service&lt;/a&gt;. It can index on chain data into structured records for query.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/crypto-com/chain/blob/master/chain-core/BUILD-WASM.md&#34;&gt;Successfully complied chain core written in Rust into WebAssembly&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;News: Released Thaler Testnet &lt;a href=&#34;https://chain.crypto.com/explorer&#34;&gt;Block Explorer 2.0&lt;/a&gt; and &lt;a href=&#34;https://chain.crypto.com/faucet&#34;&gt;Faucet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: Revamped &lt;a href=&#34;https://chain.crypto.com&#34;&gt;Chain Website&lt;/a&gt; with brand new &lt;a href=&#34;https://chain.crypto.com/releases&#34;&gt;Products and Releases Page&lt;/a&gt; for developers engagement.&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://github.com/crypto-com/chain-nodelib&#34;&gt;Node.js library&lt;/a&gt; supports latest Testnet&lt;/li&gt;
+&lt;li&gt;Promotion: &lt;a href=&#34;https://twitter.com/cryptocom/status/1276424962186735616?s=20&#34;&gt;Calling for validators and staking pools to join Crypto.com Thaler Testnet&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/crypto-com/chain/pull/2059&#34;&gt;Problem (Fix #2040): mls implementation not up with latest spec draft&lt;/a&gt; by &lt;a href=&#34;https://github.com/yihuang&#34;&gt;@yihuang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/crypto-com/chain-nodelib/pull/208&#34;&gt;Problem: Transaction builder is accepting unnecessary data&lt;/a&gt; by &lt;a href=&#34;https://github.com/calvinlauco&#34;&gt;@calvinlauco&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;holochainhttpsgithubcomholochain&#34;&gt;&lt;a href=&#34;https://github.com/holochain/&#34;&gt;Holochain&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;5 merged PRs (&lt;a href=&#34;https://github.com/holochain/holochain-rust/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;), 0 closed issues, 0 open issues&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/h-o-l-o/the-host-release-of-holofuel-6fc36003e373&#34;&gt;The Host Release of HoloFuel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/h-o-l-o/monthly-roundup-for-holo-holochain-18cb9f69c5df&#34;&gt;Monthly Roundup for Holo &amp;amp; Holochain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: Dev Pulse &lt;a href=&#34;https://blog.holochain.org/speedy-improved-holochain-release-unblocks-all-the-things/&#34;&gt;76&lt;/a&gt;, &lt;a href=&#34;https://blog.holochain.org/holofuel-enters-community-testing-phase/&#34;&gt;75&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.holochain.org/mutual-credit-part-1-a-new-type-of-cryptocurrency-as-old-as-civilisation/&#34;&gt;Mutual Credit, Part 1: A New Type of Cryptocurrency, As Old As Civilisation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2199&#34;&gt;Validation timeout fixes&lt;/a&gt; by &lt;a href=&#34;https://github.com/zippy&#34;&gt;@zippy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain-rust/pull/2202&#34;&gt;Cache validation packages&lt;/a&gt; by &lt;a href=&#34;https://github.com/zippy&#34;&gt;@zippy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;librahttpslibraorg&#34;&gt;&lt;a href=&#34;https://libra.org&#34;&gt;Libra&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;30 merged PRs (&lt;a href=&#34;https://github.com/libra/libra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;), 26 closed issues (&lt;a href=&#34;https://github.com/libra/libra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+55 open issues (&lt;a href=&#34;https://github.com/libra/libra/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/libra/libra/pull/5416&#34;&gt;[move prover] improvements to pure move function call feature&lt;/a&gt; by &lt;a href=&#34;https://github.com/emmazzz&#34;&gt;@emmazzz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/libra/libra/pull/4714&#34;&gt;[executor] fuzzing for execute_and_commit_chunk&lt;/a&gt; by &lt;a href=&#34;https://github.com/mimoo&#34;&gt;@mimoo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/libra/libra/pull/5459&#34;&gt;[db-bootstrapper] support commit genesis with waypoint at startup&lt;/a&gt; by &lt;a href=&#34;https://github.com/zekun000&#34;&gt;@zekun000&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;lighthousehttpslighthousesigmaprimeio&#34;&gt;&lt;a href=&#34;https://lighthouse.sigmaprime.io/&#34;&gt;Lighthouse&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;29 merged PRs (&lt;a href=&#34;https://github.com/sigp/lighthouse/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;), 37 closed issues (&lt;a href=&#34;https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+33 open issues (&lt;a href=&#34;https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://lighthouse.sigmaprime.io/update-27.html&#34;&gt;Lighthouse Update #27&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/sigp/lighthouse/pull/1285&#34;&gt;Write new blocks and states to the database atomically&lt;/a&gt; by &lt;a href=&#34;https://github.com/adaszko&#34;&gt;@adaszko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/sigp/lighthouse/pull/1270&#34;&gt;swap out rust-crypto for RustCrypto libraries for key management&lt;/a&gt; by &lt;a href=&#34;https://github.com/realbigsean&#34;&gt;@realbigsean&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/sigp/lighthouse/pull/1282&#34;&gt;Fix race condition in VC block proposal service&lt;/a&gt; by &lt;a href=&#34;https://github.com/michaelsproul&#34;&gt;@michaelsproul&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mobilecoinhttpswwwmobilecoincom&#34;&gt;&lt;a href=&#34;https://www.mobilecoin.com/&#34;&gt;MobileCoin&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;83 merged PRs (&lt;a href=&#34;https://github.com/mobilecoinofficial/mobilecoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;), 2 closed issues (&lt;a href=&#34;https://github.com/mobilecoinofficial/mobilecoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+1 open issues (&lt;a href=&#34;https://github.com/mobilecoinofficial/mobilecoin/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/mobilecoin/the-mobilecoin-foundation-board-welcomes-alex-feerst-ae582ce27d52&#34;&gt;The MobileCoin Foundation board welcomes Alex Feerst&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/mobilecoin/fight-for-the-future-joins-the-mobilecoin-foundation-ff07a4ac1cdb&#34;&gt;Fight for the Future joins the MobileCoin Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/mobilecoin/ren%C3%A9e-diresta-joins-the-mobilecoin-foundation-board-8c17e7fd83df&#34;&gt;Renée DiResta joins the MobileCoin Foundation Board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/mobilecoin/welcoming-dreamhost-to-the-mobilecoin-foundation-505e24139c9b&#34;&gt;Welcoming DreamHost to the MobileCoin Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/mobilecoin/introducing-mobilecoin-foundation-board-member-david-bray-c8d53ef45904&#34;&gt;Introducing MobileCoin Foundation board member, David Bray&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mobilecoinofficial/mobilecoin/pull/242&#34;&gt;Mob url&lt;/a&gt; by &lt;a href=&#34;https://github.com/garbageslam&#34;&gt;@garbageslam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mobilecoinofficial/mobilecoin/pull/246&#34;&gt;Initial fog authority key signature with schnorrkel&lt;/a&gt; by &lt;a href=&#34;https://github.com/sugargoat&#34;&gt;@sugargoat&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mobilecoinofficial/mobilecoin/pull/292&#34;&gt;Mc sig&lt;/a&gt; by &lt;a href=&#34;https://github.com/garbageslam&#34;&gt;@garbageslam&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nearhttpsgithubcomnearprotocolnearcore&#34;&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;83 merged PRs (&lt;a href=&#34;https://github.com/nearprotocol/nearcore/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;), 44 closed issues (&lt;a href=&#34;https://github.com/nearprotocol/nearcore/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+32 open issues (&lt;a href=&#34;https://github.com/nearprotocol/nearcore/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://near.org/blog/near-bringing-chainlinks-leading-oracle-solution-to-its-open-web-ecosystem/&#34;&gt;NEAR Bringing Chainlink’s Leading Oracle Solution to its Open Web Ecosystem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: Community Update
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://near.org/blog/community-update-near-edu-flux-beta-program-and-googuild/&#34;&gt;NEAR EDU, Flux Beta Program, and GooGuild&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://near.org/blog/community-update-july-17th-2020/&#34;&gt;July 17th&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://near.org/blog/community-update-july-3rd-2020/&#34;&gt;July 3rd&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video: Whiteboard Series with NEAR
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=SWtAwPPBGoI&#34;&gt;Ep: 39 Rikard Hjort from Runtime Verification&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=IIMnxRU8RPY&#34;&gt;Ep: 38 Ethan Frey from CosmWasm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=JIlLAxFUcwA&#34;&gt;Ep: 37 with Michael Riabzev from StarkWare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=w55dO89Ej4s&#34;&gt;Community Talk: Blockchain &amp;amp; AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/2651&#34;&gt;feat: Network indexer&lt;/a&gt; by &lt;a href=&#34;https://github.com/khorolets&#34;&gt;@khorolets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/2922&#34;&gt;Mocknet load testing (#2899)&lt;/a&gt; by &lt;a href=&#34;https://github.com/birchmd&#34;&gt;@birchmd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nearprotocol/nearcore/pull/3035&#34;&gt;fix: prevent repetitive initialization on node start&lt;/a&gt; by &lt;a href=&#34;https://github.com/bowenwang1996&#34;&gt;@bowenwang1996&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nervoshttpsgithubcomnervosnetwork&#34;&gt;&lt;a href=&#34;https://github.com/nervosnetwork&#34;&gt;Nervos&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;49 merged PRs (&lt;a href=&#34;https://github.com/nervosnetwork/ckb/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/rfcs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;), 12 closed issues (&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+4 open issues (&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/rfcs/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/nervosnetwork/nervos-launches-cklabs-cohort-with-portal-wallet-and-tocial-d24c8df9bcb8&#34;&gt;Nervos kicks off first CKLabs cohort with Portal Wallet and Tocial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/nervosnetwork/nervos-joins-coinbases-rosetta-to-simplify-blockchain-integration-ed1b166662c3&#34;&gt;Nervos joins Coinbase’s Rosetta to simplify blockchain integration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/nervosnetwork/introducing-nervos-integration-with-china-s-blockchain-based-services-network-bsn-d954528b098a&#34;&gt;Introducing Nervos’ integration with China’s Blockchain-based Services Network (BSN)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/nervosnetwork/grant-approved-leapdao-to-build-evm-compatible-sidechain-framework-79657ff80b02&#34;&gt;Grant Approved: LeapDAO to Build EVM-Compatible Sidechain Framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://forum.grin.mw/t/a-message-from-nervos/7568&#34;&gt;The Nervos Foundation announced a donation of 10 BTC to Grin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://medium.com/nervosnetwork/nervos-ckb-development-update-38-7d2afb4fb4d7&#34;&gt;Nervos CKB Development Update #38&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: CKB Weekly &lt;a href=&#34;https://ckbweekly.substack.com/p/privacy-is-a-feature-not-a-product&#34;&gt;#13&lt;/a&gt;,
+&lt;a href=&#34;https://ckbweekly.substack.com/p/a-simplest-ckb-based-dapp&#34;&gt;#12&lt;/a&gt;,
+&lt;a href=&#34;https://ckbweekly.substack.com/p/i-dont-want-to-learn-a-new-lang&#34;&gt;#11&lt;/a&gt;,
+&lt;a href=&#34;https://ckbweekly.substack.com/p/ethereum-compatible-sidechain-framework&#34;&gt;#10&lt;/a&gt;,
+&lt;a href=&#34;https://ckbweekly.substack.com/p/talk-is-cheap-show-me-the-tools&#34;&gt;#9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/1988&#34;&gt;refactor: use a new method to detect headers sync timeout&lt;/a&gt; by &lt;a href=&#34;https://github.com/yangby-cryptape&#34;&gt;@yangby-cryptape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/2188&#34;&gt;feat: add sync state rpc&lt;/a&gt; by &lt;a href=&#34;https://github.com/driftluo&#34;&gt;@driftluo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/2147&#34;&gt;improvement: don&amp;rsquo;t cache all data of header map in memory during IBD&lt;/a&gt; by &lt;a href=&#34;https://github.com/yangby-cryptape&#34;&gt;@yangby-cryptape&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;parityhttpsgithubcomparitytech&#34;&gt;&lt;a href=&#34;https://github.com/paritytech&#34;&gt;Parity&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;275 merged PRs (&lt;a href=&#34;https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/wasmi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;), 105 closed issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/parity-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;),
+87 open issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/parity-bitcoin/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/polkadot-network/the-results-are-in-8f6b1ca2a4e6&#34;&gt;The Results are In&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/polkadot-network/polkadot-launch-phases-3-4-8cb2e8c2a187&#34;&gt;Polkadot Launch: Phases 3 &amp;amp; 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/polkadot-network/let-the-hustings-begin-378c6e8a2323&#34;&gt;Let the hustings begin…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/polkadot-network/the-first-polkadot-vote-1fc1b8bd357b&#34;&gt;The First Polkadot Vote…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.parity.io/announcing-substrate-builders-program-v2/&#34;&gt;Announcing Substrate Builders Program V2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=o8sAhDY6IyY&#34;&gt;Gavin Wood - A Walkthrough of Polkadot&amp;rsquo;s Governance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/polkadot/pull/1312&#34;&gt;CandidateBackingSubsystem&lt;/a&gt; by &lt;a href=&#34;https://github.com/montekki&#34;&gt;@montekki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/polkadot/pull/1258&#34;&gt;Make a test crate to make the runtime-test usable&lt;/a&gt; by &lt;a href=&#34;https://github.com/cecton&#34;&gt;@cecton&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/substrate/pull/6692&#34;&gt;Add a back-pressure-friendly alternative to NetworkService::write_notifications&lt;/a&gt; by &lt;a href=&#34;https://github.com/tomaka&#34;&gt;@tomaka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/polkadot/pull/1266&#34;&gt;Downward &amp;amp; Upward messages&lt;/a&gt; by &lt;a href=&#34;https://github.com/bkchr&#34;&gt;@bkchr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;secret-networkhttpsgithubcomenigmampcsecretnetwork&#34;&gt;&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork&#34;&gt;Secret Network&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;61 merged PRs (&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/enigmampc/SafeTrace/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;), 32 closed issues (&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+14 open issues (&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.scrt.network/secret-network-ecosystem-update-july-2020/&#34;&gt;Secret Network Ecosystem Update: July 2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.scrt.network/secret-mission-design-challenge/&#34;&gt;Secret Mission: Design Challenge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.scrt.network/secret-games-update-testnet-phase-1/&#34;&gt;Secret Games Update: Incentivized Testnet Phase 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.scrt.network/enigma-development-update-june-2020/&#34;&gt;Enigma Development Update: June 2020&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.scrt.network/programmable-privacy/&#34;&gt;Programmable Privacy: Turning Smart Contracts into Secret Contracts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.scrt.network/secret-network-mathwallet-tutorial/&#34;&gt;Secret Network MathWallet Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://blog.scrt.network/secret-nodes-cookbook/&#34;&gt;The Secret Nodes Cookbook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/pull/392&#34;&gt;Implement query_chain()&lt;/a&gt; by &lt;a href=&#34;https://github.com/assafmo&#34;&gt;@assafmo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/pull/397&#34;&gt;Node auth error messages - take 3&lt;/a&gt; by &lt;a href=&#34;https://github.com/reuvenpo&#34;&gt;@reuvenpo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;solanahttpsgithubcomsolana-labssolana&#34;&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;252 merged PRs (&lt;a href=&#34;https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;), 24 closed issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;),
+43 open issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/announcing-the-solana-arweave-interoperability-hack-3ec9fbaaceb4&#34;&gt;Announcing the Solana Arweave Interoperability Hack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/ftx-chooses-solana-for-serum-a-high-speed-non-custodial-decentralized-derivatives-exchange-c346a27c1f2b&#34;&gt;FTX Chooses Solana for Serum: A High-Speed, Non-Custodial Decentralized Derivatives Exchange&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/ftx-listed-sol-trading-is-now-live-5538f1a71b0&#34;&gt;FTX Listed SOL — Trading Is Now Live&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/solana-sol-is-now-open-for-deposits-on-bitmax-trading-will-begin-at-2-pm-utc-july-20th-dd8e9efd6e00&#34;&gt;Solana (SOL) Is Now Open For Deposits On BitMax — Trading Will Begin At 2 PM UTC, July 20th&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/solana-sol-deposits-are-now-open-on-bithumb-trading-starts-9-am-utc-july-13th-2f6fc8d0bed8&#34;&gt;Solana (SOL) Is Now Trading On Bithumb Global&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/sol-pairs-now-available-for-trading-on-mxc-7fad53a535eb&#34;&gt;SOL Pairs Now Available For Trading On MXC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Solana Newsletter: &lt;a href=&#34;https://medium.com/solana-labs/july-newsletter-f86256b2dc7f&#34;&gt;July&lt;/a&gt;, &lt;a href=&#34;https://medium.com/solana-labs/june-newsletter-ab62a5b65ccf&#34;&gt;June&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/10914&#34;&gt;fix rewards points&lt;/a&gt; by &lt;a href=&#34;https://github.com/rwalker-com&#34;&gt;@rwalker-com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/11103&#34;&gt;Use BlockCommitmentCache for RPC slots&lt;/a&gt; by &lt;a href=&#34;https://github.com/garious&#34;&gt;@garious&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/11119&#34;&gt;Add replay votes to gossip vote tracking&lt;/a&gt; by &lt;a href=&#34;https://github.com/carllin&#34;&gt;@carllin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;zcashhttpszcash&#34;&gt;&lt;a href=&#34;https://z.cash/&#34;&gt;Zcash&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;144 merged PRs (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;), 74 closed issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;),
+58 open issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/zips/issues?q=is%3Aissue+is%3Aopen+created%3A2020-07-01..2020-08-04&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zfnd.org/blog/farewell-josh/&#34;&gt;The Zcash Foundation Bids Farewell to its First Executive Director&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zfnd.org/blog/frost-update/&#34;&gt;Announcing a New Version of FROST&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.coindesk.com/zcash-latest-hard-fork-heartwood-makes-mining-private&#34;&gt;Zcash Latest Hard Fork ‘Heartwood’ Makes Mining Private&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zfnd.org/blog/q2-report-2020/&#34;&gt;The Zcash Foundation&amp;rsquo;s 2020 Q2 Report&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;News: Latest proposals to ZF Grants, &lt;a href=&#34;https://grants.zfnd.org/proposals/1058908485-viewkeys-in-zecwallet&#34;&gt;Viewkeys in Zecwallet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;News: Weekly forum update:
+&lt;a href=&#34;https://forum.zcashcommunity.com/t/july-31-2020-weekly-forum-update/36963&#34;&gt;July 31&lt;/a&gt;,
+&lt;a href=&#34;https://forum.zcashcommunity.com/t/july-24-2020-weekly-forum-update/36904&#34;&gt;July 24&lt;/a&gt;,
+&lt;a href=&#34;https://forum.zcashcommunity.com/t/july-17-2020-weekly-forum-update/36836&#34;&gt;July 17&lt;/a&gt;,
+&lt;a href=&#34;https://forum.zcashcommunity.com/t/july-3-2020-weekly-forum-update/36765&#34;&gt;July 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Thread: &lt;a href=&#34;https://twitter.com/hdevalence&#34;&gt;@hdevalence&lt;/a&gt; highlighted &lt;a href=&#34;https://twitter.com/hdevalence/status/1281310138184302597&#34;&gt;major work on Zebra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pull/554&#34;&gt;Start work on new Amount type&lt;/a&gt; by &lt;a href=&#34;https://github.com/yaahc&#34;&gt;@yaahc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pull/690&#34;&gt;Command execution tests&lt;/a&gt; by &lt;a href=&#34;https://github.com/oxarbitrage&#34;&gt;@oxarbitrage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pull/707&#34;&gt;sync: add backpressure to syncer&lt;/a&gt; by &lt;a href=&#34;https://github.com/hdevalence&#34;&gt;@hdevalence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;events&#34;&gt;Events&lt;/h2&gt;
+&lt;p&gt;Aug 9-11 | Online&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://edcon.io/&#34;&gt;Community Ethereum Development Conference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aug 15 | Online&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sites.google.com/zkproof.org/acas2020/&#34;&gt;ACAS2020&lt;/a&gt;.
+2nd Workshop on Advanced Cryptography Applications and Standards&lt;/p&gt;
+&lt;p&gt;Aug 20 | Online&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rustconf.com/&#34;&gt;RustConf 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aug 28-29 | Online&lt;/p&gt;
+&lt;p&gt;Chainlink’s &lt;a href=&#34;https://www.smartcontractsummit.io/&#34;&gt;Smart Contract Virtual Summit #0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sep 17-18 | Surrey, UK&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://deic-web.uab.cat/cbt/cbt2020/&#34;&gt;4th International Workshop on Cryptocurrencies and Blockchain Technology - CBT 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oct 2-30 | Online&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.ethonline.org/&#34;&gt;ETHOnline 2020&lt;/a&gt;. Summits + Hackathon.&lt;/p&gt;
+&lt;p&gt;Oct 21-23 | NYC, US&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://aft.acm.org/&#34;&gt;ACM Advances in Financial Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oct 27-28 | Dubai&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.futureblockchainsummit.com/&#34;&gt;Future Blockchain Summit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;careers&#34;&gt;Careers&lt;/h2&gt;
+&lt;p&gt;Equilibrium | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.notion.so/Hiring-Senior-Software-Engineer-Rust-Go-e6c94ccc261f426c80a483c7fc642412&#34;&gt;Senior Software Engineer Rust/Go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Findora | Menlo Park, CA&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/findora/e89e2e02-622c-41da-a14d-c12d854a25b5&#34;&gt;Senior Systems Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Informal Systems | Berlin, Toronto, Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://informal.systems/careers/senior-distributed-systems-engineer/&#34;&gt;Senior Distributed Systems Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kraken | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/4019a818-4a7b-46ef-9225-c53c7a7f238c&#34;&gt;Backend Engineer - Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/4c864c8f-bde6-443d-b521-dd90df0e9105&#34;&gt;Senior Backend Engineer - Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/39031c44-2060-467d-8991-79f23deacbb8&#34;&gt;Backend Engineer - Crypto/Payments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/246f7fd2-000a-4f61-8f53-b1cc783d51cb&#34;&gt;Backend Engineer, Data Processing – Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Libra | San Francisco, CA or Geneva, Switzerland&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://libra.org/en-US/job-board/?gh_jid=4465800002&#34;&gt;Developer Advocate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NEAR | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/mzavershynskyi/status/1286056901914968065?s=20&#34;&gt;General Purpose Full-time Engineer - Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Protocol Labs | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/9afbc1c9-8b3b-4c03-856d-6b0cb5518eaa&#34;&gt;Software Engineer, Cryptography &amp;amp; Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/e4a469e4-c420-4ae5-acea-44c33a03dbd2&#34;&gt;Software Engineer, Peer-to-Peer Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/8c03a123-4890-4265-96e1-0427bd7ec193&#34;&gt;Sr. Software Engineer, libp2p&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/3490e571-4d47-487e-a47f-b02f08668290&#34;&gt;Sr. Software Engineer, Filecoin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:darosior@protonmail.com&#34;&gt;Revault&lt;/a&gt; | Portugal or Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build a &lt;a href=&#34;https://github.com/re-vault/practical-revault/blob/master/revault.pdf&#34;&gt;Bitcoin vault architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solana | (Probably)Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://solana.com/frontend-eng-jd.pdf&#34;&gt;Front End Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Soramitsu | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://soramitsu.freshteam.com/jobs/ifK-X2sHqXp6/rust-developer-senior-remote&#34;&gt;Senior Rust Developer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Trail of Bits | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/trailofbits/56af8506-3205-4c7b-b28d-ba8292bd1a47&#34;&gt;Cryptography Analyst&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/trailofbits/8b7f7fc1-efb0-4e89-b406-784c3a2d77e4&#34;&gt;Application Security Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Want to be included in the next issue? Feel free to submit a PR to the &lt;a href=&#34;https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft&#34;&gt;#15 draft&lt;/a&gt;, or Tweet &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Join the discussion on&lt;/strong&gt; &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;&lt;strong&gt;RiB telegram group&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;❤️&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>RiB is One Year Old!</title>
@@ -2891,6 +3304,7 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;li&gt;&lt;a href=&#34;https://github.com/darwinia-network/darwinia&#34;&gt;Darwinia&lt;/a&gt; Relay chain of Darwinia Network, can connect to Polkadot as parachain in Polkadot Model;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/enigmampc/enigma-core&#34;&gt;Enigma&lt;/a&gt; secures the decentralized web;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/exonum/exonum&#34;&gt;Exonum&lt;/a&gt; An extensible open-source framework for creating private/permissioned blockchain applications;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ChainSafe/forest&#34;&gt;Forest&lt;/a&gt; An implementation of Filecoin written in Rust;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mimblewimble/grin&#34;&gt;Grin&lt;/a&gt; Minimal implementation of the MimbleWimble protocol;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/holochain/holochain-rust&#34;&gt;Holochain&lt;/a&gt; The core Holochain framework written in rust, a container, and hdk-rust library for writing Zomes;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/HuobiGroup/huobi-chain&#34;&gt;Huobi Chain&lt;/a&gt; The next generation high performance public chain for financial infrastructure.&lt;/li&gt;
@@ -2905,8 +3319,9 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/polkadot&#34;&gt;Polkadot&lt;/a&gt; Polkadot Node Implementation;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/shasper&#34;&gt;Shasper&lt;/a&gt; Parity Shasper beacon chain implementation using the Substrate framework;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt; Blockchain Rebuilt for Scale;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/blockstack/stacks-blockchain&#34;&gt;Stacks 2.0&lt;/a&gt; Proof of Transfer blockchain from Blockstack;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tari-project&#34;&gt;Tari&lt;/a&gt; The Tari Digital Assets Protocol;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tendermint/rust-abci&#34;&gt;Tendermint&lt;/a&gt; Though, Tendermint blockchain layer is implemented in Go, they have ABCI interface for Rust;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/tendermint-rs&#34;&gt;Tendermint&lt;/a&gt; Tendermint is a high-performance blockchain consensus engine for Byzantine fault tolerant applications&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/witnet/witnet-rust&#34;&gt;Witnet&lt;/a&gt; Open source implementation of Witnet decentralized oracle network protocol in Rust;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ZcashFoundation/zebra&#34;&gt;Zebra&lt;/a&gt; An ongoing Rust implementation of a Zcash node.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/LayerXcom/zero-chain&#34;&gt;Zero-chain&lt;/a&gt; A privacy-preserving blockchain on Substrate.&lt;/li&gt;
@@ -2916,14 +3331,17 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/substrate&#34;&gt;Substrate&lt;/a&gt; Substrate: The platform for blockchain innovators;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/stellar/slingshot&#34;&gt;slingshot&lt;/a&gt; A new blockchain architecture under active development, with a strong focus on scalability, privacy and safety.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tendermint/rust-abci&#34;&gt;Tendermint ABCI&lt;/a&gt; Tendermint ABCI server, written in the Rust programming language.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cross-chain&#34;&gt;Cross-Chain&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://comit.network/&#34;&gt;Comit&lt;/a&gt; is an open protocol facilitating trustless cross-blockchain applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/ibc-rs&#34;&gt;IBC&lt;/a&gt; Rust implementation of the Interblockchain Communication Protocol (IBC).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;virtual-machines&#34;&gt;Virtual Machines&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm&#34;&gt;CKB-VM&lt;/a&gt; &amp;ndash; RISC-V virtual machine;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cosmwasm.com&#34;&gt;CosmWasm&lt;/a&gt; &amp;ndash; Multi-chain smart contract platform built for the Cosmos ecosystem;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum/tree/master/evmbin&#34;&gt;EVM Parity&lt;/a&gt; &amp;ndash; Parity implementation of EVM;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/spacemeshos/svm&#34;&gt;SVM&lt;/a&gt; &amp;ndash; Spacemesh Virtual Machine;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/wasmi&#34;&gt;Wasmi&lt;/a&gt; &amp;ndash; WebAssembly interpreter;&lt;/li&gt;
