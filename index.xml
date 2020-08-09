@@ -3403,5 +3403,68 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 </description>
     </item>
     
+    <item>
+      <title>Job Board</title>
+      <link>https://rustinblockchain.org/job-board/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/job-board/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This page shows current available Rust blockchain jobs.&lt;/em&gt;
+&lt;em&gt;To post your position here, please submit a PR to the&lt;/em&gt;
+&lt;strong&gt;&lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/tree/master/content&#34;&gt;RiB GitHub&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Equilibrium | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.notion.so/Hiring-Senior-Software-Engineer-Rust-Go-e6c94ccc261f426c80a483c7fc642412&#34;&gt;Senior Software Engineer Rust/Go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Findora | Menlo Park, CA&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/findora/e89e2e02-622c-41da-a14d-c12d854a25b5&#34;&gt;Senior Systems Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Informal Systems | Berlin, Toronto, Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://informal.systems/careers/senior-distributed-systems-engineer/&#34;&gt;Senior Distributed Systems Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Kraken | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/4019a818-4a7b-46ef-9225-c53c7a7f238c&#34;&gt;Backend Engineer - Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/4c864c8f-bde6-443d-b521-dd90df0e9105&#34;&gt;Senior Backend Engineer - Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/39031c44-2060-467d-8991-79f23deacbb8&#34;&gt;Backend Engineer - Crypto/Payments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/246f7fd2-000a-4f61-8f53-b1cc783d51cb&#34;&gt;Backend Engineer, Data Processing – Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Libra | San Francisco, CA or Geneva, Switzerland&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://libra.org/en-US/job-board/?gh_jid=4465800002&#34;&gt;Developer Advocate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NEAR | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/mzavershynskyi/status/1286056901914968065?s=20&#34;&gt;General Purpose Full-time Engineer - Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Protocol Labs | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/9afbc1c9-8b3b-4c03-856d-6b0cb5518eaa&#34;&gt;Software Engineer, Cryptography &amp;amp; Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/e4a469e4-c420-4ae5-acea-44c33a03dbd2&#34;&gt;Software Engineer, Peer-to-Peer Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/8c03a123-4890-4265-96e1-0427bd7ec193&#34;&gt;Sr. Software Engineer, libp2p&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/protocol/3490e571-4d47-487e-a47f-b02f08668290&#34;&gt;Sr. Software Engineer, Filecoin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:darosior@protonmail.com&#34;&gt;Revault&lt;/a&gt; | Portugal or Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build a &lt;a href=&#34;https://github.com/re-vault/practical-revault/blob/master/revault.pdf&#34;&gt;Bitcoin vault architecture&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Solana | (Probably)Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://solana.com/frontend-eng-jd.pdf&#34;&gt;Front End Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Soramitsu | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://soramitsu.freshteam.com/jobs/ifK-X2sHqXp6/rust-developer-senior-remote&#34;&gt;Senior Rust Developer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Trail of Bits | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/trailofbits/56af8506-3205-4c7b-b28d-ba8292bd1a47&#34;&gt;Cryptography Analyst&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/trailofbits/8b7f7fc1-efb0-4e89-b406-784c3a2d77e4&#34;&gt;Application Security Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
