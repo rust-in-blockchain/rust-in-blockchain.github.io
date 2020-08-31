@@ -3313,6 +3313,7 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;li&gt;&lt;a href=&#34;https://github.com/sigp/lighthouse&#34;&gt;Lighthouse&lt;/a&gt; Fast and secure Ethereum 2.0 client;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt; NEAR Protocol - scalable and usable blockchain;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;Nervos CKB&lt;/a&gt; Nervos CKB is a public permissionless blockchain, the common knowledge layer of Nervos network;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/nomic&#34;&gt;Nomic&lt;/a&gt; Nomic is a high-performance Bitcoin sidechain which is part of the Cosmos network.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-bitcoin&#34;&gt;Parity Bitcoin&lt;/a&gt; The Parity Bitcoin client;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum&#34;&gt;Parity Ethereum&lt;/a&gt; The fast, light, and robust EVM and WASM client;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-zcash&#34;&gt;Parity Zcash&lt;/a&gt; Rust implementation of Zcash protocol;&lt;/li&gt;
@@ -3332,6 +3333,7 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/substrate&#34;&gt;Substrate&lt;/a&gt; Substrate: The platform for blockchain innovators;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/stellar/slingshot&#34;&gt;slingshot&lt;/a&gt; A new blockchain architecture under active development, with a strong focus on scalability, privacy and safety.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tendermint/rust-abci&#34;&gt;Tendermint ABCI&lt;/a&gt; Tendermint ABCI server, written in the Rust programming language.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/orga&#34;&gt;Orga&lt;/a&gt; A high-performance state machine engine designed for Tendermint-based blockchain applications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cross-chain&#34;&gt;Cross-Chain&lt;/h2&gt;
 &lt;ul&gt;
@@ -3376,6 +3378,7 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/iqlusioninc/abscissa&#34;&gt;abscissa&lt;/a&gt; &amp;ndash; micro-framework for CLI tools with strong focus on security;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/adria0/tesseracts&#34;&gt;tesseracts&lt;/a&gt; &amp;ndash; A small block explorer for geth PoAs written in rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/merk&#34;&gt;merk&lt;/a&gt; &amp;ndash; High performance Merkle key/value store written in Rust, based on RocksDB.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;contribute&#34;&gt;Contribute&lt;/h2&gt;
 &lt;p&gt;Contributions are most welcome.&lt;/p&gt;
