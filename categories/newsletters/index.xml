@@ -40,9 +40,9 @@ But depending on SGX for privacy does have some special risks:
 software that runs in an SGX enclave must be signed (if transitively) by Intel&amp;rsquo;s own cryptographic keys,
 which means that Intel must approve of any software running in SGX,
 that Intel can &lt;em&gt;revoke&lt;/em&gt; permission to use SGX,
-and that there is risk of the signing keys being compromised;
+and that there is a risk of the signing keys being compromised;
 and it&amp;rsquo;s not obvious that secure enclaves are actually secure,
-there having already been a number of &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_Guard_Extensions#Attacks&#34;&gt;attacks against SGX&lt;/a&gt;.
+there have already been a number of &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_Guard_Extensions#Attacks&#34;&gt;attacks against SGX&lt;/a&gt;.
 Regardless,
 as of now,
 hardware enclaves provide security features that aren&amp;rsquo;t feasible any other way.&lt;/p&gt;
@@ -86,7 +86,7 @@ Rust blockchains are walking the bleeding edge of privacy tech.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Thanks so much to our anonymous donors.
 We don&amp;rsquo;t often receive donations,
-so this was a nice suprise!
+so this was a nice surprise!
 We intend to put all monetary contributions to use funding events or new contributors,
 and we&amp;rsquo;ll let you know what we do with the funds when we spend them.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
