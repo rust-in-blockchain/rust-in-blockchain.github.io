@@ -138,6 +138,11 @@
   </url>
   
   <url>
+    <loc>https://rustinblockchain.org/contributing/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://rustinblockchain.org/about/</loc>
   </url>
   

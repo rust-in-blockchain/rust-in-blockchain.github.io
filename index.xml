@@ -4354,14 +4354,98 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
     </item>
     
     <item>
+      <title></title>
+      <link>https://rustinblockchain.org/contributing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/contributing/</guid>
+      <description>&lt;h1 id=&#34;contribute-to-rib-community&#34;&gt;Contribute to RiB Community&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org&#34;&gt;Rust in Blockchain&lt;/a&gt; is a developer community
+that focuses on Rust engineering and adoption in the blockchain industry.
+The &lt;a href=&#34;./newsletters&#34;&gt;RiB Newsletter&lt;/a&gt; is a monthly newsletter that publishes on
+the first Wednesday of each month (&lt;strong&gt;Pacific time&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;There are several ways to contribute to the Rust in Blockchain community.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;contribute-to-rib-newsletter&#34;&gt;Contribute to RiB Newsletter&lt;/h2&gt;
+&lt;p&gt;We deal with contribution processes through GitHub.
+Contribute to the next issue by submitting PRs
+(Pull Requests) to the &lt;a href=&#34;https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft&#34;&gt;next draft&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Contributions are welcome to these sections:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Project Updates: PRs, issues, news, videos, podcasts, etc&lt;/li&gt;
+&lt;li&gt;Events: blockchain development related events are welcomed&lt;/li&gt;
+&lt;li&gt;Careers: job posting for Rust blockchain developers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Suggestions are also welcome to these sections:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Project Spotlight.
+You can suggest a project (big or small) you are working on,
+or recommend a project you like, with your comments ;)&lt;/li&gt;
+&lt;li&gt;Interesting Things.
+Anything you think it might be interesting to the RiB community,
+including news, blog posts, papers, projects, podcasts and videos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that we exercise more editorial control over Project Spotlight,
+Interesting Things, and the introduction, then the Project Updates.
+We may edit contributions as we feel apropriate.&lt;/p&gt;
+&lt;p&gt;GitHub statistics for Most Active section are generated automatically.
+&lt;strong&gt;Do not&lt;/strong&gt; contribute those caculations.
+Instead, add repos to the &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/blob/master/rib-bible.md&#34;&gt;rib-bible&lt;/a&gt;
+that should be monitored.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;contribute-to-rib-resources&#34;&gt;Contribute to RiB Resources&lt;/h2&gt;
+&lt;h3 id=&#34;job-board&#34;&gt;Job Board&lt;/h3&gt;
+&lt;p&gt;We maintains a standalone &lt;a href=&#34;./job-board&#34;&gt;Job Board&lt;/a&gt; with
+current job openings.
+Feel free to &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/blob/master/content/job-board.md&#34;&gt;add your open positions to this page&lt;/a&gt;.
+Open an issue if you find unavailable links.&lt;/p&gt;
+&lt;h3 id=&#34;awesome-rib&#34;&gt;Awesome RiB&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;./awesome-blockchain-rust&#34;&gt;Awesome RiB&lt;/a&gt; is linked to the
+&lt;a href=&#34;https://github.com/rust-in-blockchain/awesome-blockchain-rust&#34;&gt;Awesome Blockchain Rust&lt;/a&gt;
+repository.
+It covers almost all the Rust blockchain projects.
+You are very welcomed to add new projects to it,
+and make it &lt;strong&gt;AWESOME&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;other-ways-to-contribute&#34;&gt;Other Ways to Contribute&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Create dev tutorials or share your
+learning experience with developers&lt;/li&gt;
+&lt;li&gt;Call for team up on a specific project you are working on,
+e.g., help-wanted issues, dev bounties and grants&lt;/li&gt;
+&lt;li&gt;Organize or participate in events, such as
+Hack events, hackathons, challenges, meetups&lt;/li&gt;
+&lt;li&gt;And more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You&amp;rsquo;ll always find a way to participate in RiB community.
+Get some ideas from our post
+&lt;a href=&#34;https://rustinblockchain.org/blogposts/call-for-contributors/&#34;&gt;Call for Contributors&lt;/a&gt; in July 2019.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;maintainance&#34;&gt;Maintainance&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://rustinblockchain.org&#34;&gt;RiB website&lt;/a&gt;
+is built by Hugo and &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain&#34;&gt;hosted on GitHub&lt;/a&gt;.
+Open an issue and provide your suggestions.
+Help us to improve it and make it better.&lt;/p&gt;
+&lt;p&gt;Share information with RiB community
+by Tweeting &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_blockchain&lt;/a&gt;
+or posting in &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;RiB Telegram group&lt;/a&gt;.
+Note that we try to keep our Telegram channel &lt;strong&gt;technical and informative&lt;/strong&gt; for developers.
+Please refrain from marketing spam.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;❤️&lt;/strong&gt; Join &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;RiB Telegram group&lt;/a&gt; for community discussions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>About us</title>
       <link>https://rustinblockchain.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://rustinblockchain.org/about/</guid>
-      <description>&lt;p&gt;Rust in Blockchain is a monthly newsletter focused on Rust programming and blockchain development, bringing engineering insight and experience to the Rust blockchain community.&lt;/p&gt;
-&lt;p&gt;If you are interested in contributing to this newsletter, or would like a feature published regarding Rust, please visit us on GitHub or tweet us.&lt;/p&gt;
-&lt;p&gt;Rust in Blockchain is edited by&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org&#34;&gt;Rust in Blockchain&lt;/a&gt; is a developer community
+that focuses on Rust engineering and adoption in the blockchain industry.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;./newsletters&#34;&gt;RiB Newsletter&lt;/a&gt; is a monthly newsletter focused on Rust programming
+and blockchain development,
+bringing engineering insight and experience to the Rust blockchain community.&lt;/p&gt;
+&lt;p&gt;Rust in Blockchain is run by&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://impl.dev/&#34;&gt;Aimee&lt;/a&gt;, an experienced Rust community builder, and organizer of &lt;a href=&#34;https://rustcon.asia/&#34;&gt;RustCon Asia&lt;/a&gt; 2019;&lt;/li&gt;
 &lt;li&gt;Mike, a champion of best practices within the crypto space, making virtual tea;&lt;/li&gt;
@@ -4453,6 +4537,10 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/trailofbits/56af8506-3205-4c7b-b28d-ba8292bd1a47&#34;&gt;Cryptography Analyst&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/trailofbits/8b7f7fc1-efb0-4e89-b406-784c3a2d77e4&#34;&gt;Application Security Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Zama | Paris, Partial remote authorized&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.welcometothejungle.com/en/companies/zama/jobs/senior-engineer-rust_paris&#34;&gt;Senior Engineer - Rust&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
