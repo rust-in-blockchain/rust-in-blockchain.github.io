@@ -4367,7 +4367,7 @@ the first Wednesday of each month (&lt;strong&gt;Pacific time&lt;/strong&gt;).&l
 &lt;p&gt;There are several ways to contribute to the Rust in Blockchain community.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;contribute-to-rib-newsletter&#34;&gt;Contribute to RiB Newsletter&lt;/h2&gt;
-&lt;p&gt;We deal with contribution processes through GitHub.
+&lt;p&gt;We only accept contributions to the newsletter through GitHub.
 Contribute to the next issue by submitting PRs
 (Pull Requests) to the &lt;a href=&#34;https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft&#34;&gt;next draft&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Contributions are welcome to these sections:&lt;/p&gt;
@@ -4395,7 +4395,7 @@ that should be monitored.&lt;/p&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;h2 id=&#34;contribute-to-rib-resources&#34;&gt;Contribute to RiB Resources&lt;/h2&gt;
 &lt;h3 id=&#34;job-board&#34;&gt;Job Board&lt;/h3&gt;
-&lt;p&gt;We maintains a standalone &lt;a href=&#34;./job-board&#34;&gt;Job Board&lt;/a&gt; with
+&lt;p&gt;We maintain a standalone &lt;a href=&#34;./job-board&#34;&gt;Job Board&lt;/a&gt; with
 current job openings.
 Feel free to &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/blob/master/content/job-board.md&#34;&gt;add your open positions to this page&lt;/a&gt;.
 Open an issue if you find unavailable links.&lt;/p&gt;
