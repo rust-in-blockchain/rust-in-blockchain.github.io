@@ -4354,13 +4354,32 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
     </item>
     
     <item>
-      <title></title>
+      <title>About us</title>
+      <link>https://rustinblockchain.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/about/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org&#34;&gt;Rust in Blockchain&lt;/a&gt; is a developer community
+that focuses on Rust engineering and adoption in the blockchain industry.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;./newsletters&#34;&gt;RiB Newsletter&lt;/a&gt; is a monthly newsletter focused on Rust programming
+and blockchain development,
+bringing engineering insight and experience to the Rust blockchain community.&lt;/p&gt;
+&lt;p&gt;Rust in Blockchain is run by&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://impl.dev/&#34;&gt;Aimee&lt;/a&gt;, an experienced Rust community builder, and organizer of &lt;a href=&#34;https://rustcon.asia/&#34;&gt;RustCon Asia&lt;/a&gt; 2019;&lt;/li&gt;
+&lt;li&gt;Mike, a champion of best practices within the crypto space, making virtual tea;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://brson.github.io/&#34;&gt;Brian&lt;/a&gt;, former Rust core team member.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contribute to RiB Community</title>
       <link>https://rustinblockchain.org/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://rustinblockchain.org/contributing/</guid>
-      <description>&lt;h1 id=&#34;contribute-to-rib-community&#34;&gt;Contribute to RiB Community&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org&#34;&gt;Rust in Blockchain&lt;/a&gt; is a developer community
+      <description>&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org&#34;&gt;Rust in Blockchain&lt;/a&gt; is a developer community
 that focuses on Rust engineering and adoption in the blockchain industry.
 The &lt;a href=&#34;./newsletters&#34;&gt;RiB Newsletter&lt;/a&gt; is a monthly newsletter that publishes on
 the first Wednesday of each month (&lt;strong&gt;Pacific time&lt;/strong&gt;).&lt;/p&gt;
@@ -4430,27 +4449,8 @@ by Tweeting &lt;a href=&#34;https://twitter.com/rust_blockchain&#34;&gt;@rust_bl
 or posting in &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;RiB Telegram group&lt;/a&gt;.
 Note that we try to keep our Telegram channel &lt;strong&gt;technical and informative&lt;/strong&gt; for developers.
 Please refrain from marketing spam.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;❤️&lt;/strong&gt; Join &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;RiB Telegram group&lt;/a&gt; for community discussions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About us</title>
-      <link>https://rustinblockchain.org/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rustinblockchain.org/about/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org&#34;&gt;Rust in Blockchain&lt;/a&gt; is a developer community
-that focuses on Rust engineering and adoption in the blockchain industry.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;./newsletters&#34;&gt;RiB Newsletter&lt;/a&gt; is a monthly newsletter focused on Rust programming
-and blockchain development,
-bringing engineering insight and experience to the Rust blockchain community.&lt;/p&gt;
-&lt;p&gt;Rust in Blockchain is run by&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://impl.dev/&#34;&gt;Aimee&lt;/a&gt;, an experienced Rust community builder, and organizer of &lt;a href=&#34;https://rustcon.asia/&#34;&gt;RustCon Asia&lt;/a&gt; 2019;&lt;/li&gt;
-&lt;li&gt;Mike, a champion of best practices within the crypto space, making virtual tea;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://brson.github.io/&#34;&gt;Brian&lt;/a&gt;, former Rust core team member.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Join &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;RiB Telegram group&lt;/a&gt; for community discussions &lt;strong&gt;❤️&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     
