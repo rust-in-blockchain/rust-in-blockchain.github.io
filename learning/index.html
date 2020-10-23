@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Build the RiB Learning Hub - Rust in Blockchain</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Build the RiB Learning Hub" />
+<meta property="og:description" content="This is a work-in-progress hub that collects resource for learning Rust and blockchain. Most of the current content came from previous RiB Newsletters.
+Please contribute to the collections through the GitHub page that is preferred, or comment on this page below.
+Intro and Tutorials  What&rsquo;s It Good For?. Why Blockchain is Hard What Is Web3? What Is Web 3.0 &amp; Why It Matters The Rise of Rust and Blockchain A blockchain dilemma: chain forks, catastrophic re-orgs, and insurance ‘One Network, Many Chains’ – The Case for Blockchain Interoperability Onboarding to Bitcoin Core Programs, life cycles, and laws of software evolution Open Source: From Community to Commercialization Progressive Decentralization: A Playbook for Building Crypto Applications First impressions of NEAR smart contract development in Rust  Programming and Use cases  Rusty Chains: A Basic Blockchain Implementation Written in Pure Rust Rust Blockchain Tutorial: What is Rust and Why is it Important?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rustinblockchain.org/learning/" />
+
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Build the RiB Learning Hub"/>
+<meta name="twitter:description" content="This is a work-in-progress hub that collects resource for learning Rust and blockchain. Most of the current content came from previous RiB Newsletters.
+Please contribute to the collections through the GitHub page that is preferred, or comment on this page below.
+Intro and Tutorials  What&rsquo;s It Good For?. Why Blockchain is Hard What Is Web3? What Is Web 3.0 &amp; Why It Matters The Rise of Rust and Blockchain A blockchain dilemma: chain forks, catastrophic re-orgs, and insurance ‘One Network, Many Chains’ – The Case for Blockchain Interoperability Onboarding to Bitcoin Core Programs, life cycles, and laws of software evolution Open Source: From Community to Commercialization Progressive Decentralization: A Playbook for Building Crypto Applications First impressions of NEAR smart contract development in Rust  Programming and Use cases  Rusty Chains: A Basic Blockchain Implementation Written in Pure Rust Rust Blockchain Tutorial: What is Rust and Why is it Important?"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="shortcut icon" href="../favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-140591727-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="../" title="Rust in Blockchain" rel="home">
+				<div class="logo__title">Rust in Blockchain</div>
+				<div class="logo__tagline">Bringing engineering insight and experience to blockchain technology.</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../newsletters">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Newsletters</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../blogposts">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Blog Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../job-board">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Job Board</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../awesome-blockchain-rust">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Awesome RiB</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../learning">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Learning</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../contributing">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Contributing</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../about">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">About Us</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../index.xml">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Build the RiB Learning Hub</h1>
+			
+		</header><div class="content post__content clearfix">
+			<p>This is a work-in-progress hub
+that collects resource for learning Rust and blockchain.
+Most of the current content came from previous <a href="../newsletters">RiB Newsletters</a>.</p>
+<p>Please contribute to the collections through the <a href="https://github.com/rust-in-blockchain/rust-in-blockchain/blob/master/content/learning.md">GitHub page</a>
+that is preferred, or comment on this page below.</p>
+<h2 id="intro-and-tutorials">Intro and Tutorials</h2>
+<ul>
+<li><a href="https://www.etherean.org/blockchain/web3/software/2020/07/25/whats-it-good-for.html">What&rsquo;s It Good For?</a>.</li>
+<li><a href="https://medium.com/@jimmysong/why-blockchain-is-hard-60416ea4c5c">Why Blockchain is Hard</a></li>
+<li><a href="https://avc.com/2019/06/video-of-the-week-what-is-web3/">What Is Web3?</a></li>
+<li><a href="https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b">What Is Web 3.0 &amp; Why It Matters</a></li>
+<li><a href="https://domsteil.com/2019/08/08/rust-and-blockchain/">The Rise of Rust and Blockchain</a></li>
+<li><a href="https://medium.com/solana-labs/a-blockchain-dilemma-chain-forks-catastrophic-re-orgs-and-insurance-3b88a2fbd2ba">A blockchain dilemma: chain forks, catastrophic re-orgs, and insurance</a></li>
+<li><a href="https://www.coindesk.com/one-network-many-chains-the-case-for-blockchain-interoperability">‘One Network, Many Chains’ – The Case for Blockchain Interoperability</a></li>
+<li><a href="https://medium.com/@amitiu/onboarding-to-bitcoin-core-7c1a83b20365">Onboarding to Bitcoin Core</a></li>
+<li><a href="https://blog.acolyer.org/2020/02/14/programs-life-cycles-laws/">Programs, life cycles, and laws of software evolution</a></li>
+<li><a href="https://a16z.com/2019/10/04/commercializing-open-source/">Open Source: From Community to Commercialization</a></li>
+<li><a href="https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/">Progressive Decentralization: A Playbook for Building Crypto Applications</a></li>
+<li><a href="https://brson.github.io/2020/09/07/near-smart-contracts-rust">First impressions of NEAR smart contract development in Rust</a></li>
+</ul>
+<h2 id="programming-and-use-cases">Programming and Use cases</h2>
+<ul>
+<li><a href="https://hackernoon.com/rusty-chains-a-basic-blockchain-implementation-written-in-pure-rust-gk2m3uri">Rusty Chains: A Basic Blockchain Implementation Written in Pure Rust</a></li>
+<li><a href="https://freestartupkits.com/articles/technology/cryptocurrency-news-and-tips/ultimate-rust-blockchain-tutorial/">Rust Blockchain Tutorial: What is Rust and Why is it Important?</a></li>
+<li><a href="https://justinmeiners.github.io/lc3-vm/">Write your Own Virtual Machine</a></li>
+<li><a href="https://justinmeiners.github.io/tiny-blockchain/">Write your Own Proof-of-Work Blockchain</a></li>
+<li><a href="https://decentralizedthoughts.github.io/2020-08-28-what-is-a-cryptographic-hash-function/">What is a Cryptographic Hash Function?</a></li>
+<li><a href="https://dochdoch.gitlab.io/snark_intro/snark_intro_front/">A Gentle Introduction to Zero Knowledge Proofs with Hands on Examples</a>.</li>
+<li><a href="https://blog.coinbase.com/zksnarks-and-cryptographic-accumulators-f840da0b61c6?gi=edbf393c1af2">zkSNARKS and Cryptographic Accumulators</a></li>
+<li><a href="https://medium.com/perlin-network/build-a-decentralized-chat-using-javascript-rust-webassembly-c775f8484b52">Build A Decentralized Chat Using JavaScript &amp; Rust (WebAssembly)</a></li>
+<li><a href="https://medium.com/@prabhueshwarla/coding-a-p2p-blockchain-in-rust-part-1-2ecc8f6005ea">Coding a P2P blockchain in Rust: Part 1</a></li>
+<li><a href="https://dev.to/gnunicorn/hunting-down-a-non-determinism-bug-in-our-rust-wasm-build-4fk1">Hunting down a non-determinism-bug in our Rust Wasm build</a></li>
+<li><a href="https://hiddentao.com/archives/2020/07/17/my-first-smart-contract-in-rust-on-elrond-vm">My first smart contract in Rust on Elrond VM</a></li>
+<li><a href="https://www.youtube.com/watch?v=bjWxwTA2KLw">Build Your Own Blockchain with Substrate and Rust</a></li>
+<li><a href="https://medium.com/better-programming/substrate-blockchains-and-runtime-modules-an-introduction-866851b550b9">Substrate Blockchains and Runtime Modules: An Introduction</a></li>
+<li><a href="https://medium.com/nervosnetwork/exploring-an-essential-data-structure-in-ckb-the-transaction-a1ca8fcbfbda">Exploring an essential data structure in CKB — the transaction</a></li>
+<li><a href="https://medium.com/oasislabs/blockchain-flavored-wasi-50e3612b8eba">Blockchain-flavored WASI</a></li>
+<li><a href="https://hackernoon.com/lessons-learned-from-bitcoins-and-ethereum-s-programming-models-f9fdbe1a3fdb">Lessons Learned from Bitcoin’s and Ethereum’s Programming Models</a></li>
+<li><a href="https://medium.com/@jimmysong/lessons-learned-from-teaching-over-500-developers-or-why-you-should-level-up-ad0e48bce067">Lessons Learned from Teaching Over 500 Developers or: Why You Should Level Up</a></li>
+<li><a href="https://medium.com/meetbitfury/libra-and-exonum-a-comparison-of-rust-based-blockchain-solutions-6963a7f4a81d">Libra and Exonum: A Comparison of Rust-Based Blockchain Solutions</a></li>
+<li><a href="https://www.reddit.com/r/rust/comments/ekingn/tomakaredshirt_an_os_prototype_where_binaries_are">An OS prototype where binaries are WASM, run in ring 0</a></li>
+<li><a href="https://www.tannrallard.tech/token-engineering-learning-program/">Token Engineering Learning Program</a></li>
+<li><a href="http://dtrace.org/blogs/bmc/2020/10/11/rust-after-the-honeymoon/">Rust after the honeymoon</a></li>
+</ul>
+<h2 id="reports-and-papers">Reports and Papers</h2>
+<ul>
+<li><a href="https://eprint.iacr.org/2020/735">Bulletproofs+</a>. A new paper with improvements to bulletproofs.</li>
+<li><a href="http://elaineshi.com/docs/blockchain-book.pdf">Foundations of Distributed Consensus and Blockchains</a>. A complete book on distributed consensus, written by an expert.</li>
+<li><a href="https://eprint.iacr.org/2020/1069.pdf">Lunar: a Toolbox for More Efficient Universal and Updatable zkSNARKs and Commit-and-Prove Extensions</a></li>
+<li><a href="https://eprint.iacr.org/2020/1064.pdf">Mimblewimble Non-Interactive Transaction Scheme</a></li>
+<li><a href="https://arxiv.org/pdf/1906.08936.pdf">Scalable and Probabilistic Leaderless BFT Consensus through Metastability</a></li>
+<li><a href="https://arxiv.org/pdf/2009.10664.pdf">A Formally Verified Protocol for Log Replication with Byzantine Fault Tolerance</a></li>
+<li><a href="https://eprint.iacr.org/2020/1101.pdf">NC-Max: Breaking the Throughput Limit of Nakamoto Consensus</a></li>
+<li><a href="https://eprint.iacr.org/2020/1126.pdf">Bitcoin–Monero Cross-chain Atomic Swap</a></li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3657592">Incentives in Blockchain Design and Applications</a></li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3665447">Blockchain as a Confidence Machine: The Problem of Trusts &amp; Challenges of Governance</a></li>
+<li><a href="https://arxiv.org/pdf/2009.09480.pdf">A General Framework for the Security Analysis of Blockchain Protocols</a></li>
+<li><a href="https://eprint.iacr.org/2020/1122.pdf">The Velvet Path to Superlight Blockchain Clients</a></li>
+<li><a href="https://eprint.iacr.org/2019/953">PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge</a>.
+The new zkSNARK construction that will be employed in future revisions of Zcash.</li>
+<li><a href="https://eprint.iacr.org/2020/1021.pdf">Consensus Redux: Distributed Ledgers in the Face of Adversarial Supremacy</a></li>
+<li><a href="https://eprint.iacr.org/2020/1022.pdf">Polynomial IOPs for Linear Algebra Relations</a></li>
+<li><a href="https://eprint.iacr.org/2020/1033.pdf">RANDCHAIN: Decentralised Randomness Beacon from Sequential Proof-of-Work</a></li>
+<li><a href="https://arxiv.org/pdf/2008.00881.pdf">Demystifying the Role of zk-SNARKs in Zcash</a></li>
+<li><a href="https://eprint.iacr.org/2020/938.pdf">Performance Trade-offs in Design of MimbleWimble Proofs of Reserves</a></li>
+<li><a href="https://media.consensys.net/the-blockchain-jobs-report-2019-b2b911426c34">The Blockchain Jobs Report, 2019</a></li>
+<li><a href="https://blog.coincodecap.com/analyzing-developers-in-cryptocurrency-projects/">Analyzing Developers in Cryptocurrency Projects</a></li>
+</ul>
+<h2 id="videos-and-podcasts">Videos and Podcasts</h2>
+<ul>
+<li><a href="https://medium.com/matter-labs/introduction-to-zksync-16f3753ac96c">Introduction to zkSync</a></li>
+<li><a href="https://softwareengineeringdaily.com/2020/09/01/webassembly-migration-with-nicolo-davis/">WebAssembly Migration with Nicolo Davis</a>
+and its <a href="https://softwareengineeringdaily.com/wp-content/uploads/2020/08/SED1126-WebAssembly-Migration.pdf">script</a></li>
+<li><a href="https://www.zeroknowledge.fm/144">ZKPodcast: Aleo with Howard Wu</a></li>
+<li><a href="http://thebitcoinpodcast.com/hashing-it-out-87/">Hashing It Out #87-Informal Systems Ethan Buchman</a></li>
+<li><a href="https://epicenter.tv/episodes/346">Trail of Bits (Dan Guido) – The Evolution of Smart Contract Security</a></li>
+<li><a href="https://www.youtube.com/watch?v=HAOeR9Xh--A">Understanding Blockchain Programming Languages in 7 Minutes.</a></li>
+<li><a href="https://www.youtube.com/watch?v=vJdT05zl6jk&amp;list=PL1rXPCvogp_SsWBI_JpXFypBDhbgXVrSE">Blockchain in Rust series</a></li>
+<li><a href="https://anchor.fm/stephan-livera/episodes/SLP73-Tamas-Blummer---Rust-Bitcoin--Threats-to-Bitcoin--Bitcoin-Data-Science-e44dhk">Rust-Bitcoin, Threats to Bitcoin &amp; Bitcoin Data Science</a></li>
+<li><a href="https://xuejie.space/2019_07_05_introduction_to_ckb_script_programming_validation_model">RISC-V based CKB VM: Validation Model</a></li>
+<li><a href="https://xuejie.space/2019_07_13_introduction_to_ckb_script_programming_script_basics">RISC-V based CKB VM: Script Basics</a></li>
+<li><a href="https://medium.com/nearprotocol/wasm-for-blockchain-2019-d093bfeb6133">Wasm for Blockchain 2019</a></li>
+<li><a href="https://www.youtube.com/watch?v=_9o6RTYG_xk&amp;t=678s">Pierre Krieger from Parity discuss Libp2p library with Maksym Zavershynskyi from Near</a></li>
+<li><a href="https://www.youtube.com/watch?v=e_QOMBZS5gs&amp;list=PL9tzQn_TEuFWbiHCvul76ZyiG6C_0180f">Decentralized App Development</a></li>
+<li><a href="https://www.youtube.com/watch?v=EBoTUw4MI0k">Cell Model - A programming model that generalizes Bitcoin&rsquo;s UTXO model</a></li>
+<li><a href="https://www.youtube.com/watch?v=02oVI_2zDcI&amp;list=PLRke1-EE4VWGLXPbcpxn8fPmXlvRuZGIw">In Rust We Trust Meetup 17th July, San Francisco</a></li>
+<li><a href="https://www.youtube.com/watch?v=flV82tFjyZY&amp;list=PLM4u6XbiXf5qXKZixrDpN3ZSwH_8UabPq">Data Security and the Rise of Crypto</a></li>
+</ul>
+<h2 id="developer-stories">Developer Stories</h2>
+<ul>
+<li><a href="https://www.parity.io/people-of-parity-bastian-koecher/">People of Parity: Bastian Köcher</a></li>
+<li><a href="https://www.parity.io/people-of-parity-wei-tang/">People of Parity: Wei Tang</a> Wei is the author of <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1283.md">EIP-1283</a>, he wrote SputnikVM, an EVM implementation in Rust. Wei shares his programming experience from working in Parity.</li>
+<li><a href="https://thenewstack.io/rust-creator-graydon-hoare-talks-about-security-history-and-rust">Rust Creator Graydon Hoare Talks About Security, History, and Rust</a></li>
+</ul>
+<h2 id="discussions-and-thoughts">Discussions and Thoughts</h2>
+<ul>
+<li><a href="https://www.reddit.com/r/rust/comments/dpakxq/rust_2020_more_or_less/f5tpnkx">Reddit discussion on Rust &amp; Blockchain</a></li>
+<li><a href="https://twitter.com/tomaka17/status/1224313756458590208?s=20">How far behind rust-libp2p is compared to go-libp2p and js-libp2p</a></li>
+<li><a href="https://twitter.com/panekkkk/status/1142891604950339585">Thread: the value proposition of crypto assets</a>
+This thread is my attempt to explain the value proposition of crypto assets (“crypto”) like bitcoin ($BTC) and ethereum ($ETH) to newcomers like you.</li>
+<li><a href="https://www.reddit.com/r/rust/comments/c27fng/is_rust_my_best_option/">Is Rust My Best Option?</a></li>
+<li>Discussions on <a href="https://www.reddit.com/r/rust/comments/c20aed/facebook_just_picked_rust_to_implement_their_new/">Facebook just picked Rust to implement their new Libre blockchain</a>.</li>
+</ul>
+<h2 id="opinions">Opinions</h2>
+<ul>
+<li><a href="https://medium.com/@kevinmobrien1/instead-of-solving-the-blockchain-trilemma-focus-on-building-a-vibrant-cryptoeconomy-7064acb41a26">Instead Of Solving The ‘Blockchain Trilemma’, Focus On Building A Vibrant Cryptoeconomy</a></li>
+<li><a href="https://luttig.substack.com/p/when-tailwinds-vanish">When Tailwinds Vanish</a></li>
+</ul>
+
+		</div>
+	</article>
+</main>
+
+
+
+
+<section class="comments">
+	<script src="https://utteranc.es/client.js" repo="rust-in-blockchain/rust-in-blockchain" issue-term="url"
+		theme="github-light" crossorigin="anonymous" async>
+		</script>
+
+</section>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<h4 class="widget__title">Subscribe</h4>
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	 
+</style>
+	<div id="mc_embed_signup">
+	<form action="https://rustinblockchain.us20.list-manage.com/subscribe/post?u=1ac6f6cdd5c25b48064506045&amp;id=efe2948d57" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+		<div id="mc_embed_signup_scroll">
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	    
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1ac6f6cdd5c25b48064506045_efe2948d57" tabindex="-1" value=""></div>
+	    <div class="clear">
+				<input class="widget-subscribe-btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+				</div>
+	    </div>
+	</form>
+	</div>
+</div>
+
+<div class="widget-text widget">
+	<h4 class="widget__title">Support us</h4>
+	<div class="widget__content">
+	  <ul class="widget__list">
+	    <li class="widget__item">
+	      <b>BTC:</b> bc1qrl00ya0p0fg2s27lmws908cfmzapa4fa2uyk8n
+	    </li>
+	    <li class="widget__item">
+	      <b>ETH:</b> 0xE35D48926663dc02B7b4226d6AC044D4c6a30410
+	    </li>
+	    <li class="widget__item">
+	      <b>CKB:</b> ckb1qyqf7j4282wh0rhzcdjsnzuqas6tjgar2yjq8mtfd2
+	    </li>
+	  </ul>
+	</div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer"
+				href="https://twitter.com/rust_blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer"
+				href="https://t.me/rustinblockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
+				<span>Telegram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Reddit" rel="noopener noreferrer"
+				href="https://www.reddit.com/r/RustInBlockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-reddit" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"></path></svg>
+
+
+				<span>Reddit</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer"
+				href="https://github.com/rust-in-blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:n3wh4x0rs@gmail.com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>n3wh4x0rs@gmail.com</span>
+			</a>
+		</div>
+
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Rust in Blockchain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="../js/menu.js"></script>
+<script src="../js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

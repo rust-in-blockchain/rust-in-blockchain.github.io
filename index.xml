@@ -4393,6 +4393,123 @@ bringing engineering insight and experience to the Rust blockchain community.&lt
     </item>
     
     <item>
+      <title>Build the RiB Learning Hub</title>
+      <link>https://rustinblockchain.org/learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/learning/</guid>
+      <description>&lt;p&gt;This is a work-in-progress hub
+that collects resource for learning Rust and blockchain.
+Most of the current content came from previous &lt;a href=&#34;./newsletters&#34;&gt;RiB Newsletters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Please contribute to the collections through the &lt;a href=&#34;https://github.com/rust-in-blockchain/rust-in-blockchain/blob/master/content/learning.md&#34;&gt;GitHub page&lt;/a&gt;
+that is preferred, or comment on this page below.&lt;/p&gt;
+&lt;h2 id=&#34;intro-and-tutorials&#34;&gt;Intro and Tutorials&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.etherean.org/blockchain/web3/software/2020/07/25/whats-it-good-for.html&#34;&gt;What&amp;rsquo;s It Good For?&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@jimmysong/why-blockchain-is-hard-60416ea4c5c&#34;&gt;Why Blockchain is Hard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://avc.com/2019/06/video-of-the-week-what-is-web3/&#34;&gt;What Is Web3?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b&#34;&gt;What Is Web 3.0 &amp;amp; Why It Matters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://domsteil.com/2019/08/08/rust-and-blockchain/&#34;&gt;The Rise of Rust and Blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/a-blockchain-dilemma-chain-forks-catastrophic-re-orgs-and-insurance-3b88a2fbd2ba&#34;&gt;A blockchain dilemma: chain forks, catastrophic re-orgs, and insurance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.coindesk.com/one-network-many-chains-the-case-for-blockchain-interoperability&#34;&gt;‘One Network, Many Chains’ – The Case for Blockchain Interoperability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@amitiu/onboarding-to-bitcoin-core-7c1a83b20365&#34;&gt;Onboarding to Bitcoin Core&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.acolyer.org/2020/02/14/programs-life-cycles-laws/&#34;&gt;Programs, life cycles, and laws of software evolution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://a16z.com/2019/10/04/commercializing-open-source/&#34;&gt;Open Source: From Community to Commercialization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://a16z.com/2020/01/09/progressive-decentralization-crypto-product-management/&#34;&gt;Progressive Decentralization: A Playbook for Building Crypto Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://brson.github.io/2020/09/07/near-smart-contracts-rust&#34;&gt;First impressions of NEAR smart contract development in Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;programming-and-use-cases&#34;&gt;Programming and Use cases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://hackernoon.com/rusty-chains-a-basic-blockchain-implementation-written-in-pure-rust-gk2m3uri&#34;&gt;Rusty Chains: A Basic Blockchain Implementation Written in Pure Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://freestartupkits.com/articles/technology/cryptocurrency-news-and-tips/ultimate-rust-blockchain-tutorial/&#34;&gt;Rust Blockchain Tutorial: What is Rust and Why is it Important?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://justinmeiners.github.io/lc3-vm/&#34;&gt;Write your Own Virtual Machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://justinmeiners.github.io/tiny-blockchain/&#34;&gt;Write your Own Proof-of-Work Blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://decentralizedthoughts.github.io/2020-08-28-what-is-a-cryptographic-hash-function/&#34;&gt;What is a Cryptographic Hash Function?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dochdoch.gitlab.io/snark_intro/snark_intro_front/&#34;&gt;A Gentle Introduction to Zero Knowledge Proofs with Hands on Examples&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.coinbase.com/zksnarks-and-cryptographic-accumulators-f840da0b61c6?gi=edbf393c1af2&#34;&gt;zkSNARKS and Cryptographic Accumulators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/perlin-network/build-a-decentralized-chat-using-javascript-rust-webassembly-c775f8484b52&#34;&gt;Build A Decentralized Chat Using JavaScript &amp;amp; Rust (WebAssembly)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@prabhueshwarla/coding-a-p2p-blockchain-in-rust-part-1-2ecc8f6005ea&#34;&gt;Coding a P2P blockchain in Rust: Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dev.to/gnunicorn/hunting-down-a-non-determinism-bug-in-our-rust-wasm-build-4fk1&#34;&gt;Hunting down a non-determinism-bug in our Rust Wasm build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hiddentao.com/archives/2020/07/17/my-first-smart-contract-in-rust-on-elrond-vm&#34;&gt;My first smart contract in Rust on Elrond VM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=bjWxwTA2KLw&#34;&gt;Build Your Own Blockchain with Substrate and Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/better-programming/substrate-blockchains-and-runtime-modules-an-introduction-866851b550b9&#34;&gt;Substrate Blockchains and Runtime Modules: An Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/nervosnetwork/exploring-an-essential-data-structure-in-ckb-the-transaction-a1ca8fcbfbda&#34;&gt;Exploring an essential data structure in CKB — the transaction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/oasislabs/blockchain-flavored-wasi-50e3612b8eba&#34;&gt;Blockchain-flavored WASI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hackernoon.com/lessons-learned-from-bitcoins-and-ethereum-s-programming-models-f9fdbe1a3fdb&#34;&gt;Lessons Learned from Bitcoin’s and Ethereum’s Programming Models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@jimmysong/lessons-learned-from-teaching-over-500-developers-or-why-you-should-level-up-ad0e48bce067&#34;&gt;Lessons Learned from Teaching Over 500 Developers or: Why You Should Level Up&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/meetbitfury/libra-and-exonum-a-comparison-of-rust-based-blockchain-solutions-6963a7f4a81d&#34;&gt;Libra and Exonum: A Comparison of Rust-Based Blockchain Solutions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/rust/comments/ekingn/tomakaredshirt_an_os_prototype_where_binaries_are&#34;&gt;An OS prototype where binaries are WASM, run in ring 0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tannrallard.tech/token-engineering-learning-program/&#34;&gt;Token Engineering Learning Program&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dtrace.org/blogs/bmc/2020/10/11/rust-after-the-honeymoon/&#34;&gt;Rust after the honeymoon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reports-and-papers&#34;&gt;Reports and Papers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/735&#34;&gt;Bulletproofs+&lt;/a&gt;. A new paper with improvements to bulletproofs.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://elaineshi.com/docs/blockchain-book.pdf&#34;&gt;Foundations of Distributed Consensus and Blockchains&lt;/a&gt;. A complete book on distributed consensus, written by an expert.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1069.pdf&#34;&gt;Lunar: a Toolbox for More Efficient Universal and Updatable zkSNARKs and Commit-and-Prove Extensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1064.pdf&#34;&gt;Mimblewimble Non-Interactive Transaction Scheme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/1906.08936.pdf&#34;&gt;Scalable and Probabilistic Leaderless BFT Consensus through Metastability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/2009.10664.pdf&#34;&gt;A Formally Verified Protocol for Log Replication with Byzantine Fault Tolerance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1101.pdf&#34;&gt;NC-Max: Breaking the Throughput Limit of Nakamoto Consensus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1126.pdf&#34;&gt;Bitcoin–Monero Cross-chain Atomic Swap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3657592&#34;&gt;Incentives in Blockchain Design and Applications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3665447&#34;&gt;Blockchain as a Confidence Machine: The Problem of Trusts &amp;amp; Challenges of Governance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/2009.09480.pdf&#34;&gt;A General Framework for the Security Analysis of Blockchain Protocols&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1122.pdf&#34;&gt;The Velvet Path to Superlight Blockchain Clients&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2019/953&#34;&gt;PLONK: Permutations over Lagrange-bases for Oecumenical Noninteractive arguments of Knowledge&lt;/a&gt;.
+The new zkSNARK construction that will be employed in future revisions of Zcash.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1021.pdf&#34;&gt;Consensus Redux: Distributed Ledgers in the Face of Adversarial Supremacy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1022.pdf&#34;&gt;Polynomial IOPs for Linear Algebra Relations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1033.pdf&#34;&gt;RANDCHAIN: Decentralised Randomness Beacon from Sequential Proof-of-Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/pdf/2008.00881.pdf&#34;&gt;Demystifying the Role of zk-SNARKs in Zcash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/938.pdf&#34;&gt;Performance Trade-offs in Design of MimbleWimble Proofs of Reserves&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://media.consensys.net/the-blockchain-jobs-report-2019-b2b911426c34&#34;&gt;The Blockchain Jobs Report, 2019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.coincodecap.com/analyzing-developers-in-cryptocurrency-projects/&#34;&gt;Analyzing Developers in Cryptocurrency Projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;videos-and-podcasts&#34;&gt;Videos and Podcasts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/matter-labs/introduction-to-zksync-16f3753ac96c&#34;&gt;Introduction to zkSync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://softwareengineeringdaily.com/2020/09/01/webassembly-migration-with-nicolo-davis/&#34;&gt;WebAssembly Migration with Nicolo Davis&lt;/a&gt;
+and its &lt;a href=&#34;https://softwareengineeringdaily.com/wp-content/uploads/2020/08/SED1126-WebAssembly-Migration.pdf&#34;&gt;script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zeroknowledge.fm/144&#34;&gt;ZKPodcast: Aleo with Howard Wu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://thebitcoinpodcast.com/hashing-it-out-87/&#34;&gt;Hashing It Out #87-Informal Systems Ethan Buchman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://epicenter.tv/episodes/346&#34;&gt;Trail of Bits (Dan Guido) – The Evolution of Smart Contract Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=HAOeR9Xh--A&#34;&gt;Understanding Blockchain Programming Languages in 7 Minutes.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=vJdT05zl6jk&amp;amp;list=PL1rXPCvogp_SsWBI_JpXFypBDhbgXVrSE&#34;&gt;Blockchain in Rust series&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://anchor.fm/stephan-livera/episodes/SLP73-Tamas-Blummer---Rust-Bitcoin--Threats-to-Bitcoin--Bitcoin-Data-Science-e44dhk&#34;&gt;Rust-Bitcoin, Threats to Bitcoin &amp;amp; Bitcoin Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xuejie.space/2019_07_05_introduction_to_ckb_script_programming_validation_model&#34;&gt;RISC-V based CKB VM: Validation Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://xuejie.space/2019_07_13_introduction_to_ckb_script_programming_script_basics&#34;&gt;RISC-V based CKB VM: Script Basics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/nearprotocol/wasm-for-blockchain-2019-d093bfeb6133&#34;&gt;Wasm for Blockchain 2019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=_9o6RTYG_xk&amp;amp;t=678s&#34;&gt;Pierre Krieger from Parity discuss Libp2p library with Maksym Zavershynskyi from Near&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=e_QOMBZS5gs&amp;amp;list=PL9tzQn_TEuFWbiHCvul76ZyiG6C_0180f&#34;&gt;Decentralized App Development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=EBoTUw4MI0k&#34;&gt;Cell Model - A programming model that generalizes Bitcoin&amp;rsquo;s UTXO model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=02oVI_2zDcI&amp;amp;list=PLRke1-EE4VWGLXPbcpxn8fPmXlvRuZGIw&#34;&gt;In Rust We Trust Meetup 17th July, San Francisco&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=flV82tFjyZY&amp;amp;list=PLM4u6XbiXf5qXKZixrDpN3ZSwH_8UabPq&#34;&gt;Data Security and the Rise of Crypto&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;developer-stories&#34;&gt;Developer Stories&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.parity.io/people-of-parity-bastian-koecher/&#34;&gt;People of Parity: Bastian Köcher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.parity.io/people-of-parity-wei-tang/&#34;&gt;People of Parity: Wei Tang&lt;/a&gt; Wei is the author of &lt;a href=&#34;https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1283.md&#34;&gt;EIP-1283&lt;/a&gt;, he wrote SputnikVM, an EVM implementation in Rust. Wei shares his programming experience from working in Parity.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thenewstack.io/rust-creator-graydon-hoare-talks-about-security-history-and-rust&#34;&gt;Rust Creator Graydon Hoare Talks About Security, History, and Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;discussions-and-thoughts&#34;&gt;Discussions and Thoughts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/rust/comments/dpakxq/rust_2020_more_or_less/f5tpnkx&#34;&gt;Reddit discussion on Rust &amp;amp; Blockchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/tomaka17/status/1224313756458590208?s=20&#34;&gt;How far behind rust-libp2p is compared to go-libp2p and js-libp2p&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://twitter.com/panekkkk/status/1142891604950339585&#34;&gt;Thread: the value proposition of crypto assets&lt;/a&gt;
+This thread is my attempt to explain the value proposition of crypto assets (“crypto”) like bitcoin ($BTC) and ethereum ($ETH) to newcomers like you.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/rust/comments/c27fng/is_rust_my_best_option/&#34;&gt;Is Rust My Best Option?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Discussions on &lt;a href=&#34;https://www.reddit.com/r/rust/comments/c20aed/facebook_just_picked_rust_to_implement_their_new/&#34;&gt;Facebook just picked Rust to implement their new Libre blockchain&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;opinions&#34;&gt;Opinions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/@kevinmobrien1/instead-of-solving-the-blockchain-trilemma-focus-on-building-a-vibrant-cryptoeconomy-7064acb41a26&#34;&gt;Instead Of Solving The ‘Blockchain Trilemma’, Focus On Building A Vibrant Cryptoeconomy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://luttig.substack.com/p/when-tailwinds-vanish&#34;&gt;When Tailwinds Vanish&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Contribute to RiB Community</title>
       <link>https://rustinblockchain.org/contributing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
