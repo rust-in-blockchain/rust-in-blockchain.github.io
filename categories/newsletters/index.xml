@@ -38,7 +38,7 @@ many good videos this month, which are great resources for
 developers to learn programming blockchain.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/brson&#34;&gt;Brian&lt;/a&gt;, one of the RiB editors,
 has continued documenting his experiments with Rust-based smart contract platforms,
-this month publishing his &lt;a href=&#34;https://brson.github.io/2020/11/30/substrate-and-ink-part-1&#34;&gt;initial impressions of Substrate and Ink&lt;/a&gt;.
+this month publishing his &lt;a href=&#34;https://brson.github.io/2020/12/03/substrate-and-ink-part-1&#34;&gt;initial impressions of Substrate and Ink&lt;/a&gt;.
 We hope to bring more of this kind of content to the RiB community in the future.&lt;/p&gt;
 &lt;p&gt;We open-sourced &lt;a href=&#34;https://github.com/rust-in-blockchain/ribbot&#34;&gt;ribbot&lt;/a&gt;, the script that helps us
 generate progress reports from GitHub repos.
