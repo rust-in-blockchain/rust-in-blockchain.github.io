@@ -1,15 +1,379 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rust in Blockchain</title>
+    <title>Rust in Blockchain ❤ rib.rs</title>
     <link>https://rustinblockchain.org/</link>
-    <description>Recent content on Rust in Blockchain</description>
+    <description>Recent content on Rust in Blockchain ❤ rib.rs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rustinblockchain.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RiB Newsletter #19 - Rust and smart contracts</title>
+      <link>https://rustinblockchain.org/newsletters/rust-and-smart-contracts/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/newsletters/rust-and-smart-contracts/</guid>
+      <description>&lt;p&gt;Welcome to the #19 edition of Rust in Blockchain,
+the hypest newsletter about the hypest tech.
+&lt;a href=&#34;./newsletters/on-to-the-ribbles/&#34;&gt;Previous: #18&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It was a super uneventful December in the Rust blockchain world.
+Not a lot of GitHub activity,
+not a lot of technical blog posts to report.&lt;/p&gt;
+&lt;p&gt;But, in a seemingly monthly tradition,
+a Rust blockchain launched a mainnet:
+this time its &lt;a href=&#34;https://mobilecoinfoundation.medium.com/mobilecoin-main-net-8e355d82c726&#34;&gt;MobileCoin&lt;/a&gt;,
+a fast and private payment network,
+that uses a combination of &lt;a href=&#34;https://cryptonote.org/whitepaper.pdf&#34;&gt;CryptoNote&lt;/a&gt;,
+&lt;a href=&#34;https://eprint.iacr.org/2015/1098&#34;&gt;RingCT&lt;/a&gt;, and the &lt;a href=&#34;https://www.stellar.org/papers/stellar-consensus-protocol&#34;&gt;Stellar Consensus Protocol&lt;/a&gt;,
+all inside of &lt;a href=&#34;https://software.intel.com/content/www/us/en/develop/topics/software-guard-extensions.html&#34;&gt;SGX enclaves&lt;/a&gt;.
+Congrats to the MobileCoin team.&lt;/p&gt;
+&lt;p&gt;Since there&amp;rsquo;s not much else of note this month,
+let&amp;rsquo;s survey a topic that&amp;rsquo;s been on our minds recently:
+Rust and smart contracts.&lt;/p&gt;
+&lt;p&gt;There are a number of blockchains that either
+run smart contracts written in Rust,
+or implement their smart contract runtimes
+or languages in Rust.
+They fall into a few categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Those that support Rust compiled to WASM, like &lt;a href=&#34;https://github.com/ElrondNetwork&#34;&gt;Elrond&lt;/a&gt;, &lt;a href=&#34;https://github.com/holochain&#34;&gt;Holochain&lt;/a&gt;, &lt;a href=&#34;https://github.com/near&#34;&gt;NEAR&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/enigmamcp&#34;&gt;Secret Network&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/substrate&#34;&gt;Substrate&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;These mostly have similar programming models, influenced by Solidity, and all
+have SDKs for Rust:
+Elrond&amp;rsquo;s &lt;a href=&#34;https://github.com/ElrondNetwork/elrond-wasm-rs&#34;&gt;elrond-wasm-rs&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/holochain/holochain/blob/develop/crates/hdk3/README.md&#34;&gt;Holochain&amp;rsquo;s HDK&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/near/near-sdk-rs&#34;&gt;NEAR&amp;rsquo;s SDK&lt;/a&gt;,
+Secret Network&amp;rsquo;s &lt;a href=&#34;https://github.com/enigmampc/secret-toolkit&#34;&gt;secret-toolkit&lt;/a&gt;,
+and Substrate&amp;rsquo;s &lt;a href=&#34;https://github.com/paritytech/ink&#34;&gt;Ink&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Those that support Rust compiled to other VMs, like &lt;a href=&#34;https://github.com/nervosnetwork&#34;&gt;Nervos&lt;/a&gt; (RISC-V),
+and &lt;a href=&#34;https://github.com/solana-labs&#34;&gt;Solana&lt;/a&gt; (eBPF).&lt;/p&gt;
+&lt;p&gt;Nervos contracts are programmed in Rust with their &lt;a href=&#34;https://github.com/nervosnetwork/capsule&#34;&gt;Capsule&lt;/a&gt; library. Besides
+being the only blockchain running a RISC-V, Nervos is also a rare
+smart-contract capable blockchain using the UTXO model instead of the account
+model.&lt;/p&gt;
+&lt;p&gt;Solana runs an especially eccentric VM: &lt;a href=&#34;https://ebpf.io/&#34;&gt;eBPF&lt;/a&gt;. Originally designed as a
+non-Turing-complete interpreter for running inside OS kernels, eBPF is slowly
+finding its way into other applications. Did you know Rust supports eBPF?
+Neither did we! But it kinda does, or LLVM has a backend for it at least; and
+while Rust doesn&amp;rsquo;t officially seem to have &lt;em&gt;any&lt;/em&gt; in-tree eBPF support, Solana
+has hacked together a working Rust-&amp;gt;eBPF toolchain that includes a &lt;a href=&#34;https://github.com/solana-labs/rust&#34;&gt;fork of
+the Rust compiler with eBPF support&lt;/a&gt;. Fascinating! Upstream that code,
+Solana! Of course, with eBPF not supporting loops, the Rust here must be quite
+interesting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Those that use Rust to implement a smart-contract language, like &lt;a href=&#34;https://github.com/hyperledger-labs/solang&#34;&gt;Solang&lt;/a&gt; (a
+Solidity to WASM compiler), &lt;a href=&#34;https://github.com/AleoHQ/leo&#34;&gt;Leo&lt;/a&gt; (a zero-knowledge language), and &lt;a href=&#34;https://github.com/diem/diem/tree/master/language&#34;&gt;Move&lt;/a&gt;
+(Diem&amp;rsquo;s language).&lt;/p&gt;
+&lt;p&gt;Although many chains are moving toward general-purpose VMs, particularly to
+WASM, there are reasons not to, the main two beings: wanting Ethereum
+EVM compatibility, and being based on zero-knowledge proofs. Move is
+a relatively rare case in that it is both its own language, and
+its own VM, but does not share the obvious reason to have a custom VM
+that zero-knowledge languages do.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is notably impossible to write Rust contracts that target Ethereum&amp;rsquo;s EVM,
+which is of course the dominant smart contract platform. Maybe eventually
+somebody will write an LLVM backend for EVM, and we can change that.&lt;/p&gt;
+&lt;p&gt;In RiB news, as we&amp;rsquo;ve mentioned in the past, sometimes we receive inquiries
+about purchasing ads in RiB. We want to try this, but also to ensure RiB remains
+a welcoming place for technical discussion and news (and not a cryptocurrency
+marketing website), and that income generated by RiB supports the broader Rust
+blockchain community. As such, it is now possible for relevant parties to
+sponsor RiB in exchange for ad placement on the website, or for a prominent
+thanks and blurb in the newsletter. Half of sponsorship income is reserved for
+the &lt;a href=&#34;https://rustinblockchain.org/community-fund&#34;&gt;RiB community fund&lt;/a&gt;. Details of the program are on the
+website&amp;rsquo;s &lt;a href=&#34;https://rustinblockchain.org/sponsoring&#34;&gt;sponsorship page&lt;/a&gt;. This is our first time running such a program and feedback is
+welcome in the &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;Telegram group&lt;/a&gt; or privately &lt;a href=&#34;mailto:hi@rib.rs&#34;&gt;by email&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;/h2&gt;
+&lt;p&gt;Thanks to contributors:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/adamisrusty&#34;&gt;Adam Gutierrez&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/PauliiG22&#34;&gt;Paulii&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/brson&#34;&gt;Brian Anderson&lt;/a&gt;, and &lt;a href=&#34;https://github.com/Aimeedeer&#34;&gt;Aimee Zhu&lt;/a&gt;.
+Thank you for your help!&lt;/p&gt;
+&lt;p&gt;RiB needs help to keep up with Rust blockchain projects.
+If you follow a particular project, or otherwise find information
+that is beneficial to the Rust &amp;amp; blockchain community,
+please contribute to the next issue
+by submitting a PR to the &lt;a href=&#34;https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft&#34;&gt;#20 draft&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;project-spotlight&#34;&gt;Project Spotlight&lt;/h2&gt;
+&lt;p&gt;Each month we like to shine a light on a notable Rust blockchain project. This month that project is…&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/hyperledger-labs/solang&#34;&gt;Solang&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solang is a Solidity compiler implemented in Rust,
+but it does not target the Ethereum EVM.
+Instead it uses LLVM as a backend,
+which means it can potentially target most blockchains that do &lt;em&gt;not&lt;/em&gt; run EVM.
+Currently that includes Substrate, Solana, &lt;a href=&#34;https://github.com/ewasm&#34;&gt;ewasm&lt;/a&gt;, and &lt;a href=&#34;https://github.com/hyperledger/sawtooth-core&#34;&gt;Sawtooth&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;interesting-things&#34;&gt;Interesting Things&lt;/h2&gt;
+&lt;h4 id=&#34;news&#34;&gt;News&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New launch: &lt;a href=&#34;https://medium.com/@mobilecoinfoundation/mobilecoin-main-net-8e355d82c726&#34;&gt;MobileCoin Main Net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;blog-posts&#34;&gt;Blog Posts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sethsimmons.me/posts/moneros-ongoing-network-attack/&#34;&gt;A Brief Breakdown of Monero’s Ongoing Network Attacks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.vmsplice.net/2020/12/understanding-peer-to-peer-git-forges.html&#34;&gt;Understanding Peer-to-Peer Git Forges with Radicle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://vitalik.ca/general/2021/01/05/rollup.html&#34;&gt;An Incomplete Guide to Rollups&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://john-millikin.com/notes-on-cross-compiling-rust&#34;&gt;Notes on cross-compiling Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;papers&#34;&gt;Papers&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www2.eecs.berkeley.edu/Pubs/TechRpts/2020/EECS-2020-220.html&#34;&gt;A Languge-Based Approach to Smart Contract Engineering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3715647&#34;&gt;Freedom to (Smart) Contract: The Myth of Code and Blockchain Governance Law&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2012.01032&#34;&gt;VM Matters: A Comparison of WASM VMs and EVMs in the Performance of Blockchain Smart Contracts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2012.04254&#34;&gt;RouTEE: A Secure Payment Network Routing Hub using Trusted Execution Environments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1613&#34;&gt;Lockable Signatures for Blockchains: Scriptless Scripts for All Signatures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1601&#34;&gt;Adaptive layer-two dispute periods in blockchains&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1586&#34;&gt;Unifying Compilers for SNARKs, SMT, and More&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://eprint.iacr.org/2020/1614&#34;&gt;SoK: Algorithmic Incentive Manipulation Attacks on Permissionless PoW Cryptocurrencies&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;projects&#34;&gt;Projects&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zinc&#34;&gt;Zinc Framework&lt;/a&gt;: the ZK circuit programming language and VM.
+Zinc is designed specifically for ZK-circuits and ZKP-based smart contract development, so some differences from Rust are inevitable.
+The official &lt;a href=&#34;https://zinc.zksync.io/&#34;&gt;Zinc book&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fluencelabs/aquamarine&#34;&gt;aquamarine&lt;/a&gt;.
+Aquamarine is a distributed choreography language &amp;amp; platform.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/metastatedev/masp&#34;&gt;MASP&lt;/a&gt;.
+Rust crates for working with the Multi Asset Shielded Pool extensions of the Sapling circuits from Zcash.
+Intro: &lt;a href=&#34;https://github.com/metastatedev/masp&#34;&gt;A gentle introduction to the multi-asset shielded pool project&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/flashbots/mev-inspect-rs&#34;&gt;mev-inspect-rs&lt;/a&gt;.
+Discover historic Miner Extractable Value (MEV) opportunities.
+A blog post about this project: &lt;a href=&#34;https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251&#34;&gt;Flashbots: Frontrunning the MEV Crisis&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/staketechnologies/Plasm&#34;&gt;Plasm&lt;/a&gt;.
+The Scaling DApps Platform on Polkadot using Plasma and State Channel.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Fluidex/plonkit&#34;&gt;plonkit&lt;/a&gt;.
+A zkSNARK toolkit to work with circom zkp DSL in plonk proof system.
+The project announcement: &lt;a href=&#34;https://fluid-dex.medium.com/announcing-fluidex-building-the-first-plonk-layer2-dex-on-ethereum-e19136304a5d&#34;&gt;Announcing FluiDex: Building the first PLONK layer2 DEX on Ethereum&lt;/a&gt; and tech intro in detail:
+&lt;a href=&#34;https://lispc.github.io/2020/11/30/fluidex-a-zkrollup-layer2-dex&#34;&gt;Fluidex: A zkrollup layer2 DEX&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trailofbits/reverie&#34;&gt;Reverie&lt;/a&gt;.
+Reverie is an implementation (prover and verifier) of the MPC-in-the-head NIZKPoK outlined in
+&lt;a href=&#34;https://eprint.iacr.org/2018/475&#34;&gt;Improved Non-Interactive Zero Knowledge with Applications to Post-Quantum Signatures&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/sn_client&#34;&gt;sn_client&lt;/a&gt;.
+A set of libraries providing a way for developers to consume and use the Safe Network facilities.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/sn_node&#34;&gt;sn_node&lt;/a&gt;.
+An Implementation of a Safe Network Vault.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/poma/zkutil&#34;&gt;zkutil&lt;/a&gt;.
+A tool to work with zkSNARK circuits generated by Circom compiler.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;most-active-in-december&#34;&gt;Most Active in December&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/paritytech&#34;&gt;Parity&lt;/a&gt;:
+204 merged PRs (&lt;a href=&#34;https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cargo-contract/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cumulus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/ink/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;5&lt;/a&gt;),
+77 closed issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;5&lt;/a&gt;),
+60 open issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;5&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt;:
+272 merged PRs (&lt;a href=&#34;https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/solana-labs/solana-program-library/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+18 closed issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+40 open issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://z.cash/&#34;&gt;Zcash&lt;/a&gt;:
+104 merged PRs (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/halo2/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;),
+42 closed issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;),
+38 open issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;project-updates&#34;&gt;Project Updates&lt;/h2&gt;
+&lt;h4 id=&#34;aleohttpsgithubcomaleohq&#34;&gt;&lt;a href=&#34;https://github.com/AleoHQ&#34;&gt;Aleo&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;40 merged PRs (&lt;a href=&#34;https://github.com/AleoHQ/snarkOS/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/AleoHQ/leo/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;), 24 closed issues (&lt;a href=&#34;https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+15 open issues (&lt;a href=&#34;https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://www.aleo.org/post/how-zero-knowledge-is-rebalancing-the-internet&#34;&gt;How Zero Knowledge is Rebalancing the Scales of the Internet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/leo/pull/469&#34;&gt;Fixes conditional and early returns&lt;/a&gt; by &lt;a href=&#34;https://github.com/collinc97&#34;&gt;@collinc97&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/leo/pull/478&#34;&gt;Expression breakout&lt;/a&gt; by &lt;a href=&#34;https://github.com/Protryon&#34;&gt;@Protryon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/leo/pull/464&#34;&gt;Improve pow &amp;amp; mul performance&lt;/a&gt; by &lt;a href=&#34;https://github.com/ljedrz&#34;&gt;@ljedrz&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rust-bitcoinhttpsgithubcomrust-bitcoinrust-bitcoin&#34;&gt;&lt;a href=&#34;https://github.com/rust-bitcoin/rust-bitcoin&#34;&gt;Rust Bitcoin&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;27 merged PRs (&lt;a href=&#34;https://github.com/rust-bitcoin/rust-bitcoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/rust-bitcoin/rust-lightning/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/rust-bitcoin/rust-miniscript/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;), 5 closed issues (&lt;a href=&#34;https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+4 open issues (&lt;a href=&#34;https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/rust-bitcoin/rust-lightning/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/rust-bitcoin/rust-bitcoin/pull/499&#34;&gt;New PSBT global keys&lt;/a&gt; by &lt;a href=&#34;https://github.com/dr-orlovsky&#34;&gt;@dr-orlovsky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/rust-bitcoin/rust-lightning/pull/736&#34;&gt;Initiate gossip_queries&lt;/a&gt; by &lt;a href=&#34;https://github.com/bmancini55&#34;&gt;@bmancini55&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/rust-bitcoin/rust-bitcoin/pull/496&#34;&gt;Make Inventory and NetworkMessage enums exhaustive&lt;/a&gt; by &lt;a href=&#34;https://github.com/stevenroose&#34;&gt;@stevenroose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;comithttpsgithubcomcomit-network&#34;&gt;&lt;a href=&#34;https://github.com/comit-network&#34;&gt;COMIT&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;68 merged PRs (&lt;a href=&#34;https://github.com/comit-network/comit-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/xmr-btc-swap/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;), 7 closed issues (&lt;a href=&#34;https://github.com/comit-network/comit-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/comit-network/xmr-btc-swap/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+11 open issues (&lt;a href=&#34;https://github.com/comit-network/xmr-btc-swap/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/comit-network/xmr-btc-swap/pull/88&#34;&gt;Resume command and global database cl-parameter&lt;/a&gt; by &lt;a href=&#34;https://github.com/da-kami&#34;&gt;@da-kami&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/comit-network/xmr-btc-swap/pull/94&#34;&gt;T1Expired state for Bob and check expiries in states after both locked&lt;/a&gt; by &lt;a href=&#34;https://github.com/da-kami&#34;&gt;@da-kami&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/comit-network/xmr-btc-swap/pull/100&#34;&gt; Bob refunds swap after restart that requires communication&lt;/a&gt; by &lt;a href=&#34;https://github.com/D4nte&#34;&gt;@D4nte&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;fluencehttpsgithubcomfluencelabs&#34;&gt;&lt;a href=&#34;https://github.com/fluencelabs&#34;&gt;Fluence&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;60 merged PRs (&lt;a href=&#34;https://github.com/fluencelabs/fluence/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/fluencelabs/fce/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/fluencelabs/aquamarine/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/fluencelabs/rust-sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;), 1 closed issues (&lt;a href=&#34;https://github.com/fluencelabs/fluence/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;),
+1 open issues (&lt;a href=&#34;https://github.com/fluencelabs/fluence/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/fluencelabs/aquamarine/pull/32&#34;&gt;Introduce security tetraplets&lt;/a&gt; by &lt;a href=&#34;https://github.com/michaelvoronov&#34;&gt;@michaelvoronov&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/fluencelabs/fluence/pull/1008&#34;&gt;Send particle.data in base64 through the wire&lt;/a&gt; by &lt;a href=&#34;https://github.com/folex&#34;&gt;@folex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/fluencelabs/aquamarine/pull/51&#34;&gt;Implement two last fold iterable usage scenarious&lt;/a&gt; by &lt;a href=&#34;https://github.com/michaelvoronov&#34;&gt;@michaelvoronov&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;holochainhttpsgithubcomholochain&#34;&gt;&lt;a href=&#34;https://github.com/holochain/&#34;&gt;Holochain&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;56 merged PRs (&lt;a href=&#34;https://github.com/holochain/holochain/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/holochain/elemental-chat/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/holochain/holochain-wasmer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/holochain/lair/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;), 9 closed issues (&lt;a href=&#34;https://github.com/holochain/holochain-rust/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/holochain/holochain/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/holochain/elemental-chat/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;),
+5 open issues (&lt;a href=&#34;https://github.com/holochain/holochain/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/holochain/lair/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: Holochain Dev Pulse
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.holochain.org/steady-progress/&#34;&gt;86 - Steady Progress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.holochain.org/its-aliiiiiive/&#34;&gt;87 - It&amp;rsquo;s ALIIIVE!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Videos:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/MCvL8ttHRW4&#34;&gt;Hack it with Phil Ep 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/hySVLVeN5GQ&#34;&gt;Hack it with Phil Ep 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain/pull/512&#34;&gt;Inline zome&lt;/a&gt; by &lt;a href=&#34;https://github.com/maackle&#34;&gt;@maackle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/holochain/holochain/pull/518&#34;&gt;[TK-06381] Many fixes to gossip and other parts of holochain&lt;/a&gt; by &lt;a href=&#34;https://github.com/freesig&#34;&gt;@freesig&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;diemhttpswwwdiemcom&#34;&gt;&lt;a href=&#34;https://www.diem.com&#34;&gt;Diem&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;157 merged PRs (&lt;a href=&#34;https://github.com/diem/diem/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/diem/rosetta-proxy/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/diem/bcs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;), 7 closed issues (&lt;a href=&#34;https://github.com/diem/diem/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;),
+9 open issues (&lt;a href=&#34;https://github.com/diem/diem/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/diem/diem/pull/6786&#34;&gt;[move-lang] allow _x to bind but do not warn as unused local&lt;/a&gt; by &lt;a href=&#34;https://github.com/mengxu-fb&#34;&gt;@mengxu-fb&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/diem/diem/pull/6878&#34;&gt;network: enable having trusted peers even in non-validator networks&lt;/a&gt; by &lt;a href=&#34;https://github.com/bmwill&#34;&gt;@bmwill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/diem/diem/pull/7065&#34;&gt;[State Sync] Use checked arithmetic operations to avoid over/underflows.&lt;/a&gt; by &lt;a href=&#34;https://github.com/JoshLind&#34;&gt;@JoshLind&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;lighthousehttpslighthousesigmaprimeio&#34;&gt;&lt;a href=&#34;https://lighthouse.sigmaprime.io/&#34;&gt;Lighthouse&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;0 merged PRs (), 37 closed issues (&lt;a href=&#34;https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/sigp/beacon-fuzz/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+33 open issues (&lt;a href=&#34;https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://lighthouse.sigmaprime.io/macos-guide.html&#34;&gt;Eth2 on MacOS: A beginners guide for the technically-challenged&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mobilecoinhttpswwwmobilecoincom&#34;&gt;&lt;a href=&#34;https://www.mobilecoin.com/&#34;&gt;MobileCoin&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;46 merged PRs (&lt;a href=&#34;https://github.com/mobilecoinfoundation/mobilecoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;), 2 closed issues (&lt;a href=&#34;https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;),
+11 open issues (&lt;a href=&#34;https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://mobilecoinfoundation.medium.com/mechanics-of-mobilecoin-chapters-1-2-273b5a42b4e&#34;&gt;Mechanics of MobileCoin: Chapters 1+2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mobilecoinfoundation/mobilecoin/pull/577&#34;&gt;Encrypt account key at rest in mobilecoind&lt;/a&gt; by &lt;a href=&#34;https://github.com/eranrund&#34;&gt;@eranrund&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mobilecoinfoundation/mobilecoin/pull/585&#34;&gt;Mobilecoind db encryption: Take 2&lt;/a&gt; by &lt;a href=&#34;https://github.com/eranrund&#34;&gt;@eranrund&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/mobilecoinfoundation/mobilecoin/pull/594&#34;&gt;Wallet service&lt;/a&gt; by &lt;a href=&#34;https://github.com/sugargoat&#34;&gt;@sugargoat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nearhttpsgithubcomnearprotocolnearcore&#34;&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;39 merged PRs (&lt;a href=&#34;https://github.com/near/nearcore/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/near/borsh/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/near/core-contracts/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;), 39 closed issues (&lt;a href=&#34;https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/near/core-contracts/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+39 open issues (&lt;a href=&#34;https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/near/borsh/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/near/core-contracts/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://near.org/blog/2020-near-in-review-ecosystem-tour/&#34;&gt;2020 NEAR In Review &amp;amp; Ecosystem Tour&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Videos:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=971dTz6nM2g&#34;&gt;Cross-contract calls in Rust&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;NEAR Live Contract Review
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=KvXfEXUbcqA&#34;&gt;Episode 8: RE STAKE token&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=H3QvYHjunwc&#34;&gt;Episode 7: Berry Farm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=7g6C-UeDumg&#34;&gt;Episode 6: STAKE fungible token&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/near/nearcore/pull/3257&#34;&gt;EVM precompile&lt;/a&gt; by &lt;a href=&#34;https://github.com/ilblackdragon&#34;&gt;@ilblackdragon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/near/nearcore/pull/3738&#34;&gt;add performance metrics feature&lt;/a&gt; by &lt;a href=&#34;https://github.com/pmnoxx&#34;&gt;@pmnoxx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/near/nearcore/pull/3658&#34;&gt;feat(testing): bridge testing infrastructure major update&lt;/a&gt; by &lt;a href=&#34;https://github.com/Kouprin&#34;&gt;@Kouprin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nervoshttpsgithubcomnervosnetwork&#34;&gt;&lt;a href=&#34;https://github.com/nervosnetwork&#34;&gt;Nervos&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;65 merged PRs (&lt;a href=&#34;https://github.com/nervosnetwork/ckb/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/ckb-cli/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/ckb-std/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;), 10 closed issues (&lt;a href=&#34;https://github.com/nervosnetwork/ckb/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+1 open issues (&lt;a href=&#34;https://github.com/nervosnetwork/capsule/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;Nervos CKB Development Dossier &lt;a href=&#34;https://medium.com/nervosnetwork/nervos-ckb-development-43-4ab91ef0de6d&#34;&gt;#43&lt;/a&gt;,
+&lt;a href=&#34;https://medium.com/nervosnetwork/nervos-ckb-development-dossier-42-9d6321cc5362&#34;&gt;#42&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;CKB Weekly: &lt;a href=&#34;https://ckbweekly.substack.com/p/exploring-the-yield-dollar&#34;&gt;Exploring the Yield Dollar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/2369&#34;&gt;doc: network doc&lt;/a&gt; by &lt;a href=&#34;https://github.com/driftluo&#34;&gt;@driftluo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm/pull/118&#34;&gt;feat: chaos memory mode&lt;/a&gt; by &lt;a href=&#34;https://github.com/mohanson&#34;&gt;@mohanson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/nervosnetwork/ckb/pull/2297&#34;&gt;chain freezer&lt;/a&gt; by &lt;a href=&#34;https://github.com/zhangsoledad&#34;&gt;@zhangsoledad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;parityhttpsgithubcomparitytech&#34;&gt;&lt;a href=&#34;https://github.com/paritytech&#34;&gt;Parity&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;204 merged PRs (&lt;a href=&#34;https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cargo-contract/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cumulus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/ink/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;5&lt;/a&gt;), 77 closed issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;5&lt;/a&gt;),
+60 open issues (&lt;a href=&#34;https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;5&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://polkadot.network/rococo-v1-a-holiday-gift-to-the-polkadot-community/&#34;&gt;Rococo V1 - A Holiday Gift to the Polkadot Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://polkadot.network/polkadot-2020-roundup/&#34;&gt;Polkadot 2020 Roundup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.parity.io/defi-on-polkadot-an-ecosystem-overview/&#34;&gt;DeFi on Polkadot: An Ecosystem Overview&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/substrate/pull/6877&#34;&gt;Add &lt;code&gt;pallet&lt;/code&gt; attribute macro to declare pallets&lt;/a&gt; by &lt;a href=&#34;https://github.com/thiolliere&#34;&gt;@thiolliere&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/polkadot/pull/2047&#34;&gt;jaeger integration to debug parachains&lt;/a&gt; by &lt;a href=&#34;https://github.com/drahnr&#34;&gt;@drahnr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/substrate/pull/6629&#34;&gt;Streamline frame_system weight parametrization&lt;/a&gt; by &lt;a href=&#34;https://github.com/tomusdrw&#34;&gt;@tomusdrw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/paritytech/substrate/pull/7312&#34;&gt;Merkle Mountain Range pallet&lt;/a&gt; by &lt;a href=&#34;https://github.com/tomusdrw&#34;&gt;@tomusdrw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;secret-networkhttpsgithubcomenigmampcsecretnetwork&#34;&gt;&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork&#34;&gt;Secret Network&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;11 merged PRs (&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/enigmampc/secret-toolkit/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;), 11 closed issues (&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;),
+7 open issues (&lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://scrt.network/blog/secret-network-tokenomics-and-ecosystem-pool&#34;&gt;Secret Network Tokenomics and Ecosystem Pool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/enigmampc/secret-toolkit/pull/17&#34;&gt;Add init and query calls, docstrings, and examples&lt;/a&gt; by &lt;a href=&#34;https://github.com/baedrik&#34;&gt;@baedrik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/pull/701&#34;&gt;Update secretcli.md&lt;/a&gt; by &lt;a href=&#34;https://github.com/moonstash&#34;&gt;@moonstash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/enigmampc/SecretNetwork/pull/689&#34;&gt;Creating macros for validator syntax extenstion&lt;/a&gt; by &lt;a href=&#34;https://github.com/PumpkinSeed&#34;&gt;@PumpkinSeed&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;solanahttpsgithubcomsolana-labssolana&#34;&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;272 merged PRs (&lt;a href=&#34;https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/solana-labs/solana-program-library/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;), 18 closed issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;),
+40 open issues (&lt;a href=&#34;https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/year-in-review-2020-c3731d1cc8a&#34;&gt;Solana Year in Review 2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/solana-ecosystem-news-1ba12b6fb8d3&#34;&gt;Solana Ecosystem News&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/solana-labs/mainnet-beta-stall-postmortem-ba0c6064e3&#34;&gt;Mainnet Beta Stall - Postmortem&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/14292&#34;&gt;Add poh speed test and calibration logic&lt;/a&gt; by &lt;a href=&#34;https://github.com/sakridge&#34;&gt;@sakridge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana/pull/13929&#34;&gt;caches staked nodes computed from vote-accounts&lt;/a&gt; by &lt;a href=&#34;https://github.com/behzadnouri&#34;&gt;@behzadnouri&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/solana-labs/solana-program-library/pull/895&#34;&gt;Multi-account withdraw added the stake-pool CLI&lt;/a&gt; by &lt;a href=&#34;https://github.com/ysavchenko&#34;&gt;@ysavchenko&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;zcashhttpszcash&#34;&gt;&lt;a href=&#34;https://z.cash/&#34;&gt;Zcash&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;104 merged PRs (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/halo2/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;), 42 closed issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;),
+38 open issues (&lt;a href=&#34;https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aopen+created%3A2020-12-01..2020-12-31&#34;&gt;3&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;News: &lt;a href=&#34;https://electriccoin.co/blog/ecc-transparency-report-for-q2-2020/&#34;&gt;ECC Transparency Report for Q2 2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;https://electriccoin.co/blog/fuzzing-zcash-with-kubernetes/&#34;&gt;Fuzzing Zcash with Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/zcash/halo2/pull/84&#34;&gt;Replace Tweedle curves with Pasta curves&lt;/a&gt; by &lt;a href=&#34;https://github.com/ebfull&#34;&gt;@ebfull&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/zcash/halo2/pull/70&#34;&gt;Extract permutation argument and introduce typed challenges&lt;/a&gt; by &lt;a href=&#34;https://github.com/str4d&#34;&gt;@str4d&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/ZcashFoundation/zebra/pull/1386&#34;&gt;Implement Bitcoin Merkle trees&lt;/a&gt; by &lt;a href=&#34;https://github.com/hdevalence&#34;&gt;@hdevalence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;events&#34;&gt;Events&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;panic!()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;h2 id=&#34;careers&#34;&gt;Careers&lt;/h2&gt;
+&lt;p&gt;Aleo | San Francisco, CA; Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1Q-5y9V6QmBBLSNiHRrYRCvNKuxFLy6EnHe4DKPESMX4/edit?usp=sharing&#34;&gt;Rust Developer - Programming Languages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DFINITY | San Francisco, CA; Palo Alto, CA; Zurich, Switzerland; Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://grnh.se/1f702d2e2us&#34;&gt;Software Engineer, Distributed Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grnh.se/b8daa0ed2us&#34;&gt;Software Engineer, Front-End&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grnh.se/92e1344b2us&#34;&gt;Software Engineer, SDK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Chainflip | Berlin, Germany&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cryptojobslist.com/jobs/rust-c-developer-at-chainflip-berlin&#34;&gt;Rust/C++ Developer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Massa | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://massa.network/#jobs&#34;&gt;Full remote Rust developer, long-term contract (French CDI)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More jobs can be found at &lt;a href=&#34;https://rustinblockchain.org/job-board/&#34;&gt;Job Board&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Want to be included in the next issue? Feel free to submit a PR to the
+&lt;a href=&#34;https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft&#34;&gt;#20 draft&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Join the discussion on &lt;a href=&#34;https://t.me/rustinblockchain&#34;&gt;RiB telegram group&lt;/a&gt;&lt;/strong&gt; &lt;strong&gt;❤️&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>RiB Newsletter #18 – On to the Ribbles</title>
@@ -5236,6 +5600,10 @@ Please refrain from marketing spam.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.crypto-careers.com/jobs/39500671-rust-engineer-at-compound&#34;&gt;Rust Engineer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Diem | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.diem.com/en-us/job-board/?gh_jid=4465800002&#34;&gt;Developer Advocate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Dock | Remote&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.cryptojobsdaily.com/job/dock-blockchain-developer-rust-devops/&#34;&gt;Rust &amp;amp; DevOps&lt;/a&gt;&lt;/li&gt;
@@ -5263,9 +5631,9 @@ Please refrain from marketing spam.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/39031c44-2060-467d-8991-79f23deacbb8&#34;&gt;Backend Engineer - Crypto/Payments&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://jobs.lever.co/kraken/246f7fd2-000a-4f61-8f53-b1cc783d51cb&#34;&gt;Backend Engineer, Data Processing – Rust&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Libra | San Francisco, CA or Geneva, Switzerland&lt;/p&gt;
+&lt;p&gt;Massa | Remote&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://libra.org/en-US/job-board/?gh_jid=4465800002&#34;&gt;Developer Advocate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://massa.network/#jobs&#34;&gt;Full remote Rust developer, long-term contract (French CDI)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Moonbeam | Boston, MA USA; Madrid, Spain; Remote&lt;/p&gt;
 &lt;ul&gt;
@@ -5308,6 +5676,41 @@ Please refrain from marketing spam.&lt;/p&gt;
 &lt;p&gt;Zama | Paris, Partial remote authorized&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.welcometothejungle.com/en/companies/zama/jobs/senior-engineer-rust_paris&#34;&gt;Senior Engineer - Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RiB Community Fund</title>
+      <link>https://rustinblockchain.org/community-fund/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/community-fund/</guid>
+      <description>&lt;p&gt;RiB doesn&amp;rsquo;t make much money.&lt;/p&gt;
+&lt;p&gt;But it does bring in some &lt;a href=&#34;#donating&#34;&gt;donations&lt;/a&gt;,
+and may receive &lt;a href=&#34;./sponsoring&#34;&gt;paid sponsorships&lt;/a&gt; in the future.&lt;/p&gt;
+&lt;p&gt;100% of donations, and a portion of sponsorships,
+go to the RiB community fund,
+which is dedicated for uses that directly
+contribute back to the Rust blockchain community.&lt;/p&gt;
+&lt;p&gt;Examples of how the fund might be used include&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Event catering or other event expenses&lt;/li&gt;
+&lt;li&gt;Funding code bounties&lt;/li&gt;
+&lt;li&gt;Soliciting outside editorial content to RiB&lt;/li&gt;
+&lt;li&gt;Rewarding RiB contributors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As of yet the fund has not been used for any purpose
+(it hasn&amp;rsquo;t made much money yet),
+but when it is we&amp;rsquo;ll be sure to note how here.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;donating-to-rib&#34;&gt;Donating to RiB&lt;/h2&gt;
+&lt;p&gt;Contribute to the RiB community fund by sending
+the appropriate currency to these addresses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BTC: bc1qrl00ya0p0fg2s27lmws908cfmzapa4fa2uyk8n&lt;/li&gt;
+&lt;li&gt;ETH: 0xE35D48926663dc02B7b4226d6AC044D4c6a30410&lt;/li&gt;
+&lt;li&gt;CKB: ckb1qyqf7j4282wh0rhzcdjsnzuqas6tjgar2yjq8mtfd2&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -5428,6 +5831,80 @@ This thread is my attempt to explain the value proposition of crypto assets (“
 &lt;li&gt;&lt;a href=&#34;https://medium.com/@kevinmobrien1/instead-of-solving-the-blockchain-trilemma-focus-on-building-a-vibrant-cryptoeconomy-7064acb41a26&#34;&gt;Instead Of Solving The ‘Blockchain Trilemma’, Focus On Building A Vibrant Cryptoeconomy&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://luttig.substack.com/p/when-tailwinds-vanish&#34;&gt;When Tailwinds Vanish&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sponsoring RiB</title>
+      <link>https://rustinblockchain.org/sponsoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rustinblockchain.org/sponsoring/</guid>
+      <description>&lt;p&gt;RiB ocassionally accepts sponsorship from relevant companies and organizations
+in exchange for advertisement placement
+on the website, and/or prominent acknowledgement in the monthly newsletter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;50% of all such funds received go to the &lt;a href=&#34;./community-fund&#34;&gt;RiB community fund&lt;/a&gt;
+and the other 50% to the editors.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rustinblockchain.org&#34;&gt;Rust in Blockchain&lt;/a&gt; is a developer community
+that focuses on Rust engineering and adoption in the blockchain industry.
+The &lt;a href=&#34;./newsletters&#34;&gt;RiB Newsletter&lt;/a&gt; is a monthly newsletter that publishes on
+the first Wednesday of each month (Pacific time).&lt;/p&gt;
+&lt;p&gt;By sponsoring RiB, your message will reach the niche (but important!) community
+of Rust blockchain experts. Your information will be shown to all our readers
+via our website, email and RSS subscriptions, as well as RiB&amp;rsquo;s social media.&lt;/p&gt;
+&lt;h2 id=&#34;rib-traffic-numbers&#34;&gt;RiB Traffic Numbers&lt;/h2&gt;
+&lt;p&gt;The average monthly numbers as of December 2020 are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;49,220&lt;/strong&gt; impressions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;5,000&lt;/strong&gt; unique visitors&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;654&lt;/strong&gt; email subscribers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;packages&#34;&gt;Packages&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;Partner&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Growth&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Supporter&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;$8,000&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$3,000&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;$1,600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;3&lt;/strong&gt; months site banner &lt;strong&gt;&lt;em&gt;AND&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; month site banner &lt;strong&gt;&lt;em&gt;AND&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; month site banner &lt;strong&gt;&lt;em&gt;OR&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;3&lt;/strong&gt; newsletter mention&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; newsletter mention&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; newsletter mention&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Ads on the website are placed at the top of the sidebar,
+before all other sidebar content, and should be 300x250 pixels.
+The ad links to the URL of your choice.
+Note that on mobile, the ad will appear after the page content.&lt;/p&gt;
+&lt;p&gt;Sponsorships in the RiB Newsletter are textual.
+They are prominently displayed as a thanks from our sponsor,
+including the word &amp;ldquo;sponsor&amp;rdquo;, along with a mutually
+agreed upon description of the sponsor (3 sentences maximum),
+which may include inline links.
+It will be positioned after the introduction but before all other sections.&lt;/p&gt;
+&lt;p&gt;All sponsors are additionally thanked via our social media channels,
+including Twitter and Telegram.&lt;/p&gt;
+&lt;p&gt;All sponsors additionally have their logo listed at the bottom of &lt;em&gt;this&lt;/em&gt; page,
+linking to their website, forever.&lt;/p&gt;
+&lt;p&gt;We run only a single website ad and newsletter sponsor at a time.&lt;/p&gt;
+&lt;h2 id=&#34;contacts&#34;&gt;Contacts&lt;/h2&gt;
+&lt;p&gt;For inquiries please send us an email: &lt;a href=&#34;mailto:hi@rib.rs&#34;&gt;hi@rib.rs&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;previous-sponsors&#34;&gt;Previous Sponsors&lt;/h2&gt;
+&lt;p&gt;None yet! But your logo will be shown here.&lt;/p&gt;
 </description>
     </item>
     
