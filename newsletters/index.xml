@@ -55,7 +55,7 @@ and Substrate&amp;rsquo;s &lt;a href=&#34;https://github.com/paritytech/ink&#34;
 &lt;p&gt;Those that support Rust compiled to other VMs, like &lt;a href=&#34;https://github.com/nervosnetwork&#34;&gt;Nervos&lt;/a&gt; (RISC-V),
 and &lt;a href=&#34;https://github.com/solana-labs&#34;&gt;Solana&lt;/a&gt; (eBPF).&lt;/p&gt;
 &lt;p&gt;Nervos contracts are programmed in Rust with their &lt;a href=&#34;https://github.com/nervosnetwork/capsule&#34;&gt;Capsule&lt;/a&gt; library. Besides
-being the only blockchain running a RISC-V, Nervos is also a rare
+being the only blockchain running RISC-V, Nervos is also a rare
 smart-contract capable blockchain using the UTXO model instead of the account
 model.&lt;/p&gt;
 &lt;p&gt;Solana runs an especially eccentric VM: &lt;a href=&#34;https://ebpf.io/&#34;&gt;eBPF&lt;/a&gt;. Originally designed as a
@@ -73,7 +73,7 @@ interesting.&lt;/p&gt;
 Solidity to WASM compiler), &lt;a href=&#34;https://github.com/AleoHQ/leo&#34;&gt;Leo&lt;/a&gt; (a zero-knowledge language), and &lt;a href=&#34;https://github.com/diem/diem/tree/master/language&#34;&gt;Move&lt;/a&gt;
 (Diem&amp;rsquo;s language).&lt;/p&gt;
 &lt;p&gt;Although many chains are moving toward general-purpose VMs, particularly to
-WASM, there are reasons not to, the main two beings: wanting Ethereum
+WASM, there are reasons not to, the main two being: wanting Ethereum
 EVM compatibility, and being based on zero-knowledge proofs. Move is
 a relatively rare case in that it is both its own language, and
 its own VM, but does not share the obvious reason to have a custom VM
