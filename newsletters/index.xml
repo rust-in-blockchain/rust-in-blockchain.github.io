@@ -25,7 +25,7 @@ Not a lot of GitHub activity,
 not a lot of technical blog posts to report.&lt;/p&gt;
 &lt;p&gt;But, in a seemingly monthly tradition,
 a Rust blockchain launched a mainnet:
-this time its &lt;a href=&#34;https://mobilecoinfoundation.medium.com/mobilecoin-main-net-8e355d82c726&#34;&gt;MobileCoin&lt;/a&gt;,
+this time it&amp;rsquo;s &lt;a href=&#34;https://mobilecoinfoundation.medium.com/mobilecoin-main-net-8e355d82c726&#34;&gt;MobileCoin&lt;/a&gt;,
 a fast and private payment network,
 that uses a combination of &lt;a href=&#34;https://cryptonote.org/whitepaper.pdf&#34;&gt;CryptoNote&lt;/a&gt;,
 &lt;a href=&#34;https://eprint.iacr.org/2015/1098&#34;&gt;RingCT&lt;/a&gt;, and the &lt;a href=&#34;https://www.stellar.org/papers/stellar-consensus-protocol&#34;&gt;Stellar Consensus Protocol&lt;/a&gt;,
