@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RiB Newsletter #20 - Old fashioned chill - Rust in Blockchain ❤ rib.rs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="#20 - January 2021">
+	<meta property="og:title" content="RiB Newsletter #20 - Old fashioned chill" />
+<meta property="og:description" content="#20 - January 2021" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rustinblockchain.org/newsletters/old-fashioned-chill/" />
+<meta property="article:published_time" content="2021-02-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-03T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RiB Newsletter #20 - Old fashioned chill"/>
+<meta name="twitter:description" content="#20 - January 2021"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/custom.css">
+	<link rel="shortcut icon" href="../../favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-140591727-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="../../" title="Rust in Blockchain ❤ rib.rs" rel="home">
+				<div class="logo__title">Rust in Blockchain ❤ rib.rs</div>
+				<div class="logo__tagline">Bringing engineering insight and experience to blockchain technology.</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../newsletters">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Newsletters</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../blogposts">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Blog Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../awesome-blockchain-rust">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Awesome RiB</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../job-board">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Job Board</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../learning">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Learning</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../contributing">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Contributing</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../sponsoring">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Sponsoring</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../about">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">About Us</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../index.xml">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">RiB Newsletter #20 - Old fashioned chill</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2021-02-03T00:00:00Z">February 03, 2021</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="../../categories/newsletters/" rel="category">newsletters</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>Welcome to the #20 edition of Rust in Blockchain,
+the chillest newsletter about the chillest tech.
+<a href="../../newsletters/rust-and-smart-contracts/">Previous: #19</a>.</p>
+<p>Within the blockchain industry and without,
+the rate of Rust job postings appears to be on a steady rise,
+and every month we come across interesting new Rust gigs.
+New public job postings are listed
+in the &ldquo;Careers&rdquo; section in this newsletter,
+while previously-open listings are on the website <a href="https://rustinblockchain.org/job-board/">job board</a>.
+It&rsquo;s a good time to be a skilled Rust programmer,
+especially for those of us into blockchain tech.</p>
+<p>For those wanting to stay the most up to date with what&rsquo;s going on,
+the pace of the RiB <a href="https://t.me/rustinblockchain">Telegram group</a> has been picking up lately,
+and the announcements and discussions there are more detailed
+than the brief one-liners in the newsletter.</p>
+<p>Representatives from Rust blockchain projects will often hop in and link to
+developer tools, events, and jobs.
+While we usually include these links in the newsletter,
+we also generally strip out the details and nuance of the message.</p>
+<p>This month we talked a lot about Rust smart contract platforms,
+including the possibility of creating a single Rust library that abstracts
+over multiple blockchain runtimes.</p>
+<p>Still, it is a low-volume group that only permits developer-relevant content —
+typical blockchain marketing spam is moderated away.</p>
+<p>On that note, we welcome Ilya as our new administrator.
+Ilya&rsquo;s vigilance is one of the reasons there&rsquo;s so little spam in the group.</p>
+<p> </p>
+<h2 id="thanks">Thanks</h2>
+<p>Thanks to contributors:
+<a href="https://github.com/adamisrusty">Adam Gutierrez</a>,
+<a href="https://github.com/apruden2008">apruden2008</a>,
+<a href="https://github.com/ernestkissiedu">Ernest Kissiedu</a>,
+<a href="https://github.com/leoyvens">Leonardo Yvens</a>,
+<a href="https://github.com/paul-schaaf">Paul</a>,
+<a href="https://github.com/brson">Brian Anderson</a>, and <a href="https://github.com/Aimeedeer">Aimee Zhu</a>.
+Thank you for your help!</p>
+<p>RiB needs help to keep up with Rust blockchain projects.
+If you follow a particular project, or otherwise find information
+that is beneficial to the Rust &amp; blockchain community,
+please contribute to the next issue
+by submitting a PR to the <a href="https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft">#21 draft</a>.</p>
+<p> </p>
+<h2 id="project-spotlight">Project Spotlight</h2>
+<p>Each month we like to shine a light on a notable Rust blockchain project. This month that project is…</p>
+<p><a href="https://github.com/flashbots/mev-inspect-rs">mev-inspect</a></p>
+<p>This is a tool for analyzing historical miner extractable value (MEV) on Ethereum.
+&ldquo;Miner extractable value&rdquo; refers to value that can be earned by miners directly from transactions,
+through e.g. mempool frontrunning,
+as opposed to traditional miner rewards.
+It was defined and analyzed in the <a href="https://pdaian.com/flashboys2.pdf">Flashboys 2.0 paper</a>,
+which claims that the phenomenon poses near-term system risk to Ethereum&rsquo;s
+security by skewing the economic incentives of miners in unanticipated ways.
+<code>mev-inspect</code> then is a tool designed to illuminate how bots
+today are competing with each other to squeeze value out of Ethereum transactions.</p>
+<p>It can introspect transactions with common DeFi applications,
+including Uniswap, Aave, and Curve,
+to find instances of arbitrage, liquidations, and other front-runnable activites.</p>
+<p>It is described further in <a href="https://ethresear.ch/t/flashbots-frontrunning-the-mev-crisis/8251">a post on the Ethereum research forum</a>.</p>
+<p><code>mev-inspect</code> communicates with Ethereum nodes via the <a href="https://github.com/gakonst/ethers-rs">ethers crate</a>.</p>
+<p> </p>
+<h2 id="interesting-things">Interesting Things</h2>
+<h4 id="news">News</h4>
+<ul>
+<li>Dfinity: <a href="https://medium.com/dfinity/announcing-internet-computer-mainnet-and-a-20-year-roadmap-790e56cbe04a">Announcing the Internet Computer “Mainnet” and a 20-Year Roadmap</a></li>
+</ul>
+<h4 id="blog-posts">Blog Posts</h4>
+<ul>
+<li><a href="https://solongwallet.medium.com/solana-development-tutorial-things-you-should-know-before-structuring-your-code-807f0e2ee43">Solana Development Tutorial: Things you should know before structuring your code</a></li>
+<li><a href="https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/">Programming on Solana - An Introduction</a></li>
+<li><a href="https://medium.com/dfinity/candid-a-tool-for-interoperable-programming-languages-on-the-internet-computer-27e7085cd97f">Candid: A Common Language for Application Interfaces on the Internet Computer</a>.
+Source code: <a href="https://github.com/dfinity/candid">Candid</a>.</li>
+<li><a href="https://brson.github.io/2021/01/30/dfinity-impressions">First impressions of programming on DFINITY</a></li>
+<li><a href="https://vitalik.ca/general/2021/01/26/snarks.html">An approximate introduction to how zk-SNARKs are possible</a>.
+A typically good post from Vitalik that helps illuminate a difficult subject</li>
+</ul>
+<h4 id="papers">Papers</h4>
+<ul>
+<li><a href="https://eprint.iacr.org/2021/038">Streaming Merkle Proofs within Binary Numeral Trees</a></li>
+<li><a href="https://eprint.iacr.org/2021/086">On Elapsed Time Consensus Protocols</a></li>
+<li><a href="https://eprint.iacr.org/2021/100">SPURT: Scalable Distributed Randomness Beacon with Transparent Setup</a></li>
+<li><a href="https://eprint.iacr.org/2021/047">Evolution of Bulletin Board &amp; its application to E-Voting – A Survey</a></li>
+<li><a href="https://deepai.org/publication/the-eye-of-horus-spotting-and-analyzing-attacks-on-ethereum-smart-contracts">The Eye of Horus: Spotting and Analyzing Attacks on Ethereum Smart Contracts</a></li>
+<li><a href="https://github.com/harmony-one/horizon/blob/main/horizon-whitepaper.pdf">Horizon: A Gas-Efficient, Trustless Bridge for Cross-Chain Transactions</a></li>
+<li><a href="https://paperswithcode.com/paper/byzantine-generals-in-the-permissionless">Byzantine Generals in the Permissionless Setting</a></li>
+<li><a href="https://arxiv.org/abs/2101.08778">SoK: Decentralized Finance (DeFi)</a></li>
+</ul>
+<h4 id="projects">Projects</h4>
+<ul>
+<li><a href="https://github.com/project-serum/anchor">Anchor</a>, a Rust eDSL for writing Solana programs</li>
+<li><a href="https://concordium.com">Concordium</a>
+<ul>
+<li>This is an enterprise blockchain that <a href="https://github.com/Concordium/concordium-rust-smart-contracts">runs Rust smart contracts</a> on wasm</li>
+<li><a href="https://medium.com/concordium/concordium-releases-testnet-4-b5c0f2895b3b">Concordium releases Testnet 4</a></li>
+<li>They are <a href="https://medium.com/concordium/announcing-concordium-testnet-4-incentives-3b2d72fcee68">looking for people to test</a> their smart contracts and network ahead of the mainnet launch in Q2</li>
+</ul>
+</li>
+<li><a href="https://github.com/spruceid/didkit">DIDKit</a> provides Verifiable Credential and Decentralized Identifier functionality across different platforms</li>
+<li><a href="https://github.com/Mirror-Protocol/mirror-contracts">Mirror Core Contracts</a>.
+A DeFi smart contract that implements Mirror Protocol on the Terra blockchain, written in Rust</li>
+</ul>
+<p> </p>
+<h2 id="most-active-in-january">Most Active in January</h2>
+<p><a href="https://github.com/paritytech">Parity</a>:
+301 merged PRs (<a href="https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/paritytech/cargo-contract/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/paritytech/wasmi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">4</a>, <a href="https://github.com/paritytech/cumulus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">5</a>, <a href="https://github.com/paritytech/ink/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">6</a>), 96 closed issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/paritytech/wasmi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">4</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">5</a>),
+76 open issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">4</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">5</a>)</p>
+<p><a href="https://github.com/solana-labs/solana">Solana</a>:
+357 merged PRs (<a href="https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>), 48 closed issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>),
+47 open issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>)</p>
+<p><a href="https://www.diem.com">Diem</a>:
+177 merged PRs (<a href="https://github.com/diem/diem/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>), 7 closed issues (<a href="https://github.com/diem/diem/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/diem/bcs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>),
+15 open issues (<a href="https://github.com/diem/diem/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<p> </p>
+<h2 id="project-updates">Project Updates</h2>
+<h4 id="aleohttpsgithubcomaleohq"><a href="https://github.com/AleoHQ">Aleo</a></h4>
+<p>60 merged PRs (<a href="https://github.com/AleoHQ/aleo/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/AleoHQ/snarkOS/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/AleoHQ/leo/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>), 42 closed issues (<a href="https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>),
+22 open issues (<a href="https://github.com/AleoHQ/aleo/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">3</a>)</p>
+<ul>
+<li>Blog: <a href="https://aleo.org/post/what-does-transparency-cost-you">The Cost of Transparency in Public Blockchain Networks</a></li>
+<li>PR: <a href="https://github.com/AleoHQ/leo/pull/594">Add ASG Base Implementation for Leo Compiler</a> by <a href="https://github.com/collinc97">@collinc97</a> and <a href="https://github.com/Protryon">@protryon</a></li>
+<li>PR: <a href="https://github.com/AleoHQ/leo/pull/597">Rebase Leo Compiler to use ASG vs AST</a> by <a href="https://github.com/collinc97">@collinc97</a></li>
+<li>PR: <a href="https://github.com/AleoHQ/aleo/pull/16">Implements Aleo account generation &amp; derivation methods in WASM</a> by <a href="https://github.com/howardwu">@howardwu</a></li>
+</ul>
+<h4 id="rust-bitcoinhttpsgithubcomrust-bitcoinrust-bitcoin"><a href="https://github.com/rust-bitcoin/rust-bitcoin">Rust Bitcoin</a></h4>
+<p>41 merged PRs (<a href="https://github.com/rust-bitcoin/rust-bitcoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/rust-bitcoin/rust-lightning/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">4</a>), 15 closed issues (<a href="https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/rust-bitcoin/rust-lightning/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">4</a>),
+10 open issues (<a href="https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/rust-bitcoin/rust-lightning/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">3</a>)</p>
+<ul>
+<li>PR: <a href="https://github.com/rust-bitcoin/rust-lightning/pull/742">Introduce CommitmentTransactionInfo</a> by <a href="https://github.com/devrandom">@devrandom</a></li>
+<li>PR: <a href="https://github.com/rust-bitcoin/rust-lightning/pull/772">Add GLOSSARY.md and more</a> by <a href="https://github.com/ariard">@ariard</a></li>
+</ul>
+<h4 id="comithttpsgithubcomcomit-network"><a href="https://github.com/comit-network">COMIT</a></h4>
+<p>55 merged PRs (<a href="https://github.com/comit-network/comit-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/comit-network/xmr-btc-swap/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/comit-network/blockchain-contracts/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>), 3 closed issues (<a href="https://github.com/comit-network/xmr-btc-swap/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>),
+12 open issues (<a href="https://github.com/comit-network/xmr-btc-swap/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<ul>
+<li>PR: <a href="https://github.com/comit-network/xmr-btc-swap/pull/147">Refactor prod code after test refactoring</a> by <a href="https://github.com/da-kami">@da-kami</a></li>
+<li>PR: <a href="https://github.com/comit-network/xmr-btc-swap/pull/159">Introduce &ldquo;one shots&rdquo;</a> by <a href="https://github.com/D4nte">@D4nte</a></li>
+<li>PR: <a href="https://github.com/comit-network/xmr-btc-swap/pull/138">Add sequence diagram</a> by <a href="https://github.com/D4nte">@D4nte</a></li>
+</ul>
+<h4 id="fluencehttpsgithubcomfluencelabs"><a href="https://github.com/fluencelabs">Fluence</a></h4>
+<p>17 merged PRs (<a href="https://github.com/fluencelabs/fluence/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/fluencelabs/fce/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/fluencelabs/aquamarine/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>),
+0 closed issues, 0 open issues</p>
+<ul>
+<li>PR: <a href="https://github.com/fluencelabs/fluence/pull/1017">Introduce ConnectionPool &amp; localize libp2p</a> by <a href="https://github.com/folex">@folex</a></li>
+<li>PR: <a href="https://github.com/fluencelabs/aquamarine/pull/55">Refactoring and housekeeping</a> by <a href="https://github.com/michaelvoronov">@michaelvoronov</a></li>
+</ul>
+<h4 id="holochainhttpsgithubcomholochain"><a href="https://github.com/holochain/">Holochain</a></h4>
+<p>36 merged PRs (<a href="https://github.com/holochain/holochain/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/holochain/elemental-chat/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/holochain/holochain-wasmer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>), 3 closed issues (<a href="https://github.com/holochain/holochain/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>),
+7 open issues (<a href="https://github.com/holochain/holochain/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<ul>
+<li>News: Holochain Dev Pulse:
+<ul>
+<li><a href="https://blog.holochain.org/testing-testing-testing-and-some-goodies-for-developers/">89: Testing, Testing, Testing (and some goodies for developers)</a></li>
+<li><a href="https://blog.holochain.org/new-year-new-energy/">88: New Year, New Energy</a></li>
+</ul>
+</li>
+<li>PR: <a href="https://github.com/holochain/holochain/pull/582">Add RegisterDna to conductor api and allow InstallApp to take a hash</a> by <a href="https://github.com/zippy">@zippy</a></li>
+<li>PR: <a href="https://github.com/holochain/elemental-chat/pull/41">Convert signal test to show  failure point while scaling</a> by <a href="https://github.com/zippy">@zippy</a></li>
+</ul>
+<h4 id="diemhttpswwwdiemcom"><a href="https://www.diem.com">Diem</a></h4>
+<p>177 merged PRs (<a href="https://github.com/diem/diem/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>), 7 closed issues (<a href="https://github.com/diem/diem/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/diem/bcs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>),
+15 open issues (<a href="https://github.com/diem/diem/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<ul>
+<li>PR: <a href="https://github.com/diem/diem/pull/7234">[vm] avoid cyclic dependencies that may be introduced by module republishing</a> by <a href="https://github.com/mengxu-fb">@mengxu-fb</a></li>
+<li>PR: <a href="https://github.com/diem/diem/pull/7337">[network] Merge PeerPubkeys and PeerAddresses</a> by <a href="https://github.com/gregnazario">@gregnazario</a></li>
+<li>PR: <a href="https://github.com/diem/diem/pull/7189">[transaction-replay] Implement a few commands for txn-replay tool</a> by <a href="https://github.com/runtian-zhou">@runtian-zhou</a></li>
+</ul>
+<h4 id="lighthousehttpslighthousesigmaprimeio"><a href="https://lighthouse.sigmaprime.io/">Lighthouse</a></h4>
+<p>2 merged PRs (<a href="https://github.com/sigp/beacon-fuzz/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/sigp/discv5/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>), 28 closed issues (<a href="https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>),
+4 open issues (<a href="https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<ul>
+<li>News: <a href="https://lighthouse.sigmaprime.io/update-33.html">Lighthouse Update #33</a></li>
+<li>PR: <a href="https://github.com/sigp/beacon-fuzz/pull/96">lodestar.Dockerfile: upgrade LODESTAR_VERSION and DISCV5_VERSION to latest versions</a> by <a href="https://github.com/3xtr4t3rr3str14l">@3xtr4t3rr3str14l</a></li>
+<li>PR: <a href="https://github.com/sigp/discv5/pull/57">Upgrade to tokio 1.0</a> by <a href="https://github.com/pawanjay176">@pawanjay176</a></li>
+</ul>
+<h4 id="mobilecoinhttpswwwmobilecoincom"><a href="https://www.mobilecoin.com/">MobileCoin</a></h4>
+<p>22 merged PRs (<a href="https://github.com/mobilecoinfoundation/mobilecoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>), 2 closed issues (<a href="https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>),
+2 open issues (<a href="https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<ul>
+<li>PR: <a href="https://github.com/mobilecoinfoundation/mobilecoin/pull/581">MCC-710 Final changes regarded FullyValidatedFogPubkey and TransactionBuilder</a> by <a href="https://github.com/garbageslam">@garbageslam</a></li>
+<li>PR: <a href="https://github.com/mobilecoinfoundation/mobilecoin/pull/684">FOG-179 x509 Utilities</a> by <a href="https://github.com/jcape">@jcape</a></li>
+<li>PR: <a href="https://github.com/mobilecoinfoundation/mobilecoin/pull/680">Add GetMixins to mobilecoind API</a> by <a href="https://github.com/mfaulk">@mfaulk</a></li>
+</ul>
+<h4 id="nearhttpsgithubcomnearprotocolnearcore"><a href="https://github.com/nearprotocol/nearcore">NEAR</a></h4>
+<p>37 merged PRs (<a href="https://github.com/near/nearcore/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/near/borsh/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/near/near-sdk-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>), 19 closed issues (<a href="https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/near/near-sdk-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>),
+44 open issues (<a href="https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/near/core-contracts/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/near/near-sdk-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">3</a>)</p>
+<ul>
+<li>News: <a href="https://near.org/blog/dragonfly-capital/">Dragonfly Capital Joins NEAR Validator Advisory Board</a></li>
+<li>Learn: <a href="https://figment.io/resources/build-apps-and-earn-near-with-the-near-learn-pathway/">Build Apps and Earn NEAR with the NEAR Learn Pathway</a></li>
+<li>Videos: NEAR Live Contract Review
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Hy4VBSCqnsE">Episode 11: Low-level no_std</a></li>
+<li><a href="https://www.youtube.com/watch?v=ptmFN41igks">Episode 10: Rainbow Bridge</a></li>
+<li><a href="https://www.youtube.com/watch?v=TkFYBEOk9pI">Episode 9: BananaSwap</a></li>
+</ul>
+</li>
+<li>Videos: NEAR Core
+<ul>
+<li><a href="https://www.youtube.com/watch?v=jmdxdO0gifY">Episode 05: NEAR Network Routing</a></li>
+<li><a href="https://www.youtube.com/watch?v=r6gyuUYo2tw">Episode 04: Network P2P Connection</a></li>
+<li><a href="https://www.youtube.com/watch?v=JCkSNL4ie1U">Episode 03: Runtime State</a></li>
+<li><a href="https://www.youtube.com/watch?v=RBb3rJGtqOE">Episode 02: Runtime Action and Data Receipts</a></li>
+<li><a href="https://www.youtube.com/watch?v=Xi_8PapFCjo">Episode 01: Runtime Overview</a></li>
+</ul>
+</li>
+<li>PR: <a href="https://github.com/near/nearcore/pull/3775">[WIP] Evm phase2</a> by <a href="https://github.com/evgenykuzyakov">@evgenykuzyakov</a></li>
+<li>PR: <a href="https://github.com/near/nearcore/pull/3804">Adding block_ordinal to BlockHeaderInnerRest</a> by <a href="https://github.com/Kouprin">@Kouprin</a></li>
+<li>PR: <a href="https://github.com/near/nearcore/pull/3773">feat(evm): Raw Ethereum transaction relay support</a> by <a href="https://github.com/ilblackdragon">@ilblackdragon</a></li>
+</ul>
+<h4 id="nervoshttpsgithubcomnervosnetwork"><a href="https://github.com/nervosnetwork">Nervos</a></h4>
+<p>46 merged PRs (<a href="https://github.com/nervosnetwork/ckb/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/nervosnetwork/ckb-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/nervosnetwork/capsule/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>), 8 closed issues (<a href="https://github.com/nervosnetwork/ckb/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>),
+1 open issues (<a href="https://github.com/nervosnetwork/capsule/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<ul>
+<li>Blog:
+<ul>
+<li><a href="https://medium.com/nervosnetwork/nervos-2020-a-year-in-review-3d560ed93880">Nervos 2020: A Year in Review</a></li>
+<li><a href="https://medium.com/nervosnetwork/towards-ckb-style-lego-pieces-polyjuice-on-godwoken-cbc935d77abf">Towards CKB style Lego pieces: Polyjuice on Godwoken</a></li>
+</ul>
+</li>
+<li>PR: <a href="https://github.com/nervosnetwork/ckb/pull/2542">fix: resolve rocksdb cache size issue when using <code>default.db-options</code></a> by <a href="https://github.com/quake">@quake</a></li>
+<li>PR: <a href="https://github.com/nervosnetwork/ckb/pull/2520">feat: add RPC get_block_median_time</a> by <a href="https://github.com/keroro520">@keroro520</a></li>
+<li>PR: <a href="https://github.com/nervosnetwork/ckb/pull/2505">feat: provide <code>--overwrite-spec</code> to override the chain spec in storage</a> by <a href="https://github.com/keroro520">@keroro520</a></li>
+</ul>
+<h4 id="parityhttpsgithubcomparitytech"><a href="https://github.com/paritytech">Parity</a></h4>
+<p>301 merged PRs (<a href="https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/paritytech/cargo-contract/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/paritytech/wasmi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">4</a>, <a href="https://github.com/paritytech/cumulus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">5</a>, <a href="https://github.com/paritytech/ink/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">6</a>), 96 closed issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/paritytech/wasmi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">4</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">5</a>),
+76 open issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">3</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">4</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">5</a>)</p>
+<ul>
+<li>News: <a href="https://medium.com/polkadot-network/polkadot-js-extension-release-update-3b0d2d87edb8">Polkadot-js Extension Release Update</a></li>
+<li>PR: <a href="https://github.com/paritytech/substrate/pull/7463">Telemetry per node</a> by <a href="https://github.com/cecton">@cecton</a></li>
+<li>PR: <a href="https://github.com/paritytech/substrate/pull/7363">Introduces account existence providers reference counting</a> by <a href="https://github.com/gavofyork">@gavofyork</a></li>
+<li>PR: <a href="https://github.com/paritytech/substrate/pull/7339">Cleaner GRANDPA RPC API for proving finality</a> by <a href="https://github.com/octol">@octol</a></li>
+</ul>
+<h4 id="secret-networkhttpsgithubcomenigmampcsecretnetwork"><a href="https://github.com/enigmampc/SecretNetwork">Secret Network</a></h4>
+<p>8 merged PRs (<a href="https://github.com/enigmampc/SecretNetwork/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>), 1 closed issues (<a href="https://github.com/enigmampc/SecretNetwork/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>),
+1 open issues (<a href="https://github.com/enigmampc/SecretNetwork/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>)</p>
+<ul>
+<li>PR: <a href="https://github.com/enigmampc/SecretNetwork/pull/716">Fix links to quickstart topics</a> by <a href="https://github.com/levackt">@levackt</a></li>
+<li>PR: <a href="https://github.com/enigmampc/SecretNetwork/pull/715">Update quickstart</a> by <a href="https://github.com/levackt">@levackt</a></li>
+</ul>
+<h4 id="solanahttpsgithubcomsolana-labssolana"><a href="https://github.com/solana-labs/solana">Solana</a></h4>
+<p>357 merged PRs (<a href="https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>), 48 closed issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>),
+47 open issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>)</p>
+<ul>
+<li>News: <a href="https://medium.com/solana-labs/announcing-the-solana-foundation-x-serum-defi-hackathon-7e34290f8262">Announcing the Solana Foundation x Serum DeFi Hackathon</a></li>
+<li>Blog: <a href="https://medium.com/solana-labs/year-in-review-2020-c3731d1cc8a">Solana Year in Review 2020</a></li>
+<li>PR: <a href="https://github.com/solana-labs/solana/pull/14596">Clean accounts cache before flush</a> by <a href="https://github.com/carllin">@carllin</a></li>
+<li>PR: <a href="https://github.com/solana-labs/solana/pull/14544">Parallel cache scan</a> by <a href="https://github.com/carllin">@carllin</a></li>
+<li>PR: <a href="https://github.com/solana-labs/solana-program-library/pull/1061">swap: Add rounding correction for deposit / withdraw</a> by <a href="https://github.com/joncinque">@joncinque</a></li>
+</ul>
+<h4 id="zcashhttpszcash"><a href="https://z.cash/">Zcash</a></h4>
+<p>79 merged PRs (<a href="https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/zcash/halo2/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2021-01-01..2021-01-31">3</a>), 41 closed issues (<a href="https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2021-01-01..2021-01-31">3</a>),
+54 open issues (<a href="https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">1</a>, <a href="https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">2</a>, <a href="https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aopen+created%3A2021-01-01..2021-01-31">3</a>)</p>
+<ul>
+<li>News:
+<ul>
+<li><a href="https://electriccoin.co/blog/announcing-zip-224-bringing-halo-2-to-zcash/">Announcing ZIP 224: Bringing Halo 2 to Zcash</a></li>
+<li><a href="https://www.zcashcommunity.com/2021/01/08/zcash-developers-update-1-8-2021/">Zcash Developers Update 1-8-2021</a></li>
+</ul>
+</li>
+<li>Blog:
+<ul>
+<li><a href="https://electriccoin.co/blog/electric-coin-co-engineering-2020-a-year-in-review/">Electric Coin Co. Engineering: 2020, a year in review</a></li>
+<li><a href="https://electriccoin.co/blog/technical-explainer-halo-on-zcash/">Technical explainer: Halo on Zcash</a></li>
+</ul>
+</li>
+<li>PR: <a href="https://github.com/zcash/librustzcash/pull/307">Data Access API (Low-level wallet persistence API)</a> by <a href="https://github.com/nuttycom">@nuttycom</a></li>
+<li>PR: <a href="https://github.com/zcash/halo2/pull/111">New Transcript API (and modified commitment scheme)</a> by <a href="https://github.com/ebfull">@ebfull</a></li>
+<li>PR: <a href="https://github.com/zcash/halo2/pull/120">Add sqrt_ratio implementation.</a> by <a href="https://github.com/daira">@daira</a></li>
+</ul>
+<p> </p>
+<h2 id="events">Events</h2>
+<p>Feb 1-21 | Online</p>
+<p><a href="https://gitcoin.co/issue/binancex/Grant-projects/17/100024656">Binance Hackathon: The Future Is Now</a></p>
+<p>Feb 6-7 | Online</p>
+<p><a href="https://fosdem.org/2021/">FOSDEM21</a></p>
+<p>Feb 15-Mar 1 | Online</p>
+<p><a href="https://solana.com/defi">Solana Foundation x Serum DeFi Hackathon</a></p>
+<p>May 20 | Online</p>
+<p><a href="https://decoded.polkadot.network/">Polkadot Decoded</a>.
+<a href="https://decoded.polkadot.network/2021submission">Submit your proposal</a> by February 28th.</p>
+<p> </p>
+<h2 id="careers">Careers</h2>
+<p>Aleo | Remote</p>
+<ul>
+<li><a href="https://aleo.org/jobs/community-manager">Community Manager</a></li>
+</ul>
+<p>The Graph | Remote</p>
+<ul>
+<li><a href="https://thegraph.com/jobs/rust-engineer">Rust Engineer at The Graph</a></li>
+</ul>
+<p>Nervos | Remote</p>
+<ul>
+<li>Verious Rust positions. Contact Vicky at <a href="mailto:vicky@cryptape.com">vicky@cryptape.com</a></li>
+</ul>
+<p>Parity | Berlin, Germany</p>
+<ul>
+<li><a href="https://www.parity.io/apply/?gh_jid=4030002003">Runtime Engineer (m/f/d)</a></li>
+</ul>
+<p>Zcash | Remote</p>
+<ul>
+<li><a href="https://www.zfnd.org/blog/open-position-cryptography-engineer/">Open Position: Cryptography Engineer</a></li>
+</ul>
+<p>More jobs can be found at <a href="https://rustinblockchain.org/job-board/">Job Board</a>.</p>
+<p> </p>
+<p>Want to be included in the next issue? Feel free to submit a PR to the
+<a href="https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft">#21 draft</a>.</p>
+<p><strong>Join the discussion on <a href="https://t.me/rustinblockchain">RiB telegram group</a></strong> <strong>❤️</strong></p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../newsletters/rust-and-smart-contracts/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">RiB Newsletter #19 - Rust and smart contracts</p>
+		</a>
+	</div>
+</nav>
+
+
+<section class="comments">
+  <script src="https://utteranc.es/client.js"
+          repo="rust-in-blockchain/rust-in-blockchain"
+          issue-term="url"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+</section>
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<h4 class="widget__title">Subscribe</h4>
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	 
+</style>
+	<div id="mc_embed_signup">
+	<form action="https://rustinblockchain.us20.list-manage.com/subscribe/post?u=1ac6f6cdd5c25b48064506045&amp;id=efe2948d57" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+		<div id="mc_embed_signup_scroll">
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	    
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1ac6f6cdd5c25b48064506045_efe2948d57" tabindex="-1" value=""></div>
+	    <div class="clear">
+				<input class="widget-subscribe-btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+				</div>
+	    </div>
+	</form>
+	</div>
+</div>
+
+<div class="widget-text widget">
+	<h4 class="widget__title">Support us</h4>
+	<div class="widget__content">
+	  <ul class="widget__list">
+	    <li class="widget__item">
+	      <b>BTC:</b> bc1qrl00ya0p0fg2s27lmws908cfmzapa4fa2uyk8n
+	    </li>
+	    <li class="widget__item">
+	      <b>ETH:</b> 0xE35D48926663dc02B7b4226d6AC044D4c6a30410
+	    </li>
+	    <li class="widget__item">
+	      <b>CKB:</b> ckb1qyqf7j4282wh0rhzcdjsnzuqas6tjgar2yjq8mtfd2
+	    </li>
+	  </ul>
+	</div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer"
+				href="https://twitter.com/rust_blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer"
+				href="https://t.me/rustinblockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
+				<span>Telegram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Reddit" rel="noopener noreferrer"
+				href="https://www.reddit.com/r/RustInBlockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-reddit" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"></path></svg>
+
+
+				<span>Reddit</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer"
+				href="https://github.com/rust-in-blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:hi@rib.rs">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>hi@rib.rs</span>
+			</a>
+		</div>
+
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Rust in Blockchain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="../../js/menu.js"></script>
+<script src="../../js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
