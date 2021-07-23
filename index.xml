@@ -7252,6 +7252,7 @@ A library for creating and parsing Bitcoin Cash trasactions&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm&#34;&gt;CKB-VM&lt;/a&gt; &amp;ndash; RISC-V virtual machine;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.cosmwasm.com&#34;&gt;CosmWasm&lt;/a&gt; &amp;ndash; Multi-chain smart contract platform built for the Cosmos ecosystem;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum/tree/master/evmbin&#34;&gt;EVM Parity&lt;/a&gt; &amp;ndash; Parity implementation of EVM;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lunatic-solutions/lunatic&#34;&gt;Lunatic&lt;/a&gt; &amp;ndash; Erlang-inspired runtime for WebAssembly;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/spacemeshos/svm&#34;&gt;SVM&lt;/a&gt; &amp;ndash; Spacemesh Virtual Machine;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/wasmi&#34;&gt;Wasmi&lt;/a&gt; &amp;ndash; WebAssembly interpreter;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://wasmer.io/&#34;&gt;Wasmer&lt;/a&gt; &amp;ndash; a convenient Rust wrapper over WebAssembly backends;&lt;/li&gt;
