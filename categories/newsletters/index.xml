@@ -87,7 +87,7 @@ producer is eligible to produce a block at a specific slot.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/compiler-yul&#34;&gt;YUL compiler&lt;/a&gt;.
 The compiler from YUL intermediate language to zkEVM bytecode.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;video&#34;&gt;Video&lt;/h4&gt;
+&lt;h4 id=&#34;videos&#34;&gt;Videos&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/uSqXIPWr4-4&#34;&gt;Rust Cryptography Interest Group sync up call
 #4&lt;/a&gt;&lt;/li&gt;
