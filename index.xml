@@ -7855,6 +7855,8 @@ chain interactions, and disk storage.&lt;/li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/project-serum/serum-dex&#34;&gt;Serum-dex&lt;/a&gt;.
 A decentralized exchange built on Solana.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/second-state/SewUp&#34;&gt;SewUp&lt;/a&gt;.
+A library to help you build your Ethereum webassembly contract with Rust and just like develop in a common backend.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
 &lt;ul&gt;
