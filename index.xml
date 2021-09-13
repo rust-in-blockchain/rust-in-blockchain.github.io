@@ -7762,86 +7762,162 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;/ul&gt;
 &lt;h2 id=&#34;blockchains&#34;&gt;Blockchains&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/be-cash/bitcoin-cash&#34;&gt;Bitcoin Cash&lt;/a&gt;
-A library for creating and parsing Bitcoin Cash trasactions&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/cryptape/cita&#34;&gt;CITA&lt;/a&gt; A high performance blockchain kernel for enterprise users;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/CodeChain-io/codechain&#34;&gt;CodeChain&lt;/a&gt; Programmable multi-asset chain;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Conflux-Chain/conflux-rust&#34;&gt;Conflux&lt;/a&gt; The Rust implementation of Conflux protocol;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/darwinia-network/darwinia&#34;&gt;Darwinia&lt;/a&gt; Relay chain of Darwinia Network, can connect to Polkadot as parachain in Polkadot Model;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/enigmampc/enigma-core&#34;&gt;Enigma&lt;/a&gt; secures the decentralized web;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://elrond.com/&#34;&gt;Elrond&lt;/a&gt; Elrond (EGOLD( - scalable and usable blockchain, written is Rust and has smart contracts in Rust&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/exonum/exonum&#34;&gt;Exonum&lt;/a&gt; An extensible open-source framework for creating private/permissioned blockchain applications;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ChainSafe/forest&#34;&gt;Forest&lt;/a&gt; An implementation of Filecoin written in Rust;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gear-tech/gear&#34;&gt;Gear&lt;/a&gt; Computational component of Polkadot network;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mimblewimble/grin&#34;&gt;Grin&lt;/a&gt; Minimal implementation of the MimbleWimble protocol;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/holochain/holochain-rust&#34;&gt;Holochain&lt;/a&gt; The core Holochain framework written in rust, a container, and hdk-rust library for writing Zomes;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/HuobiGroup/huobi-chain&#34;&gt;Huobi Chain&lt;/a&gt; The next generation high performance public chain for financial infrastructure.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/interledger-rs/interledger-rs&#34;&gt;Interledger&lt;/a&gt; An easy-to-use, high-performance Interledger implementation written in Rust.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/libra/libra&#34;&gt;Libra&lt;/a&gt; global currency and financial infrastructure that empowers billions of people;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sigp/lighthouse&#34;&gt;Lighthouse&lt;/a&gt; Fast and secure Ethereum 2.0 client;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt; NEAR Protocol - scalable and usable blockchain;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;Nervos CKB&lt;/a&gt; Nervos CKB is a public permissionless blockchain, the common knowledge layer of Nervos network;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/nomic&#34;&gt;Nomic&lt;/a&gt; Nomic is a high-performance Bitcoin sidechain which is part of the Cosmos network.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-bitcoin&#34;&gt;Parity Bitcoin&lt;/a&gt; The Parity Bitcoin client;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum&#34;&gt;Parity Ethereum&lt;/a&gt; The fast, light, and robust EVM and WASM client;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-zcash&#34;&gt;Parity Zcash&lt;/a&gt; Rust implementation of Zcash protocol;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/polkadot&#34;&gt;Polkadot&lt;/a&gt; Polkadot Node Implementation;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/shasper&#34;&gt;Shasper&lt;/a&gt; Parity Shasper beacon chain implementation using the Substrate framework;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt; Blockchain Rebuilt for Scale;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/blockstack/stacks-blockchain&#34;&gt;Stacks 2.0&lt;/a&gt; Proof of Transfer blockchain from Blockstack;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tari-project&#34;&gt;Tari&lt;/a&gt; The Tari Digital Assets Protocol;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/tendermint-rs&#34;&gt;Tendermint&lt;/a&gt; Tendermint is a high-performance blockchain consensus engine for Byzantine fault tolerant applications&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/witnet/witnet-rust&#34;&gt;Witnet&lt;/a&gt; Open source implementation of Witnet decentralized oracle network protocol in Rust;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ZcashFoundation/zebra&#34;&gt;Zebra&lt;/a&gt; An ongoing Rust implementation of a Zcash node.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/LayerXcom/zero-chain&#34;&gt;Zero-chain&lt;/a&gt; A privacy-preserving blockchain on Substrate.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zksync&#34;&gt;zkSync&lt;/a&gt; Matter Labs&amp;rsquo; scaling L2 engine secured by zero-knowledge proofs.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/be-cash/bitcoin-cash&#34;&gt;Bitcoin Cash&lt;/a&gt;.
+A library for creating and parsing Bitcoin Cash trasactions.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cryptape/cita&#34;&gt;CITA&lt;/a&gt;.
+A high performance blockchain kernel for enterprise users.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/CodeChain-io/codechain&#34;&gt;CodeChain&lt;/a&gt;.
+Programmable multi-asset chain.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Conflux-Chain/conflux-rust&#34;&gt;Conflux&lt;/a&gt;.
+The Rust implementation of Conflux protocol.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/darwinia-network/darwinia&#34;&gt;Darwinia&lt;/a&gt;.
+Relay chain of Darwinia Network, can connect to Polkadot as
+parachain in Polkadot Model.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/enigmampc/enigma-core&#34;&gt;Enigma&lt;/a&gt; secures the
+decentralized web.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://elrond.com/&#34;&gt;Elrond&lt;/a&gt;.
+Elrond (EGOLD( - scalable and usable blockchain, written is Rust and
+has smart contracts in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/exonum/exonum&#34;&gt;Exonum&lt;/a&gt;.
+An extensible open-source framework for creating
+private/permissioned blockchain applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ChainSafe/forest&#34;&gt;Forest&lt;/a&gt;.
+An implementation of Filecoin written in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gear-tech/gear&#34;&gt;Gear&lt;/a&gt;.
+Computational component of Polkadot network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mimblewimble/grin&#34;&gt;Grin&lt;/a&gt;.
+Minimal implementation of the MimbleWimble protocol.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/holochain/holochain-rust&#34;&gt;Holochain&lt;/a&gt;.
+The core Holochain framework written in rust, a container, and
+hdk-rust library for writing Zomes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/HuobiGroup/huobi-chain&#34;&gt;Huobi Chain&lt;/a&gt;.
+The next generation high performance public chain for financial
+infrastructure.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/interledger-rs/interledger-rs&#34;&gt;Interledger&lt;/a&gt;.
+An easy-to-use, high-performance Interledger implementation written
+in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/libra/libra&#34;&gt;Libra&lt;/a&gt;.
+Global currency and financial infrastructure that empowers billions
+of people.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sigp/lighthouse&#34;&gt;Lighthouse&lt;/a&gt;.
+Fast and secure Ethereum 2.0 client.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt;.
+NEAR Protocol - scalable and usable blockchain.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;Nervos CKB&lt;/a&gt;.
+Nervos CKB is a public permissionless blockchain, the common
+knowledge layer of Nervos network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/nomic&#34;&gt;Nomic&lt;/a&gt;.
+Nomic is a high-performance Bitcoin sidechain which is part of the
+Cosmos network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-bitcoin&#34;&gt;Parity Bitcoin&lt;/a&gt;.
+The Parity Bitcoin client.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum&#34;&gt;Parity Ethereum&lt;/a&gt;.
+The fast, light, and robust EVM and WASM client.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-zcash&#34;&gt;Parity Zcash&lt;/a&gt;.
+Rust implementation of Zcash protocol.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/polkadot&#34;&gt;Polkadot&lt;/a&gt;.
+Polkadot Node Implementation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/shasper&#34;&gt;Shasper&lt;/a&gt;.
+Parity Shasper beacon chain implementation using the Substrate
+framework.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/solana-labs/solana&#34;&gt;Solana&lt;/a&gt;.
+Blockchain Rebuilt for Scale.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/blockstack/stacks-blockchain&#34;&gt;Stacks 2.0&lt;/a&gt;.
+Proof of Transfer blockchain from Blockstack.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tari-project&#34;&gt;Tari&lt;/a&gt;.
+The Tari Digital Assets Protocol.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/tendermint-rs&#34;&gt;Tendermint&lt;/a&gt;.
+Tendermint is a high-performance blockchain consensus engine for
+Byzantine fault tolerant applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/witnet/witnet-rust&#34;&gt;Witnet&lt;/a&gt;.
+Open source implementation of Witnet decentralized oracle network
+protocol in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ZcashFoundation/zebra&#34;&gt;Zebra&lt;/a&gt;.
+An ongoing Rust implementation of a Zcash node.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LayerXcom/zero-chain&#34;&gt;Zero-chain&lt;/a&gt;.
+A privacy-preserving blockchain on Substrate.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zksync&#34;&gt;zkSync&lt;/a&gt;.
+Matter Labs&amp;rsquo; scaling L2 engine secured by zero-knowledge proofs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;blockchain-frameworks&#34;&gt;Blockchain Frameworks&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/substrate&#34;&gt;Substrate&lt;/a&gt; Substrate: The platform for blockchain innovators;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/stellar/slingshot&#34;&gt;slingshot&lt;/a&gt; A new blockchain architecture under active development, with a strong focus on scalability, privacy and safety.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tendermint/rust-abci&#34;&gt;Tendermint ABCI&lt;/a&gt; Tendermint ABCI server, written in the Rust programming language.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/orga&#34;&gt;Orga&lt;/a&gt; A high-performance state machine engine designed for Tendermint-based blockchain applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/substrate&#34;&gt;Substrate&lt;/a&gt;.
+The platform for blockchain innovators.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stellar/slingshot&#34;&gt;slingshot&lt;/a&gt;.
+A new blockchain architecture under active development, with a
+strong focus on scalability, privacy and safety.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tendermint/rust-abci&#34;&gt;Tendermint ABCI&lt;/a&gt;.
+Tendermint ABCI server, written in the Rust programming language.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/orga&#34;&gt;Orga&lt;/a&gt;.
+A high-performance state machine engine designed for
+Tendermint-based blockchain applications.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cross-chain&#34;&gt;Cross-Chain&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://comit.network/&#34;&gt;Comit&lt;/a&gt; is an open protocol facilitating trustless cross-blockchain applications.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/ibc-rs&#34;&gt;IBC&lt;/a&gt; Rust implementation of the Interblockchain Communication Protocol (IBC).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://comit.network/&#34;&gt;Comit&lt;/a&gt; is an open protocol facilitating
+trustless cross-blockchain applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/ibc-rs&#34;&gt;IBC&lt;/a&gt;.
+Rust implementation of the Interblockchain Communication Protocol
+(IBC).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;virtual-machines&#34;&gt;Virtual Machines&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm&#34;&gt;CKB-VM&lt;/a&gt; &amp;ndash; RISC-V virtual machine;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cosmwasm.com&#34;&gt;CosmWasm&lt;/a&gt; &amp;ndash; Multi-chain smart contract platform built for the Cosmos ecosystem;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum/tree/master/evmbin&#34;&gt;EVM Parity&lt;/a&gt; &amp;ndash; Parity implementation of EVM;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/lunatic-solutions/lunatic&#34;&gt;Lunatic&lt;/a&gt; &amp;ndash; Erlang-inspired runtime for WebAssembly;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spacemeshos/svm&#34;&gt;SVM&lt;/a&gt; &amp;ndash; Spacemesh Virtual Machine;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/wasmi&#34;&gt;Wasmi&lt;/a&gt; &amp;ndash; WebAssembly interpreter;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://wasmer.io/&#34;&gt;Wasmer&lt;/a&gt; &amp;ndash; a convenient Rust wrapper over WebAssembly backends;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/CraneStation/wasmtime&#34;&gt;Wasmtime &amp;amp; Lightbeam&lt;/a&gt; &amp;ndash; Wasmtime &amp;ndash; JIT runtime, Lightbeam &amp;ndash; single-pass compiler for WebAssembly.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb-vm&#34;&gt;CKB-VM&lt;/a&gt;.
+RISC-V virtual machine.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cosmwasm.com&#34;&gt;CosmWasm&lt;/a&gt;.
+Multi-chain smart contract platform built for the Cosmos ecosystem.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum/tree/master/evmbin&#34;&gt;EVM Parity&lt;/a&gt;.
+Parity implementation of EVM.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lunatic-solutions/lunatic&#34;&gt;Lunatic&lt;/a&gt;.
+Erlang-inspired runtime for WebAssembly.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spacemeshos/svm&#34;&gt;SVM&lt;/a&gt;
+Spacemesh Virtual Machine.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/wasmi&#34;&gt;Wasmi&lt;/a&gt;.
+WebAssembly interpreter.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://wasmer.io/&#34;&gt;Wasmer&lt;/a&gt;.
+A convenient Rust wrapper over WebAssembly backends.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/CraneStation/wasmtime&#34;&gt;Wasmtime&lt;/a&gt;.
+Standalone JIT-style runtime for WebAssembly, using Cranelift.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;general-purpose-consensus&#34;&gt;General-Purpose Consensus&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/pingcap/raft-rs&#34;&gt;Raft&lt;/a&gt; Raft distributed consensus algorithm implemented in Rust;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/parsec&#34;&gt;parsec&lt;/a&gt; Protocol for Asynchronous, Reliable, Secure and Efficient Consensus;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/poanetwork/hbbft&#34;&gt;Honey Badger&lt;/a&gt; An implementation of the paper &amp;ldquo;Honey Badger of BFT Protocols&amp;rdquo; in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pingcap/raft-rs&#34;&gt;Raft&lt;/a&gt;.
+Raft distributed consensus algorithm implemented in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/parsec&#34;&gt;parsec&lt;/a&gt;.
+Protocol for Asynchronous, Reliable, Secure and Efficient Consensus.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/poanetwork/hbbft&#34;&gt;Honey Badger&lt;/a&gt;.
+An implementation of the paper &amp;ldquo;Honey Badger of BFT Protocols&amp;rdquo; in
+Rust.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;p2p-network-libraries&#34;&gt;P2P Network Libraries&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/placefortea/chamomile&#34;&gt;chamomile&lt;/a&gt; p2p implement on Actor. Everything is for ease of use;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/crust&#34;&gt;crust&lt;/a&gt; Reliable p2p network connections in Rust with NAT traversal. One of the most needed libraries for any server-less / decentralised projects;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/libp2p/rust-libp2p&#34;&gt;libp2p&lt;/a&gt; The Rust Implementation of libp2p networking stack;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/driftluo/p2p&#34;&gt;p2p&lt;/a&gt; A multiplexed p2p network framework that supports custom protocols; (漂流)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ustulation/p2p&#34;&gt;p2p&lt;/a&gt; NAT Traversal techniques for p2p communication; (Spandan Sharma)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/quic-p2p&#34;&gt;quic-p2p&lt;/a&gt; peer-to-peer communications library for Rust based on QUIC protocol;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rust-cc&#34;&gt;rckad&lt;/a&gt; Efficient and flexible S/Kademlia implementation;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/routing&#34;&gt;routing&lt;/a&gt; Routing - specialised storage DHT.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/placefortea/chamomile&#34;&gt;chamomile&lt;/a&gt;.
+P2P library. Support build robust stable connection on
+p2p/distributed network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/crust&#34;&gt;crust&lt;/a&gt;.
+Reliable P2P network connections in Rust with NAT traversal. One of
+the most needed libraries for any server-less / decentralised
+projects.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/libp2p/rust-libp2p&#34;&gt;rust-libp2p&lt;/a&gt;.
+The Rust Implementation of the libp2p networking stack.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/driftluo/tentacle&#34;&gt;Tentacle&lt;/a&gt;.
+A multiplexed p2p network framework that supports custom protocols&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ustulation/p2p&#34;&gt;P2P NAT-Traversal&lt;/a&gt;.
+NAT Traversal techniques for p2p communication.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/qp2p&#34;&gt;qp2p&lt;/a&gt;.
+Peer-to-peer communications library for Rust based on QUIC protocol.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/sn_routing&#34;&gt;sn_routing&lt;/a&gt;.
+Routing - specialised storage DHT.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cryptography&#34;&gt;Cryptography&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/rust-cc/awesome-cryptography-rust&#34;&gt;Awesome Cryptography Rust&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/dalek-cryptography&#34;&gt;Dalek Cryptography&lt;/a&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/adria0/za&#34;&gt;Za!&lt;/a&gt; &amp;ndash; An experimental rust zksnarks compiler with embeeded bellman-bn128 prover;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/0xProject/OpenZKP&#34;&gt;OpenZKP&lt;/a&gt; &amp;ndash; Pure Rust implementations of Zero-Knowledge Proof systems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/rust-cc/awesome-cryptography-rust&#34;&gt;Awesome Cryptography Rust&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dalek-cryptography&#34;&gt;Dalek Cryptography&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/adria0/za&#34;&gt;Za!&lt;/a&gt;.
+An experimental rust zksnarks compiler with embeeded bellman-bn128
+prover.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/0xProject/OpenZKP&#34;&gt;OpenZKP&lt;/a&gt;.
+Pure Rust implementations of Zero-Knowledge Proof systems.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;layer2&#34;&gt;Layer2&lt;/h2&gt;
 &lt;ul&gt;
@@ -7857,20 +7933,27 @@ chain interactions, and disk storage.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/project-serum/serum-dex&#34;&gt;Serum-dex&lt;/a&gt;.
 A decentralized exchange built on Solana.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/second-state/SewUp&#34;&gt;SewUp&lt;/a&gt;.
-A library to help you build your Ethereum webassembly contract with Rust and just like develop in a common backend.&lt;/li&gt;
+A library to help you build your Ethereum webassembly contract with
+Rust and just like develop in a common backend.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/iqlusioninc/abscissa&#34;&gt;abscissa&lt;/a&gt; &amp;ndash; micro-framework for CLI tools with strong focus on security;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/adria0/tesseracts&#34;&gt;tesseracts&lt;/a&gt; &amp;ndash; A small block explorer for geth PoAs written in rust.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/merk&#34;&gt;merk&lt;/a&gt; &amp;ndash; High performance Merkle key/value store written in Rust, based on RocksDB.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/iqlusioninc/abscissa&#34;&gt;abscissa&lt;/a&gt;.
+Micro-framework for CLI tools with strong focus on security.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/adria0/tesseracts&#34;&gt;tesseracts&lt;/a&gt;.
+A small block explorer for geth PoAs written in rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/merk&#34;&gt;merk&lt;/a&gt;.
+High performance Merkle key/value store written in Rust, based on
+RocksDB.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;contribute&#34;&gt;Contribute&lt;/h2&gt;
 &lt;p&gt;Contributions are most welcome.&lt;/p&gt;
-&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/rust-in-blockchain/awesome-blockchain-rust&#34;&gt;Awesome Blockchain Rust&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GitHub: &lt;a href=&#34;https://github.com/rust-in-blockchain/awesome-blockchain-rust&#34;&gt;Awesome Blockchain
+Rust&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;&lt;img src=&#34;http://i.creativecommons.org/l/by/4.0/88x31.png&#34; alt=&#34;Creative Commons License&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This work is licensed under a &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;&lt;img src=&#34;http://i.creativecommons.org/l/by/4.0/88x31.png&#34; alt=&#34;Creative CommonsLicense&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This work is licensed under a &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0
+International License&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
