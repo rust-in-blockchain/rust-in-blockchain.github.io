@@ -7772,6 +7772,7 @@ A library for creating and parsing Bitcoin Cash trasactions&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://elrond.com/&#34;&gt;Elrond&lt;/a&gt; Elrond (EGOLD( - scalable and usable blockchain, written is Rust and has smart contracts in Rust&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/exonum/exonum&#34;&gt;Exonum&lt;/a&gt; An extensible open-source framework for creating private/permissioned blockchain applications;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ChainSafe/forest&#34;&gt;Forest&lt;/a&gt; An implementation of Filecoin written in Rust;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gear-tech/gear&#34;&gt;Gear&lt;/a&gt; Computational component of Polkadot network;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mimblewimble/grin&#34;&gt;Grin&lt;/a&gt; Minimal implementation of the MimbleWimble protocol;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/holochain/holochain-rust&#34;&gt;Holochain&lt;/a&gt; The core Holochain framework written in rust, a container, and hdk-rust library for writing Zomes;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/HuobiGroup/huobi-chain&#34;&gt;Huobi Chain&lt;/a&gt; The next generation high performance public chain for financial infrastructure.&lt;/li&gt;
