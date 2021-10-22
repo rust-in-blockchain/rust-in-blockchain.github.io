@@ -8136,6 +8136,8 @@ knowledge layer of Nervos network.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/nomic&#34;&gt;Nomic&lt;/a&gt;.
 Nomic is a high-performance Bitcoin sidechain which is part of the
 Cosmos network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/openethereum/openethereum&#34;&gt;OpenEthereum&lt;/a&gt;.
+The Ethereum Rust client&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-bitcoin&#34;&gt;Parity Bitcoin&lt;/a&gt;.
 The Parity Bitcoin client.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum&#34;&gt;Parity Ethereum&lt;/a&gt;.
