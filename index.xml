@@ -8080,26 +8080,38 @@ Bitcoin’s Nakamoto Consensus (NC) is well-received due to its simplicity and l
 &lt;li&gt;&lt;a href=&#34;#blockchain-frameworks&#34;&gt;Blockchain Frameworks&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#cross-chain&#34;&gt;Cross-Chain&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#virtual-machines&#34;&gt;Virtual Machines&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#consensus&#34;&gt;General-Purpose Consensus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#general-purpose-consensus&#34;&gt;General-Purpose Consensus&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#p2p-network-libraries&#34;&gt;P2P Network Libraries&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#cryptography&#34;&gt;Cryptography&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#layer2&#34;&gt;Layer2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#dapps&#34;&gt;Dapps&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#other&#34;&gt;Other&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#contribute&#34;&gt;Contribute&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;blockchains&#34;&gt;Blockchains&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.aleo.org/aleo/getting_started/overview&#34;&gt;Aleo&lt;/a&gt;.
+Leo is a rust flavoured zk language.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://alephzero.org/&#34;&gt;Alpha Zero&lt;/a&gt;.
+DAG, PoS, snark smart contracts (substrate based).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://anoma.network/&#34;&gt;Anoma.network&lt;/a&gt;.
+PoS blockchain with privacy.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/be-cash/bitcoin-cash&#34;&gt;Bitcoin Cash&lt;/a&gt;.
 A library for creating and parsing Bitcoin Cash trasactions.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/cryptape/cita&#34;&gt;CITA&lt;/a&gt;.
 A high performance blockchain kernel for enterprise users.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/CodeChain-io/codechain&#34;&gt;CodeChain&lt;/a&gt;.
 Programmable multi-asset chain.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://concordium.com/&#34;&gt;Concordium&lt;/a&gt;.
+Privacy centric (zk) PoS chain, yet with built in identities and rust smart contracts.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Conflux-Chain/conflux-rust&#34;&gt;Conflux&lt;/a&gt;.
 The Rust implementation of Conflux protocol.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/darwinia-network/darwinia&#34;&gt;Darwinia&lt;/a&gt;.
 Relay chain of Darwinia Network, can connect to Polkadot as
 parachain in Polkadot Model.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dusk.network/&#34;&gt;Dusk.network&lt;/a&gt;.
+Privacy PoS using zk (plonk).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/enigmampc/enigma-core&#34;&gt;Enigma&lt;/a&gt; secures the
 decentralized web.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://elrond.com/&#34;&gt;Elrond&lt;/a&gt;.
@@ -8136,6 +8148,10 @@ knowledge layer of Nervos network.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/nomic&#34;&gt;Nomic&lt;/a&gt;.
 Nomic is a high-performance Bitcoin sidechain which is part of the
 Cosmos network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ChainSafe/mina-rs&#34;&gt;Mina Protocol&lt;/a&gt;.
+A rust implementation of the mina succinct blockchain.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mirprotocol.org/&#34;&gt;Mir Protocol&lt;/a&gt;.
+A succinct blockchain powered by zero-knowledge proofs. (plonk based)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/openethereum/openethereum&#34;&gt;OpenEthereum&lt;/a&gt;.
 The Ethereum Rust client&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-bitcoin&#34;&gt;Parity Bitcoin&lt;/a&gt;.
@@ -8146,6 +8162,9 @@ The fast, light, and robust EVM and WASM client.&lt;/li&gt;
 Rust implementation of Zcash protocol.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/polkadot&#34;&gt;Polkadot&lt;/a&gt;.
 Polkadot Node Implementation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PolymathNetwork/Polymesh&#34;&gt;Polymesh&lt;/a&gt;.
+The Polymesh blockchain (built on Substrate) is an identity orientated chain
+for the issuance, lifecycle management and settlement of regulated securities.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/shasper&#34;&gt;Shasper&lt;/a&gt;.
 Parity Shasper beacon chain implementation using the Substrate
 framework.&lt;/li&gt;
@@ -8165,8 +8184,6 @@ protocol in Rust.&lt;/li&gt;
 An ongoing Rust implementation of a Zcash node.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/LayerXcom/zero-chain&#34;&gt;Zero-chain&lt;/a&gt;.
 A privacy-preserving blockchain on Substrate.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zksync&#34;&gt;zkSync&lt;/a&gt;.
-Matter Labs&amp;rsquo; scaling L2 engine secured by zero-knowledge proofs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;blockchain-frameworks&#34;&gt;Blockchain Frameworks&lt;/h2&gt;
 &lt;ul&gt;
@@ -8247,15 +8264,27 @@ An experimental rust zksnarks compiler with embeeded bellman-bn128
 prover.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/0xProject/OpenZKP&#34;&gt;OpenZKP&lt;/a&gt;.
 Pure Rust implementations of Zero-Knowledge Proof systems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/microsoft/Nova&#34;&gt;Microsoft Nova&lt;/a&gt;.
+Rust recursive snark without trusted setup.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/arkworks-rs&#34;&gt;Arkworks&lt;/a&gt;.
+An ecosystem for developing and programming with zkSNARKs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;layer2&#34;&gt;Layer2&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/OffchainLabs/arb-os&#34;&gt;Arbitrum&amp;rsquo;s arb-os&lt;/a&gt;
+ArbOS is the &amp;ldquo;operating system&amp;rdquo; that runs an eth Layer 2 on an Arbitrum chain,&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/noir-lang/noir&#34;&gt;Noir language&lt;/a&gt;.
+Noir is a Domain Specific Language for SNARK proving systems. (Aztec eth L2)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://penumbra.zone/&#34;&gt;Penumbra&lt;/a&gt;.
+PoS network providing privacy to the Cosmos ecosystem.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/rust-bitcoin/rust-lightning&#34;&gt;Rust-Lightning&lt;/a&gt;
 is a Bitcoin Lightning library written in Rust.
 The main crate, lightning, does not handle networking,
 persistence, or any other I/O. Thus, it is runtime-agnostic,
 but users must implement basic networking logic,
 chain interactions, and disk storage.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zksync&#34;&gt;zkSync&lt;/a&gt;.
+Matter Labs&amp;rsquo; scaling eth L2 engine secured by zero-knowledge proofs.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;dapps&#34;&gt;Dapps&lt;/h2&gt;
 &lt;ul&gt;
