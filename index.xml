@@ -8815,6 +8815,9 @@ infrastructure.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/interledger-rs/interledger-rs&#34;&gt;Interledger&lt;/a&gt;.
 An easy-to-use, high-performance Interledger implementation written
 in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Internet-of-People/iop-rs&#34;&gt;Internet of People&lt;/a&gt;.
+Decentralized software stack that provides the building blocks and
+tools to support a decentralized society.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/libra/libra&#34;&gt;Libra&lt;/a&gt;.
 Global currency and financial infrastructure that empowers billions
 of people.&lt;/li&gt;
@@ -8825,6 +8828,8 @@ NEAR Protocol - scalable and usable blockchain.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;Nervos CKB&lt;/a&gt;.
 Nervos CKB is a public permissionless blockchain, the common
 knowledge layer of Nervos network.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nymtech/nym&#34;&gt;NYM&lt;/a&gt;.
+Selective privacy via a mixnet preventing metadata analysis.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/nomic&#34;&gt;Nomic&lt;/a&gt;.
 Nomic is a high-performance Bitcoin sidechain which is part of the
 Cosmos network.&lt;/li&gt;
@@ -8845,6 +8850,10 @@ Polkadot Node Implementation.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/PolymathNetwork/Polymesh&#34;&gt;Polymesh&lt;/a&gt;.
 The Polymesh blockchain (built on Substrate) is an identity orientated chain
 for the issuance, lifecycle management and settlement of regulated securities.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/QANplatform/its_alive&#34;&gt;QAN&lt;/a&gt;.
+Post-quantum blockchain.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/radixdlt/radixdlt-scrypto&#34;&gt;Radix&lt;/a&gt;.
+Sharded smart contract DeFi platform.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/shasper&#34;&gt;Shasper&lt;/a&gt;.
 Parity Shasper beacon chain implementation using the Substrate
 framework.&lt;/li&gt;
@@ -8860,6 +8869,8 @@ Byzantine fault tolerant applications.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/witnet/witnet-rust&#34;&gt;Witnet&lt;/a&gt;.
 Open source implementation of Witnet decentralized oracle network
 protocol in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xx-labs/xxchain&#34;&gt;xx-network&lt;/a&gt;.
+Post-quantum blockchain, mixnet privacy preventing metadata analysis. (Substrate rust+go)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ZcashFoundation/zebra&#34;&gt;Zebra&lt;/a&gt;.
 An ongoing Rust implementation of a Zcash node.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/LayerXcom/zero-chain&#34;&gt;Zero-chain&lt;/a&gt;.
@@ -8883,7 +8894,7 @@ Tendermint-based blockchain applications.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://comit.network/&#34;&gt;Comit&lt;/a&gt; is an open protocol facilitating
 trustless cross-blockchain applications.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/ibc-rs&#34;&gt;IBC&lt;/a&gt;.
-Rust implementation of the Interblockchain Communication Protocol
+Rust implementation of Cosmos&amp;rsquo; Interblockchain Communication Protocol
 (IBC).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;virtual-machines&#34;&gt;Virtual Machines&lt;/h2&gt;
@@ -8896,6 +8907,8 @@ Multi-chain smart contract platform built for the Cosmos ecosystem.&lt;/li&gt;
 Parity implementation of EVM.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/lunatic-solutions/lunatic&#34;&gt;Lunatic&lt;/a&gt;.
 Erlang-inspired runtime for WebAssembly.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/maticnetwork/miden&#34;&gt;Polygon Miden&lt;/a&gt;.
+SNARK based VM.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/spacemeshos/svm&#34;&gt;SVM&lt;/a&gt;
 Spacemesh Virtual Machine.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/wasmi&#34;&gt;Wasmi&lt;/a&gt;.
@@ -8904,6 +8917,8 @@ WebAssembly interpreter.&lt;/li&gt;
 A convenient Rust wrapper over WebAssembly backends.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/CraneStation/wasmtime&#34;&gt;Wasmtime&lt;/a&gt;.
 Standalone JIT-style runtime for WebAssembly, using Cranelift.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matter-labs/zinc&#34;&gt;Zinc&lt;/a&gt;.
+Zinc zk smart contract language.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;general-purpose-consensus&#34;&gt;General-Purpose Consensus&lt;/h2&gt;
 &lt;ul&gt;
