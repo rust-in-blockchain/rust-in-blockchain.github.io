@@ -8806,7 +8806,7 @@ An implementation of Filecoin written in Rust.&lt;/li&gt;
 Computational component of Polkadot network.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mimblewimble/grin&#34;&gt;Grin&lt;/a&gt;.
 Minimal implementation of the MimbleWimble protocol.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/holochain/holochain-rust&#34;&gt;Holochain&lt;/a&gt;.
+&lt;li&gt;&lt;a href=&#34;https://github.com/holochain/holochain&#34;&gt;Holochain&lt;/a&gt;.
 The core Holochain framework written in rust, a container, and
 hdk-rust library for writing Zomes.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/HuobiGroup/huobi-chain&#34;&gt;Huobi Chain&lt;/a&gt;.
