@@ -9100,6 +9100,8 @@ An extensible open-source framework for creating
 private/permissioned blockchain applications.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ChainSafe/forest&#34;&gt;Forest&lt;/a&gt;.
 An implementation of Filecoin written in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/FuelLabs/fuel-core&#34;&gt;Fuel&lt;/a&gt;.
+Rust full node implementation of the Fuel v2 protocol.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/gear-tech/gear&#34;&gt;Gear&lt;/a&gt;.
 Computational component of Polkadot network.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mimblewimble/grin&#34;&gt;Grin&lt;/a&gt;.
@@ -9203,6 +9205,8 @@ RISC-V virtual machine.&lt;/li&gt;
 Multi-chain smart contract platform built for the Cosmos ecosystem.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/parity-ethereum/tree/master/evmbin&#34;&gt;EVM Parity&lt;/a&gt;.
 Parity implementation of EVM.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/FuelLabs/fuel-vm&#34;&gt;FuelVM&lt;/a&gt;
+FuelVM interpreter in Rust.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/lunatic-solutions/lunatic&#34;&gt;Lunatic&lt;/a&gt;.
 Erlang-inspired runtime for WebAssembly.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/maticnetwork/miden&#34;&gt;Polygon Miden&lt;/a&gt;.
@@ -9617,6 +9621,10 @@ Please refrain from marketing spam.&lt;/p&gt;
 &lt;p&gt;Pine Street Labs | San Francisco or Remote&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/hiring/jobs/2863929634/detail/&#34;&gt;Custody Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Polygon Zero | Remote&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://mirprotocol.org/careers/protocol-engineer&#34;&gt;Senior Protocol Engineer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Protocol Labs | Remote&lt;/p&gt;
 &lt;ul&gt;
