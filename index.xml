@@ -4288,7 +4288,7 @@ A sandbox to run and debug smart contracts for FRAME Contracts pallet and also a
 &lt;ul&gt;
 &lt;li&gt;Blog: &lt;a href=&#34;https://aleo.org/post/the-future-of-zero-knowledge-with-aleo&#34;&gt;The Future of Zero Knowledge with Aleo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/snarkVM/pull/66&#34;&gt;Upgrade to the Constraint System for Marlin&lt;/a&gt; by &lt;a href=&#34;https://github.com/howardwu&#34;&gt;@howardwu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/leo/pull/686&#34;&gt;Add &amp;lsquo;leo clone&amp;rsquo; command and add integration test with Aleo Package Manager&lt;/a&gt; by &lt;a href=&#34;https://github.com/damirka&#34;&gt;@damirka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/leo/pull/686&#34;&gt;Add &amp;rsquo;leo clone&amp;rsquo; command and add integration test with Aleo Package Manager&lt;/a&gt; by &lt;a href=&#34;https://github.com/damirka&#34;&gt;@damirka&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/snarkOS/pull/630&#34;&gt;Update POSW Implementation&lt;/a&gt; by &lt;a href=&#34;https://github.com/raychu86&#34;&gt;@raychu86&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;comithttpsgithubcomcomit-network&#34;&gt;&lt;a href=&#34;https://github.com/comit-network&#34;&gt;COMIT&lt;/a&gt;&lt;/h4&gt;
@@ -7361,7 +7361,7 @@ Taylor Lee,
 You made the RiB community great!&lt;/p&gt;
 &lt;h2 id=&#34;sponsors-and-supporters&#34;&gt;Sponsors and Supporters&lt;/h2&gt;
 &lt;p&gt;In the last year, RiB got two cups-of-coffee donations in ETH! Thanks!&lt;/p&gt;
-&lt;p&gt;With &lt;a href=&#34;https://www.nervos.org/&#34;&gt;Nervos Network&lt;/a&gt;&amp;lsquo;s sponsoring, we organized RiB meetups, In Rust We Trust,
+&lt;p&gt;With &lt;a href=&#34;https://www.nervos.org/&#34;&gt;Nervos Network&lt;/a&gt;&amp;rsquo;s sponsoring, we organized RiB meetups, In Rust We Trust,
 in &lt;a href=&#34;https://www.meetup.com/Rust-in-Blockchain-San-Francisco/events/262773260/&#34;&gt;SF&lt;/a&gt;, &lt;a href=&#34;https://www.meetup.com/Rust-in-Blockchain-Berlin/events/263526816/&#34;&gt;Berlin&lt;/a&gt;, and in &lt;a href=&#34;https://www.meetup.com/Rust-in-Blockchain-Hangzhou/events/264778357/&#34;&gt;Hangzhou, China&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks to SF Blockchain community,
 and sponsors Nervos, Polkadot, Oasis, NEAR, Xpring, Insight,
@@ -10562,11 +10562,12 @@ Please refrain from marketing spam.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://grnh.se/fc3876861us&#34;&gt;Software Library Engineer (Rust)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grnh.se/69d260dc1us&#34;&gt;Software Library Engineer (C++)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://grnh.se/aed921721us&#34;&gt;Full-Stack Software Engineer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grnh.se/6ac8f7f11us&#34;&gt;Network Engineer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grnh.se/11354dd01us&#34;&gt;Sr. Product Manager&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grnh.se/1bdd2ced1us&#34;&gt;Product Manager&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://grnh.se/ca7b51b81us&#34;&gt;Technical Project Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grnh.se/ce2891871us&#34;&gt;QA Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://grnh.se/e53608a01us&#34;&gt;Don&amp;rsquo;t see a role that fits? Apply here!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Bolt Labs | US, Remote&lt;/p&gt;
 &lt;ul&gt;
@@ -10999,26 +11000,26 @@ via our website, email and RSS subscriptions, as well as RiB&amp;rsquo;s social 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;Partner&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Growth&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Supporter&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Partner&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Growth&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Supporter&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;$8,000&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;$3,000&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;$1,600&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$8,000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$3,000&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;$1,600&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;3&lt;/strong&gt; months site banner &lt;strong&gt;&lt;em&gt;AND&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; month site banner &lt;strong&gt;&lt;em&gt;AND&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; month site banner &lt;strong&gt;&lt;em&gt;OR&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;3&lt;/strong&gt; months site banner &lt;strong&gt;&lt;em&gt;AND&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; month site banner &lt;strong&gt;&lt;em&gt;AND&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; month site banner &lt;strong&gt;&lt;em&gt;OR&lt;/em&gt;&lt;/strong&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;3&lt;/strong&gt; newsletter mention&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; newsletter mention&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; newsletter mention&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;3&lt;/strong&gt; newsletter mention&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; newsletter mention&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;strong&gt;1&lt;/strong&gt; newsletter mention&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

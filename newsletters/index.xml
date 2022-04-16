@@ -4288,7 +4288,7 @@ A sandbox to run and debug smart contracts for FRAME Contracts pallet and also a
 &lt;ul&gt;
 &lt;li&gt;Blog: &lt;a href=&#34;https://aleo.org/post/the-future-of-zero-knowledge-with-aleo&#34;&gt;The Future of Zero Knowledge with Aleo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/snarkVM/pull/66&#34;&gt;Upgrade to the Constraint System for Marlin&lt;/a&gt; by &lt;a href=&#34;https://github.com/howardwu&#34;&gt;@howardwu&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/leo/pull/686&#34;&gt;Add &amp;lsquo;leo clone&amp;rsquo; command and add integration test with Aleo Package Manager&lt;/a&gt; by &lt;a href=&#34;https://github.com/damirka&#34;&gt;@damirka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/leo/pull/686&#34;&gt;Add &amp;rsquo;leo clone&amp;rsquo; command and add integration test with Aleo Package Manager&lt;/a&gt; by &lt;a href=&#34;https://github.com/damirka&#34;&gt;@damirka&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;PR: &lt;a href=&#34;https://github.com/AleoHQ/snarkOS/pull/630&#34;&gt;Update POSW Implementation&lt;/a&gt; by &lt;a href=&#34;https://github.com/raychu86&#34;&gt;@raychu86&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;comithttpsgithubcomcomit-network&#34;&gt;&lt;a href=&#34;https://github.com/comit-network&#34;&gt;COMIT&lt;/a&gt;&lt;/h4&gt;

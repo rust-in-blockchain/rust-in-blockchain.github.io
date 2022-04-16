@@ -1,258 +1,154 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://rustinblockchain.org/categories/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/categories/newsletters/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-34/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/</loc>
     <lastmod>2022-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-33/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-32/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-31/</loc>
     <lastmod>2022-01-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-30/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-29/</loc>
     <lastmod>2021-11-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-28/</loc>
     <lastmod>2021-10-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-27/</loc>
     <lastmod>2021-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rib-newsletter-26/</loc>
     <lastmod>2021-08-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/hello-summer/</loc>
     <lastmod>2021-07-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/bridges/</loc>
     <lastmod>2021-06-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rewriting-in-rust/</loc>
     <lastmod>2021-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/a-few-tweaks/</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/more-rust-and-blockchains/</loc>
     <lastmod>2021-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/old-fashioned-chill/</loc>
     <lastmod>2021-02-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/rust-and-smart-contracts/</loc>
     <lastmod>2021-01-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/on-to-the-ribbles/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-11-04-trick-or-trait/</loc>
     <lastmod>2020-11-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-09-30-secure-enclaves-a-la-crab/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-09-02-turbofish-in-the-blocksea/</loc>
     <lastmod>2020-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-08-05-are-we-smart-contract-yet/</loc>
     <lastmod>2020-08-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/blogposts/</loc>
     <lastmod>2020-07-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/categories/blogposts/</loc>
     <lastmod>2020-07-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/blogposts/2020-07-30-rib-is-one-year-old/</loc>
     <lastmod>2020-07-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-07-01-stuck-inside-hacking-away/</loc>
     <lastmod>2020-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-06-03-zk-rustups/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/blogposts/how-rib-newsletter-is-generated/</loc>
     <lastmod>2020-05-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-05-06-the-flourishing-spring/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-04-01-keep-calm-and-hack-more/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-03-04-the-month-of-working-from-home/</loc>
     <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-02-05-looking-forward-to-2020/</loc>
     <lastmod>2020-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2020-01-02/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2019-12-05/</loc>
     <lastmod>2019-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2019-11-07/</loc>
     <lastmod>2019-11-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2019-10-03/</loc>
     <lastmod>2019-10-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2019-09-05/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2019-08-01/</loc>
     <lastmod>2019-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/blogposts/call-for-contributors/</loc>
     <lastmod>2019-07-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2019-07-04/</loc>
     <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/newsletters/2019-06-06/</loc>
     <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/awesome-blockchain-rust/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/contributing/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/job-board/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/community-fund/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/learning/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/sponsoring/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://rustinblockchain.org/tags/</loc>
   </url>
-  
 </urlset>
