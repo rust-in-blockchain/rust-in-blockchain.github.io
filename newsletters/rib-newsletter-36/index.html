@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RiB Newsletter #36 - Rust in Blockchain ❤ rib.rs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="May 2022">
+	<meta property="og:title" content="RiB Newsletter #36" />
+<meta property="og:description" content="May 2022" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rustinblockchain.org/newsletters/rib-newsletter-36/" /><meta property="article:section" content="newsletters" />
+<meta property="article:published_time" content="2022-06-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-06-01T00:00:00+00:00" />
+
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RiB Newsletter #36"/>
+<meta name="twitter:description" content="May 2022"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/custom.css">
+	<link rel="shortcut icon" href="../../favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-140591727-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="../../" title="Rust in Blockchain ❤ rib.rs" rel="home">
+				<div class="logo__title">Rust in Blockchain ❤ rib.rs</div>
+				<div class="logo__tagline">Bringing engineering insight and experience to blockchain technology.</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../newsletters">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Newsletters</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../blogposts">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Blog Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../awesome-blockchain-rust">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Awesome RiB</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../job-board">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Job Board</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../learning">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Learning</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../contributing">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Contributing</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../about">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">About Us</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../index.xml">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">RiB Newsletter #36</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2022-06-01T00:00:00Z">June 01, 2022</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="../../categories/newsletters/" rel="category">newsletters</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>Welcome to the #36 edition of Rust in Blockchain, the monthly
+newsletter about Rust, distributed systems, cryptography, and other
+industry topics.
+<a href="../../newsletters/rib-newsletter-35/">Previous: #35</a>.</p>
+<p>There are quite a few security advisories this month that might impact
+blockchain projects. If you are using OpenSSL, crossbeam, or hyper you should
+see if you need to upgrade.</p>
+<p> </p>
+<h2 id="thanks">Thanks</h2>
+<p>Thanks to contributors:
+<a href="https://github.com/aadz1">Aadz</a>,
+Camila Hanada,
+Dan Shields,
+<a href="https://github.com/cryptoquick">Hunter Trujillo</a>,
+<a href="https://github.com/adlerjohn">John Adler</a>,
+<a href="https://github.com/keymakercasa">keymakercasa</a>,
+<a href="https://github.com/piotr-dziubecki">Piotr Dziubecki</a>,
+<a href="https://github.com/thewinfred">thewinfred</a>,
+<a href="https://github.com/brson">Brian Anderson</a> and <a href="https://github.com/Aimeedeer">Aimee Zhu</a>.
+Thank you for your help!</p>
+<p>RiB needs help to keep up with Rust blockchain projects.
+If you follow a particular project, or otherwise find information
+that is beneficial to the Rust &amp; blockchain community,
+please contribute to the next issue
+by submitting a PR to the <a href="https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft">next draft</a>.</p>
+<p> </p>
+<h2 id="project-spotlight">Project Spotlight</h2>
+<p>Each month we like to shine a light on a notable Rust blockchain project. This month that project is…</p>
+<p><a href="https://github.com/rust-secure-code/cargo-supply-chain"><code>cargo-supply-chain</code></a>.</p>
+<p>This project lists the authors, as registered with crates.io, of every crate in your dependency graph.</p>
+<p> </p>
+<h2 id="interesting-things">Interesting Things</h2>
+<h4 id="blog-posts">Blog Posts</h4>
+<ul>
+<li><a href="https://hackmd.io/@sin7y/rJZZy_mD9#Sin7Y-Tech-Review-23-Verkle-Tree-For-ETH">Sin7Y Tech Review (23): Verkle Tree For ETH</a></li>
+<li><a href="https://blog.rust-lang.org/2022/05/10/malicious-crate-rustdecimal.html">Security advisory: malicious crate rustdecimal</a></li>
+<li><a href="https://blog.chain.link/blockchain-scalability-approaches/">Blockchain Scalability: Execution, Storage, and Consensus</a></li>
+<li><a href="https://blog.torproject.org/congestion-contrl-047/">Tor implements congestion control, improving bandwidth</a></li>
+<li><a href="https://darknetlive.com/post/psa-security-vuln-in-tor-browser/">Serious Security Vulnerability in Tor Browser</a></li>
+<li><a href="https://blog.torproject.org/arti_030_released/">Arti 0.3.0 is released: Robustness and API improvements</a></li>
+<li><a href="https://github.com/supertestnet/rule-110-in-bitcoin-script">Bitcoin Script is Turing-complete (in a way)</a></li>
+</ul>
+<h4 id="papers">Papers</h4>
+<ul>
+<li><a href="https://arxiv.org/abs/2205.06314">Pre-print of Casper&rsquo;s new consensus solution</a></li>
+<li><a href="https://eprint.iacr.org/2022/551">Marlin: Two-Phase BFT with Linearity</a></li>
+<li><a href="https://eprint.iacr.org/2022/560">Distributed Shuffling in Adversarial Environments</a></li>
+<li><a href="https://eprint.iacr.org/2022/550">ROAST: Robust Asynchronous Schnorr Threshold Signatures</a></li>
+<li><a href="https://datatracker.ietf.org/doc/draft-irtf-cfrg-frost/">Two-Round Threshold Schnorr Signatures with FROST</a></li>
+<li><a href="https://eprint.iacr.org/2022/582">Ponyta: Foundations of Side-Contract-Resilient Fair Exchange</a></li>
+<li><a href="https://eprint.iacr.org/2022/599">TenderTee: Secure Tendermint</a></li>
+<li><a href="https://eprint.iacr.org/2022/603">Distributed Blockchain Price Oracle</a></li>
+<li><a href="https://eprint.iacr.org/2022/541">The Generals’ Scuttlebutt: Byzantine-Resilient Gossip Protocols</a></li>
+<li><a href="https://eprint.iacr.org/2022/684">RSK: A Bitcoin sidechain with stateful smart-contracts</a></li>
+<li><a href="https://eprint.iacr.org/2022/546">He-HTLC: Revisiting Incentives in HTLC</a></li>
+</ul>
+<h4 id="projects">Projects</h4>
+<ul>
+<li><a href="https://github.com/brave/sta-rs">sta-rs</a>.
+Rust workspace for implementing basic functionality of
+<a href="https://arxiv.org/abs/2109.10074">STAR: Distributed Secret-Sharing for Threshold Aggregation Reporting</a>.</li>
+<li><a href="https://github.com/disnocen/dmix2">dmix2 - A Decentralized Bitcoin Mixer, written in Rust</a></li>
+</ul>
+<p> </p>
+<h2 id="security-advisories">Security Advisories</h2>
+<p>Monthly security advisories, from <a href="https://rustsec.org/advisories/">RustSec</a>, and <a href="https://github.com/advisories?query=ecosystem%3Arust">GitHub Advisories</a>.
+Bold entries here are especially relevant to blockchain projects.</p>
+<ul>
+<li><strong><a href="https://rustsec.org/advisories/RUSTSEC-2022-0027.html">RUSTSEC-2022-0027: Vulnerability in openssl-src</a>.</strong>
+<ul>
+<li><code>OCSP_basic_verify</code> may incorrectly verify the response signing certificate</li>
+</ul>
+</li>
+<li><strong><a href="https://rustsec.org/advisories/RUSTSEC-2022-0026.html">RUSTSEC-2022-0026: Vulnerability in openssl-src</a>.</strong>
+<ul>
+<li>Incorrect MAC key used in the RC4-MD5 ciphersuite</li>
+</ul>
+</li>
+<li><strong><a href="https://rustsec.org/advisories/RUSTSEC-2022-0025.html">RUSTSEC-2022-0025: Vulnerability in openssl-src</a>.</strong>
+<ul>
+<li>Resource leakage when decoding certificates and keys</li>
+</ul>
+</li>
+<li><a href="https://rustsec.org/advisories/RUSTSEC-2022-0018.html">RUSTSEC-2022-0018: Vulnerability in totp-rs</a>.
+<ul>
+<li>Timing attack.</li>
+</ul>
+</li>
+<li><a href="https://rustsec.org/advisories/RUSTSEC-2022-0019.html">RUSTSEC-2022-0019: Unsoundness in crossbeam-channel</a>.
+<ul>
+<li>Channel creates zero value of any type</li>
+</ul>
+</li>
+<li><a href="https://rustsec.org/advisories/RUSTSEC-2022-0020.html">RUSTSEC-2022-0020: Unsoundness in crossbeam</a>.
+<ul>
+<li><code>SegQueue</code> creates zero value of any type</li>
+</ul>
+</li>
+<li><a href="https://rustsec.org/advisories/RUSTSEC-2022-0021.html">RUSTSEC-2022-0021: Unsoundness in crossbeam-queue</a>.
+<ul>
+<li><code>SegQueue</code> creates zero value of any type</li>
+</ul>
+</li>
+<li><a href="https://rustsec.org/advisories/RUSTSEC-2022-0022.html">RUSTSEC-2022-0022: Unsoundness in hyper</a>.
+<ul>
+<li>Parser creates invalid uninitialized value</li>
+</ul>
+</li>
+<li><a href="https://rustsec.org/advisories/RUSTSEC-2022-0028.html">RUSTSEC-2022-0028: Vulnerability in neon</a>.
+<ul>
+<li>Use after free in Neon external buffers</li>
+</ul>
+</li>
+<li><a href="https://github.com/advisories/GHSA-9qmm-4mfr-r3wj">CVE-2022-23066: Incorrect Calculation in solana_rbpf</a>.</li>
+<li><a href="https://github.com/advisories/GHSA-ffx3-8qvm-pq3j">CVE-2022-31264: Integer overflow in solana_rbpf</a>.</li>
+</ul>
+<p> </p>
+<h2 id="most-active-in-may">Most Active in May</h2>
+<p><a href="https://github.com/paritytech">Parity</a>:
+605 merged PRs, 180 closed issues, 167 open issues</p>
+<p><a href="https://github.com/solana-labs/solana">Solana</a>:
+559 merged PRs, 110 closed issues, 114 open issues</p>
+<p><a href="https://github.com/MystenLabs">Sui</a>:
+489 merged PRs, 146 closed issues, 169 open issues</p>
+<p><a href="https://github.com/FuelLabs">Fuel</a>:
+352 merged PRs, 195 closed issues, 145 open issues</p>
+<p><a href="https://github.com/iotaledger">IOTA</a>:
+226 merged PRs, 53 closed issues, 41 open issues</p>
+<p> </p>
+<h2 id="project-updates">Project Updates</h2>
+<!-- raw HTML omitted -->
+<h4 id="aleohttpsgithubcomaleohq"><a href="https://github.com/AleoHQ">Aleo</a></h4>
+<p>118 merged PRs (<a href="https://github.com/AleoHQ/snarkOS/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/AleoHQ/snarkVM/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/AleoHQ/leo/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>),
+27 closed issues (<a href="https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/AleoHQ/snarkVM/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>),
+28 open issues (<a href="https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/AleoHQ/snarkVM/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>)</p>
+<h4 id="anomahttpsgithubcomanoma"><a href="https://github.com/anoma">Anoma</a></h4>
+<p>11 merged PRs (<a href="https://github.com/anoma/anoma/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+13 closed issues (<a href="https://github.com/anoma/anoma/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/anoma/masp/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>),
+22 open issues (<a href="https://github.com/anoma/anoma/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="aptoshttpsgithubcomaptos-labs"><a href="https://github.com/aptos-labs">Aptos</a></h4>
+<p>307 merged PRs (<a href="https://github.com/aptos-labs/aptos-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+48 closed issues (<a href="https://github.com/aptos-labs/aptos-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+64 open issues (<a href="https://github.com/aptos-labs/aptos-core/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="casperhttpscaspernetwork"><a href="https://casper.network">Casper</a></h4>
+<p>96 merged PRs (<a href="https://github.com/casper-network/casper-node/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/casper-network/docs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+91 closed issues (<a href="https://github.com/casper-network/casper-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/casper-network/docs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>),
+108 open issues (<a href="https://github.com/casper-network/casper-node/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/casper-network/docs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>)</p>
+<ul>
+<li><a href="https://casper.network/network/blog/technical-release-and-changelog-for-v146">Technical Release Memo for v1.4.6</a></li>
+</ul>
+<h4 id="chainsafehttpsgithubcomchainsafe"><a href="https://github.com/ChainSafe">ChainSafe</a></h4>
+<p>8 merged PRs (<a href="https://github.com/ChainSafe/mina-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/ChainSafe/api3-rust/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+10 closed issues (<a href="https://github.com/ChainSafe/mina-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/ChainSafe/api3-rust/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>),
+8 open issues (<a href="https://github.com/ChainSafe/mina-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<ul>
+<li><a href="https://blog.chainsafe.io/lodestar-v0-37-0-bopsten-ready-release-231d185e3e1e">Lodestar v0.37.0: Bopsten-ready Release</a></li>
+<li><a href="https://blog.chainsafe.io/how-to-become-a-web3-developer-8849ab20b686">How to Become a Web3 Developer</a></li>
+</ul>
+<h4 id="comithttpsgithubcomcomit-network"><a href="https://github.com/comit-network">COMIT</a></h4>
+<p>4 merged PRs (<a href="https://github.com/comit-network/maia/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+0 closed issues,
+2 open issues (<a href="https://github.com/comit-network/maia/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/comit-network/xmr-btc-swap/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>)</p>
+<h4 id="concordiumhttpsgithubcomconcordium"><a href="https://github.com/Concordium">Concordium</a></h4>
+<p>45 merged PRs (<a href="https://github.com/Concordium/concordium-rust-smart-contracts/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/Concordium/concordium-wasm-smart-contracts/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/Concordium/concordium-rust-sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/Concordium/concordium-base/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/Concordium/concordium-transaction-logger/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/Concordium/concordium-euro2ccd-service/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/Concordium/concordium-node/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>),
+46 closed issues (<a href="https://github.com/Concordium/concordium-rust-smart-contracts/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/Concordium/concordium-wasm-smart-contracts/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/Concordium/concordium-rust-sdk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/Concordium/concordium-base/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/Concordium/concordium-transaction-logger/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/Concordium/concordium-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">6</a>),
+48 open issues (<a href="https://github.com/Concordium/concordium-rust-smart-contracts/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/Concordium/concordium-contracts-common/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/Concordium/concordium-rust-sdk/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/Concordium/concordium-base/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/Concordium/concordium-use-case-examples/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/Concordium/concordium-node/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">6</a>)</p>
+<ul>
+<li><a href="https://medium.com/concordium/sirius-release-now-available-aa39cec4bd5d">Sirius Release NOW Available on Testnet</a></li>
+</ul>
+<h4 id="confluxhttpsgithubcomconflux-chain"><a href="https://github.com/Conflux-Chain">Conflux</a></h4>
+<p>16 merged PRs (<a href="https://github.com/Conflux-Chain/conflux-rust/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+1 closed issues (<a href="https://github.com/Conflux-Chain/conflux-rust/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+1 open issues (<a href="https://github.com/Conflux-Chain/conflux-rust/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="darkfihttpsdarkfi"><a href="https://dark.fi">DarkFi</a></h4>
+<p>1 merged PRs (<a href="https://github.com/darkrenaissance/darkfi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+1 closed issues (<a href="https://github.com/darkrenaissance/darkfi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+0 open issues</p>
+<h4 id="dfinityhttpsgithubcomdfinity"><a href="https://github.com/dfinity">Dfinity</a></h4>
+<p>99 merged PRs (<a href="https://github.com/dfinity/sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/dfinity/agent-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/dfinity/icx-proxy/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/dfinity/cdk-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/dfinity/candid/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/dfinity/quill/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/dfinity/vessel/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>),
+23 closed issues (<a href="https://github.com/dfinity/sdk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/dfinity/agent-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/dfinity/icx-proxy/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/dfinity/cdk-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/dfinity/candid/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>),
+13 open issues (<a href="https://github.com/dfinity/sdk/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/dfinity/agent-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/dfinity/candid/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/dfinity/quill/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/dfinity/bitcoin-developer-preview/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/dfinity/ic-types/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">6</a>)</p>
+<ul>
+<li><a href="https://medium.com/dfinity/the-internet-computer-for-ethereum-developers-3331b50db31b">The Internet Computer for Ethereum Developers</a></li>
+</ul>
+<h4 id="dusk-networkhttpsgithubcomdusk-network"><a href="https://github.com/dusk-network">Dusk Network</a></h4>
+<p>21 merged PRs (<a href="https://github.com/dusk-network/dusk-hamt/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/dusk-network/microkelvin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/dusk-network/plonk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/dusk-network/rusk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/dusk-network/rusk-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/dusk-network/wallet-cli/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/dusk-network/wallet-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>),
+34 closed issues (<a href="https://github.com/dusk-network/dusk-hamt/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/dusk-network/microkelvin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/dusk-network/plonk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/dusk-network/rusk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/dusk-network/rusk-vm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/dusk-network/wallet-cli/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">6</a>),
+26 open issues (<a href="https://github.com/dusk-network/microkelvin/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/dusk-network/plonk/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/dusk-network/rusk/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/dusk-network/rusk-vm/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/dusk-network/wallet-cli/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>)</p>
+<h4 id="elrondhttpsgithubcomelrondnetwork"><a href="https://github.com/ElrondNetwork">Elrond</a></h4>
+<p>77 merged PRs (<a href="https://github.com/ElrondNetwork/elrond-wasm-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/ElrondNetwork/sc-dex-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/ElrondNetwork/sc-nft-marketplace/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/ElrondNetwork/sc-metabonding-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/ElrondNetwork/sc-bridge-elrond/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/ElrondNetwork/sc-chainlink-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/ElrondNetwork/sc-savings-account-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>),
+1 closed issues (<a href="https://github.com/ElrondNetwork/elrond-wasm-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+4 open issues (<a href="https://github.com/ElrondNetwork/elrond-wasm-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/ElrondNetwork/sc-dex-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>)</p>
+<h4 id="espresso-systemshttpsgithubcomespressosystems"><a href="https://github.com/EspressoSystems">Espresso Systems</a></h4>
+<p>101 merged PRs (<a href="https://github.com/EspressoSystems/jellyfish/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/EspressoSystems/cape/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/EspressoSystems/reef/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/EspressoSystems/seahorse/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/EspressoSystems/cap/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>),
+48 closed issues (<a href="https://github.com/EspressoSystems/jellyfish/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/EspressoSystems/cape/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/EspressoSystems/seahorse/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/EspressoSystems/cap/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>),
+19 open issues (<a href="https://github.com/EspressoSystems/jellyfish/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/EspressoSystems/cape/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/EspressoSystems/seahorse/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/EspressoSystems/cap/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>)</p>
+<h4 id="findorahttpsgithubcomfindoranetwork"><a href="https://github.com/FindoraNetwork">Findora</a></h4>
+<p>29 merged PRs (<a href="https://github.com/FindoraNetwork/zei/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/FindoraNetwork/platform/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/FindoraNetwork/findora-scanner/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/FindoraNetwork/findora-exporter/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>),
+1 closed issues (<a href="https://github.com/FindoraNetwork/platform/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+3 open issues (<a href="https://github.com/FindoraNetwork/platform/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="fluencehttpsgithubcomfluencelabs"><a href="https://github.com/fluencelabs">Fluence</a></h4>
+<p>39 merged PRs (<a href="https://github.com/fluencelabs/marine/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/fluencelabs/aquavm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/fluencelabs/examples/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>),
+23 closed issues (<a href="https://github.com/fluencelabs/marine/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/fluencelabs/aquavm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/fluencelabs/fluence/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/fluencelabs/examples/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>),
+4 open issues (<a href="https://github.com/fluencelabs/marine/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/fluencelabs/aquavm/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/fluencelabs/trust-graph/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>)</p>
+<h4 id="fuelhttpsgithubcomfuellabs"><a href="https://github.com/FuelLabs">Fuel</a></h4>
+<p>352 merged PRs (<a href="https://github.com/FuelLabs/faucet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/FuelLabs/forc-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/FuelLabs/fuel-asm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/FuelLabs/fuel-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/FuelLabs/fuel-crypto/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/FuelLabs/fuel-indexer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/FuelLabs/fuel-merkle/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/FuelLabs/fuel-storage/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">8</a>, <a href="https://github.com/FuelLabs/fuel-tx/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">9</a>, <a href="https://github.com/FuelLabs/fuel-types/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">10</a>, <a href="https://github.com/FuelLabs/fuel-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">11</a>, <a href="https://github.com/FuelLabs/fuels-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">12</a>, <a href="https://github.com/FuelLabs/sway/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">13</a>),
+195 closed issues (<a href="https://github.com/FuelLabs/faucet/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/FuelLabs/fuel-asm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/FuelLabs/fuel-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/FuelLabs/fuel-indexer/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/FuelLabs/fuel-merkle/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/FuelLabs/fuel-tx/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/FuelLabs/fuel-types/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/FuelLabs/fuel-vm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">8</a>, <a href="https://github.com/FuelLabs/fuels-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">9</a>, <a href="https://github.com/FuelLabs/sway/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">10</a>),
+145 open issues (<a href="https://github.com/FuelLabs/fuel-asm/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/FuelLabs/fuel-core/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/FuelLabs/fuel-indexer/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/FuelLabs/fuel-merkle/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/FuelLabs/fuel-tx/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/FuelLabs/fuel-vm/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/FuelLabs/fuels-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/FuelLabs/sway/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">8</a>)</p>
+<h4 id="golemhttpsgithubcomgolemfactory"><a href="https://github.com/golemfactory">Golem</a></h4>
+<p>25 merged PRs (<a href="https://github.com/golemfactory/yagna/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/golemfactory/ya-client/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/golemfactory/ya-relay/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/golemfactory/ya-runtime-sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/golemfactory/ya-runtime-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>),
+13 closed issues (<a href="https://github.com/golemfactory/yagna/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/golemfactory/ya-relay/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/golemfactory/ya-runtime-vm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>),
+10 open issues (<a href="https://github.com/golemfactory/yagna/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/golemfactory/ya-relay/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/golemfactory/ya-runtime-vm/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>)</p>
+<h4 id="grinhttpsgithubcommimblewimblegrin"><a href="https://github.com/mimblewimble/grin">Grin</a></h4>
+<p>2 merged PRs (<a href="https://github.com/mimblewimble/grin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+1 closed issues (<a href="https://github.com/mimblewimble/grin-wallet/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+1 open issues (<a href="https://github.com/mimblewimble/grin/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="heliumhttpsgithubcomhelium"><a href="https://github.com/helium">Helium</a></h4>
+<p>16 merged PRs (<a href="https://github.com/helium/gateway-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/helium/semtech-udp/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/helium/helium-crypto-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/helium/virtual-lorawan-device/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/helium/helium-api-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>),
+10 closed issues (<a href="https://github.com/helium/gateway-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/helium/virtual-lorawan-device/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>),
+3 open issues (<a href="https://github.com/helium/gateway-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/helium/virtual-lorawan-device/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/helium/helium-wallet-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>)</p>
+<h4 id="holochainhttpsgithubcomholochain"><a href="https://github.com/holochain/">Holochain</a></h4>
+<p>27 merged PRs (<a href="https://github.com/holochain/holochain/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/holochain/hc-utils/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+4 closed issues (<a href="https://github.com/holochain/launcher/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+5 open issues (<a href="https://github.com/holochain/launcher/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<ul>
+<li><a href="https://press.holo.host/214789-announcing-the-holochain-developer-education-initiative">Announcing the Holochain Developer Education Initiative</a></li>
+</ul>
+<h4 id="iotahttpsgithubcomiotaledger"><a href="https://github.com/iotaledger">IOTA</a></h4>
+<p>226 merged PRs (<a href="https://github.com/iotaledger/bee/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/iotaledger/wallet.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/iotaledger/iota.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/iotaledger/identity.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/iotaledger/cli-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/iotaledger/streams/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/iotaledger/stronghold.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/iotaledger/chronicle.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">8</a>),
+53 closed issues (<a href="https://github.com/iotaledger/bee/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/iotaledger/wallet.rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/iotaledger/iota.rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/iotaledger/identity.rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/iotaledger/stronghold.rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>),
+41 open issues (<a href="https://github.com/iotaledger/bee/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/iotaledger/wallet.rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/iotaledger/iota.rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/iotaledger/identity.rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/iotaledger/cli-wallet/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/iotaledger/streams/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/iotaledger/stronghold.rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">7</a>)</p>
+<ul>
+<li><a href="https://blog.iota.org/energy-consumption-of-iota-2-0/">Energy Consumption of IOTA 2.0</a></li>
+</ul>
+<h4 id="maidsafehttpsgithubcommaidsafe"><a href="https://github.com/maidsafe">Maidsafe</a></h4>
+<p>51 merged PRs (<a href="https://github.com/maidsafe/sn_dbc/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/maidsafe/safe_network/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/maidsafe/sn_consensus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/maidsafe/bls_dkg/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>),
+10 closed issues (<a href="https://github.com/maidsafe/safe_network/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+5 open issues (<a href="https://github.com/maidsafe/safe_network/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/maidsafe/sn_consensus/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>)</p>
+<h4 id="mobilecoinhttpsgithubcommobilecoinfoundation"><a href="https://github.com/mobilecoinfoundation">MobileCoin</a></h4>
+<p>135 merged PRs (<a href="https://github.com/mobilecoinfoundation/mobilecoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/mobilecoinfoundation/mc-oblivious/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+25 closed issues (<a href="https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+24 open issues (<a href="https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<ul>
+<li><a href="https://mobilecoin.com/news/mobilecoin-launches-bounties-on-gitcoin">MobileCoin launches Bounties on Gitcoin</a></li>
+</ul>
+<h4 id="nearhttpsgithubcomnearprotocolnearcore"><a href="https://github.com/nearprotocol/nearcore">NEAR</a></h4>
+<p>194 merged PRs (<a href="https://github.com/near/workspaces-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/near/nearcore/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/near/near-cli-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/near/near-sdk-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/near/near-jsonrpc-client-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/near/near-lake/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/near/near-lake-framework/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/near/near-indexer-for-explorer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">8</a>, <a href="https://github.com/near/wasmer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">9</a>),
+49 closed issues (<a href="https://github.com/near/workspaces-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/near/near-cli-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/near/near-sdk-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/near/near-lake/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/near/near-lake-framework/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/near/near-indexer-for-explorer/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">7</a>),
+42 open issues (<a href="https://github.com/near/workspaces-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/near/near-cli-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/near/near-sdk-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/near/core-contracts/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/near/near-lake-framework/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/near/wasmer/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">7</a>)</p>
+<h4 id="nervoshttpsgithubcomnervosnetwork"><a href="https://github.com/nervosnetwork">Nervos</a></h4>
+<p>180 merged PRs (<a href="https://github.com/nervosnetwork/axon/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/nervosnetwork/godwoken/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/nervosnetwork/ckb/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/nervosnetwork/godwoken-scripts/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/nervosnetwork/mercury/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/nervosnetwork/godwoken-tests/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/nervosnetwork/ckb-cli/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/nervosnetwork/ckb-indexer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">8</a>),
+3 closed issues (<a href="https://github.com/nervosnetwork/godwoken/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/nervosnetwork/mercury/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/nervosnetwork/ckb-indexer/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>),
+3 open issues (<a href="https://github.com/nervosnetwork/axon/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/nervosnetwork/ckb/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/nervosnetwork/ckb-cli/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>)</p>
+<ul>
+<li><a href="https://www.nervos.org/blog/the-nervos-layer-1-major-protocol-upgrade-with-chief-architect-jan-xie-highlights">The Nervos Layer 1 – Major Protocol Upgrade with Chief Architect Jan Xie – Highlights</a></li>
+<li><a href="https://www.nervos.org/blog/the-nervos-address-format-upgrade">The Nervos Address Format Upgrade</a></li>
+<li><a href="https://www.nervos.org/blog/virtual-machine-improvements">Virtual Machine Improvements</a></li>
+</ul>
+<h4 id="oasishttpsgithubcomoasisprotocol"><a href="https://github.com/oasisprotocol">Oasis</a></h4>
+<p>49 merged PRs (<a href="https://github.com/oasisprotocol/oasis-sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/oasisprotocol/cipher-paratime/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+1 closed issues (<a href="https://github.com/oasisprotocol/oasis-sdk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+3 open issues (<a href="https://github.com/oasisprotocol/oasis-sdk/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="parityhttpsgithubcomparitytech"><a href="https://github.com/paritytech">Parity</a></h4>
+<p>605 merged PRs (<a href="https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/paritytech/cumulus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/paritytech/parity-signer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/paritytech/smoldot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/paritytech/ink/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/paritytech/subxt/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/paritytech/jsonrpsee/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">8</a>, <a href="https://github.com/paritytech/frontier/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">9</a>, <a href="https://github.com/paritytech/cargo-contract/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">10</a>, <a href="https://github.com/paritytech/substrate-contracts-node/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">11</a>, <a href="https://github.com/paritytech/ink-playground/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">12</a>, <a href="https://github.com/paritytech/metadata-portal/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">13</a>, <a href="https://github.com/paritytech/parity-bridges-common/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">14</a>),
+180 closed issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/paritytech/parity-signer/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/paritytech/smoldot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/paritytech/subxt/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/paritytech/jsonrpsee/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">8</a>, <a href="https://github.com/paritytech/frontier/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">9</a>, <a href="https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">10</a>, <a href="https://github.com/paritytech/substrate-contracts-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">11</a>, <a href="https://github.com/paritytech/ink-playground/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">12</a>, <a href="https://github.com/paritytech/metadata-portal/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">13</a>, <a href="https://github.com/paritytech/parity-bridges-common/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">14</a>),
+167 open issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/paritytech/parity-signer/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/paritytech/smoldot/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">6</a>, <a href="https://github.com/paritytech/parity-common/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">7</a>, <a href="https://github.com/paritytech/subxt/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">8</a>, <a href="https://github.com/paritytech/jsonrpsee/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">9</a>, <a href="https://github.com/paritytech/frontier/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">10</a>, <a href="https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">11</a>, <a href="https://github.com/paritytech/substrate-contracts-node/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">12</a>, <a href="https://github.com/paritytech/ink-playground/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">13</a>, <a href="https://github.com/paritytech/metadata-portal/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">14</a>, <a href="https://github.com/paritytech/parity-bridges-common/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">15</a>)</p>
+<h4 id="secret-networkhttpsgithubcomenigmampcsecretnetwork"><a href="https://github.com/enigmampc/SecretNetwork">Secret Network</a></h4>
+<p>12 merged PRs (<a href="https://github.com/scrtlabs/SecretNetwork/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/scrtlabs/secret-toolkit/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/scrtlabs/snip20-reference-impl/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>),
+10 closed issues (<a href="https://github.com/scrtlabs/SecretNetwork/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/scrtlabs/secret-toolkit/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/scrtlabs/snip20-reference-impl/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>),
+0 open issues</p>
+<ul>
+<li><a href="https://scrt.network/blog/shockwave-alpha-mainnet-upgrade-complete">Shockwave Alpha Mainnet Upgrade is Complete!</a></li>
+</ul>
+<h4 id="solanahttpsgithubcomsolana-labssolana"><a href="https://github.com/solana-labs/solana">Solana</a></h4>
+<p>559 merged PRs (<a href="https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/solana-labs/solana-accountsdb-plugin-postgres/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>),
+110 closed issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/solana-labs/solana-accountsdb-plugin-postgres/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>),
+114 open issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/solana-labs/solana-accountsdb-plugin-postgres/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>)</p>
+<ul>
+<li><a href="https://blog.neodyme.io/posts/solana_core_1">How a Little-Known Solana Feature Made Program Vaults Unsafe</a></li>
+<li><a href="https://solana.com/news/solana-scaffold-part-1-wallet-adapter">Scaffold Series - Part 1 Wallet Adapter</a></li>
+<li><a href="https://solana.com/news/solana-scaffold-part-2-wallet-balance">Scaffold Series - Part 2 Wallet Balance</a></li>
+<li><a href="https://solana.com/news/solana-scaffold-part-3-sending-sol">Scaffold Series - Part 3 Sending SOL</a></li>
+</ul>
+<h4 id="subspace-labshttpsgithubcomsubspace"><a href="https://github.com/subspace">Subspace Labs</a></h4>
+<p>94 merged PRs (<a href="https://github.com/subspace/subspace/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+13 closed issues (<a href="https://github.com/subspace/subspace/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+4 open issues (<a href="https://github.com/subspace/subspace/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="suihttpsgithubcommystenlabs"><a href="https://github.com/MystenLabs">Sui</a></h4>
+<p>489 merged PRs (<a href="https://github.com/MystenLabs/sui/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/MystenLabs/narwhal/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+146 closed issues (<a href="https://github.com/MystenLabs/sui/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/MystenLabs/narwhal/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>),
+169 open issues (<a href="https://github.com/MystenLabs/sui/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/MystenLabs/narwhal/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>)</p>
+<h4 id="tezedgehttpsgithubcomtezedge"><a href="https://github.com/tezedge">TezEdge</a></h4>
+<p>20 merged PRs (<a href="https://github.com/tezedge/tezedge/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+0 closed issues,
+1 open issues (<a href="https://github.com/tezedge/tezedge/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="zcashhttpsgithubcomzcash"><a href="https://github.com/zcash">Zcash</a></h4>
+<p>175 merged PRs (<a href="https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/zcash/halo2/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/zcash/incrementalmerkletree/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/zcash/orchard/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/zcash/pasta_curves/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>),
+86 closed issues (<a href="https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/zcash/incrementalmerkletree/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/zcash/orchard/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>),
+34 open issues (<a href="https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/zcash/orchard/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/zcash/pasta_curves/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">5</a>)</p>
+<ul>
+<li><a href="https://electriccoin.co/blog/zcash-proof-of-stake-research/">Zcash Proof-of-Stake Research</a></li>
+<li><a href="https://electriccoin.co/blog/nu5-activates-on-mainnet-eliminating-trusted-setup-and-launching-a-new-era-for-zcash/">NU5 activates on mainnet, eliminating trusted setup and launching a new era for Zcash</a></li>
+<li><a href="https://electriccoin.co/blog/new-release-5-0-0/">New Release 5.0.0</a></li>
+</ul>
+<p> </p>
+<h3 id="rust-in-bitcoin">Rust in Bitcoin</h3>
+<p>An improvement to amount display types in Rust Bitcoin will help make BIP-21-encoded URIs shorter and their QR codes easier to scan. BDK implemented the &ldquo;oldest-first&rdquo; coin selection algorithm, which will be available to wallet authors in their next release. 0-conf channels have landed in LDK, allowing channels funds to be safely spent before there are block confirmations under some scenarios. Federico Tenga proposes a proof of payment protocol for LNP/BP. And in testing Bitmask RGB transfers, it&rsquo;s been observed that Bitcoin L3 token protocols will result in a dramatic improvements in privacy.</p>
+<p>For further details, see the links in their respective sections.</p>
+<p>For discussion join the <a href="https://t.me/rust_in_bitcoin">Rust in Bitcoin Telegram group</a>.</p>
+<h4 id="bdkhttpsgithubcombitcoindevkitbdk"><a href="https://github.com/bitcoindevkit/bdk">BDK</a></h4>
+<p>25 merged PRs (<a href="https://github.com/bitcoindevkit/bdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/bitcoindevkit/bdk-cli/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/bitcoindevkit/bdk-ffi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/bitcoindevkit/rust-hwi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>),
+21 closed issues (<a href="https://github.com/bitcoindevkit/bdk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/bitcoindevkit/bdk-cli/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/bitcoindevkit/bdk-ffi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/bitcoindevkit/rust-hwi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>),
+12 open issues (<a href="https://github.com/bitcoindevkit/bdk/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/bitcoindevkit/bdk-cli/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/bitcoindevkit/bdk-ffi/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/bitcoindevkit/rust-electrum-client/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>)</p>
+<ul>
+<li><a href="https://github.com/bitcoindevkit/bdk/pull/557">OldestFirstCoinSelection</a></li>
+</ul>
+<h4 id="bitmaskhttpsgithubcomdiba-iobitmask-core"><a href="https://github.com/diba-io/bitmask-core">Bitmask</a></h4>
+<p>3 merged PRs (<a href="https://github.com/diba-io/bitmask-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+1 closed issues (<a href="https://github.com/diba-io/bitmask-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+0 open issues</p>
+<ul>
+<li><a href="https://twitter.com/cryptoquick/status/1526996436650496000">Comment on RGB token transfers and their privacy</a></li>
+</ul>
+<h4 id="electrshttpsgithubcomromanzelectrs"><a href="https://github.com/romanz/electrs">Electrs</a></h4>
+<p>8 merged PRs (<a href="https://github.com/romanz/electrs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+0 closed issues,
+2 open issues (<a href="https://github.com/romanz/electrs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="internet2httpsgithubcominternet2-wg"><a href="https://github.com/internet2-wg/">Internet2</a></h4>
+<p>1 merged PRs (<a href="https://github.com/Internet2-WG/rust-internet2/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+0 closed issues,
+0 open issues</p>
+<h4 id="ldkhttpsgithubcomlightningdevkitrust-lightning"><a href="https://github.com/lightningdevkit/rust-lightning">LDK</a></h4>
+<p>40 merged PRs (<a href="https://github.com/lightningdevkit/rust-lightning/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/lightningdevkit/ldk-c-bindings/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+18 closed issues (<a href="https://github.com/lightningdevkit/rust-lightning/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+10 open issues (<a href="https://github.com/lightningdevkit/rust-lightning/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/lightningdevkit/ldk-c-bindings/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>)</p>
+<ul>
+<li><a href="https://github.com/lightningdevkit/rust-lightning/pull/1401">Zero-conf Channels</a></li>
+</ul>
+<h4 id="lnpbphttpsgithubcomlnp-bp"><a href="https://github.com/LNP-BP">LNP/BP</a></h4>
+<p>8 merged PRs (<a href="https://github.com/LNP-BP/client_side_validation/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/rust-amplify/rust-amplify/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/BP-WG/bp-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>),
+8 closed issues (<a href="https://github.com/LNP-BP/client_side_validation/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/BP-WG/bp-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>),
+0 open issues</p>
+<ul>
+<li><a href="https://github.com/LNP-BP/LNPBPs/discussions/122#discussion-3985446">Discussion around a proof-of-payment protocol</a></li>
+</ul>
+<h4 id="lnp-wghttpsgithubcomlnp-wg"><a href="https://github.com/LNP-WG">LNP WG</a></h4>
+<p>1 merged PRs (<a href="https://github.com/LNP-WG/lnp-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+0 closed issues,
+0 open issues</p>
+<h4 id="mycitadelhttpsgithubcomorgsmycitadel"><a href="https://github.com/orgs/mycitadel">MyCitadel</a></h4>
+<p>4 merged PRs (<a href="https://github.com/mycitadel/mycitadel-desktop/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+6 closed issues (<a href="https://github.com/mycitadel/mycitadel-desktop/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+12 open issues (<a href="https://github.com/mycitadel/mycitadel-desktop/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="nakamotohttpsgithubcomcloudheadnakamoto"><a href="https://github.com/cloudhead/nakamoto">Nakamoto</a></h4>
+<p>1 merged PRs (<a href="https://github.com/cloudhead/nakamoto/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+0 closed issues,
+0 open issues</p>
+<h4 id="nomichttpsgithubcomnomic-io"><a href="https://github.com/nomic-io">Nomic</a></h4>
+<p>0 merged PRs,
+0 closed issues,
+2 open issues (<a href="https://github.com/nomic-io/nomic/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="rgbhttpsgithubcomrgb-wg"><a href="https://github.com/rgb-wg">RGB</a></h4>
+<p>2 merged PRs (<a href="https://github.com/RGB-WG/rgb-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/RGB-WG/rgb-node/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+1 closed issues (<a href="https://github.com/RGB-WG/rgb-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+2 open issues (<a href="https://github.com/RGB-WG/rgb-core/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/RGB-WG/rgb-node/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>)</p>
+<h4 id="rust-bitcoinhttpsgithubcomrust-bitcoinrust-bitcoin"><a href="https://github.com/rust-bitcoin/rust-bitcoin">Rust Bitcoin</a></h4>
+<p>57 merged PRs (<a href="https://github.com/rust-bitcoin/rust-bitcoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/rust-bitcoin/rust-secp256k1/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/rust-bitcoin/rust-bip39/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/rust-bitcoin/bitcoin_hashes/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">6</a>),
+11 closed issues (<a href="https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/rust-bitcoin/rust-secp256k1/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">4</a>, <a href="https://github.com/rust-bitcoin/rust-bip39/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">5</a>, <a href="https://github.com/rust-bitcoin/bitcoin_hashes/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">6</a>),
+15 open issues (<a href="https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">2</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">3</a>, <a href="https://github.com/rust-bitcoin/rust-bip39/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">4</a>)</p>
+<ul>
+<li><a href="https://github.com/rust-bitcoin/rust-bitcoin/issues/716">Added amount::Display</a> - Added a configurable Display type for denominations or other user-facing amounts. This patch reduces all representations of numbers to the minimum width by default, thereby reducing the use of superfluous zeros that caused BIP21 URIs to be needlessly longer, which often made QR codes larger or harder to scan than necessary.</li>
+</ul>
+<h4 id="sapiohttpsgithubcomsapio-langsapio"><a href="https://github.com/sapio-lang/sapio">Sapio</a></h4>
+<p>6 merged PRs (<a href="https://github.com/sapio-lang/sapio/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+1 closed issues (<a href="https://github.com/sapio-lang/sapio/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+0 open issues</p>
+<h4 id="talaiahttpsgithubcomtalaia-labsrust-teos"><a href="https://github.com/talaia-labs/rust-teos">Talaia</a></h4>
+<p>2 merged PRs (<a href="https://github.com/talaia-labs/rust-teos/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+1 closed issues (<a href="https://github.com/talaia-labs/rust-teos/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+3 open issues (<a href="https://github.com/talaia-labs/rust-teos/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<p>If we&rsquo;ve missed any other notable Rust Bitcoin projects or ecosystems, feel free to contribute!</p>
+<p> </p>
+<h3 id="rust-in-ethereum">Rust in Ethereum</h3>
+<h4 id="ethers-rshttpsgithubcomgakonstethers-rs"><a href="https://github.com/gakonst/ethers-rs">Ethers-rs</a></h4>
+<p>97 merged PRs (<a href="https://github.com/gakonst/ethers-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+26 closed issues (<a href="https://github.com/gakonst/ethers-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+10 open issues (<a href="https://github.com/gakonst/ethers-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="lighthousehttpsgithubcomsigplighthouse"><a href="https://github.com/sigp/lighthouse">Lighthouse</a></h4>
+<p>10 merged PRs (<a href="https://github.com/sigp/discv5/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+21 closed issues (<a href="https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+14 open issues (<a href="https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="rust-ethereumhttpsgithubcomrust-ethereum"><a href="https://github.com/rust-ethereum">Rust Ethereum</a></h4>
+<p>4 merged PRs (<a href="https://github.com/rust-ethereum/enr/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+0 closed issues,
+0 open issues</p>
+<h4 id="rust-web3httpsgithubcomtomusdrwrust-web3"><a href="https://github.com/tomusdrw/rust-web3">Rust Web3</a></h4>
+<p>2 merged PRs (<a href="https://github.com/tomusdrw/rust-web3/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>),
+1 closed issues (<a href="https://github.com/tomusdrw/rust-web3/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+9 open issues (<a href="https://github.com/tomusdrw/rust-web3/issues?q=is%3Aissue+is%3Aopen+created%3A2022-05-01..2022-05-31">1</a>)</p>
+<h4 id="zksynchttpsgithubcommatter-labszksync"><a href="https://github.com/matter-labs/zksync">zkSync</a></h4>
+<p>5 merged PRs (<a href="https://github.com/matter-labs/zksync/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">1</a>, <a href="https://github.com/matter-labs/compiler-solidity/pulls?q=is%3Apr+is%3Aclosed+merged%3A2022-05-01..2022-05-31">2</a>),
+2 closed issues (<a href="https://github.com/matter-labs/zksync/issues?q=is%3Aissue+is%3Aclosed+closed%3A2022-05-01..2022-05-31">1</a>),
+0 open issues</p>
+<p>If we&rsquo;ve missed any other notable Rust Ethereum projects or ecosystems, feel free to contribute!</p>
+<p> </p>
+<h2 id="events">Events</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Jun 9-12 | Austin, TX, US</p>
+<p><a href="https://www.coindesk.com/consensus2022/">Consensus</a></p>
+<p>Jun 13-17 | Šibenik, Croatia</p>
+<p><a href="https://summerschool-croatia.cs.ru.nl/2022/">Summer school on real-world crypto and privacy</a></p>
+<p>Jun 20-23 | New York, US</p>
+<p><a href="https://www.nft.nyc/">NFT.NYC</a></p>
+<p>Jun 29-30 | Online, multiple cities</p>
+<p><a href="https://decoded.polkadot.network/">Polkadot Decoded</a></p>
+<p>Aug 7-9 | Online, Las Vegas, US</p>
+<p><a href="https://zfnd.org/zcon3/">Zcon3</a></p>
+<p>Aug 13-18 | Santa Barbara, CA, US</p>
+<p><a href="https://crypto.iacr.org/2022/">Crypto 2022</a></p>
+<p>Aug 29-31 | Arrillaga Alumni Center, Stanford University</p>
+<p><a href="https://cbr.stanford.edu/sbc22/">SBC'22: The Science of Blockchain Conference 2022</a></p>
+<p>Oct 7-16 | Bogota, Colombia</p>
+<p><a href="https://devcon.org/">Devcon Week</a></p>
+<p> </p>
+<h2 id="careers">Careers</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Blockstream | Remote</p>
+<ul>
+<li><a href="https://grnh.se/69d260dc1us">Software Library Engineer (C++)</a></li>
+<li><a href="https://grnh.se/6ac8f7f11us">Senior Network Engineer</a></li>
+<li><a href="https://grnh.se/11354dd01us">Senior Product Manager</a></li>
+<li><a href="https://grnh.se/1bdd2ced1us">Product Manager</a></li>
+<li><a href="https://grnh.se/ca7b51b81us">Technical Project Manager</a></li>
+<li><a href="https://grnh.se/e128bb9b1us">Lead Engineer, Blockstream Mining</a></li>
+<li><a href="https://grnh.se/ce2891871us">QA Engineer</a></li>
+<li><a href="https://grnh.se/2bf5f9981us">Qt Engineer</a></li>
+<li><a href="https://grnh.se/f1c289141us">Junior Operations Manager</a></li>
+<li><a href="https://grnh.se/e53608a01us">Don&rsquo;t see a role that fits? Apply here!</a></li>
+</ul>
+<p>Casa | Remote</p>
+<ul>
+<li><a href="https://tinyurl.com/Sr-Backend-RiB">Senior Backend Software Engineer</a></li>
+<li><a href="https://tinyurl.com/Casa-EngMgr-RiB">Engineering Manager, Backend</a></li>
+<li><a href="https://tinyurl.com/Casa-Dir-Partnerships-RiB">Director of Partnerships</a></li>
+</ul>
+<p>IO Global (IOHK) | Remote</p>
+<ul>
+<li><a href="https://apply.workable.com/io-global/j/9278186849/">Software Engineer - Rust (Jormungandr)</a></li>
+<li><a href="https://apply.workable.com/io-global/j/C2F607EEF5/">Technical Architect (Rust) - Lead Governance</a></li>
+<li><a href="https://apply.workable.com/io-global/j/3DDB40A962/">Technical Architect (Catalyst)</a></li>
+</ul>
+<p>Zcash Foundation | Remote</p>
+<ul>
+<li><a href="https://cryptojobslist.com/jobs/core-engineer-zcash-foundation-no-restrictions">Core Rust Engineer</a></li>
+</ul>
+<p>More jobs can be found at <a href="https://rustinblockchain.org/job-board/">Job Board</a>.</p>
+<p> </p>
+<p>Want to be included in the next issue? Feel free to submit a PR to the
+<a href="https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft">next draft</a>.</p>
+<p><strong>Join the discussion on <a href="https://t.me/rustinblockchain">RiB telegram group</a></strong> <strong>❤️</strong></p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../newsletters/rib-newsletter-35/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">RiB Newsletter #35</p>
+		</a>
+	</div>
+</nav>
+
+
+<section class="comments">
+  <script src="https://utteranc.es/client.js"
+          repo="rust-in-blockchain/rust-in-blockchain"
+          issue-term="url"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+</section>
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<h4 class="widget__title">Subscribe</h4>
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	 
+</style>
+	<div id="mc_embed_signup">
+	<form action="https://rustinblockchain.us20.list-manage.com/subscribe/post?u=1ac6f6cdd5c25b48064506045&amp;id=efe2948d57" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+		<div id="mc_embed_signup_scroll">
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	    
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1ac6f6cdd5c25b48064506045_efe2948d57" tabindex="-1" value=""></div>
+	    <div class="clear">
+				<input class="widget-subscribe-btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+				</div>
+	    </div>
+	</form>
+	</div>
+</div>
+
+<div class="widget-text widget">
+	<h4 class="widget__title">Support us</h4>
+	<div class="widget__content">
+	  <ul class="widget__list">
+	    <li class="widget__item">
+	      <b>BTC:</b> bc1qrl00ya0p0fg2s27lmws908cfmzapa4fa2uyk8n
+	    </li>
+	    <li class="widget__item">
+	      <b>ETH:</b> 0xE35D48926663dc02B7b4226d6AC044D4c6a30410
+	    </li>
+	    <li class="widget__item">
+	      <b>CKB:</b> ckb1qyqtgdktk9s52pd9q3f5wpqykee6eawz3dnsu8pcex
+	    </li>
+            <li class="widget__item">
+	      <b>NEAR:</b> @rib.near
+	    </li>
+            <li class="widget__item">
+	      <b>Zcash:</b> t1dvAmgCUWpFW4LccbE4MXag4Y6SBr4k5vD
+	    </li>
+	  </ul>
+	</div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer"
+				href="https://twitter.com/rust_blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer"
+				href="https://t.me/rustinblockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
+				<span>Telegram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Reddit" rel="noopener noreferrer"
+				href="https://www.reddit.com/r/RustInBlockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-reddit" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"></path></svg>
+
+
+				<span>Reddit</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer"
+				href="https://github.com/rust-in-blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:hi@rib.rs">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>hi@rib.rs</span>
+			</a>
+		</div>
+
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Rust in Blockchain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="../../js/menu.js"></script>
+<script src="../../js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
