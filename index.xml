@@ -11169,6 +11169,10 @@ for the issuance, lifecycle management and settlement of regulated securities.&l
 Post-quantum blockchain.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/radixdlt/radixdlt-scrypto&#34;&gt;Radix&lt;/a&gt;.
 Sharded smart contract DeFi platform.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Setheum-Labs/Setheum&#34;&gt;Setheum&lt;/a&gt;.
+SETHEUM : “Secure Evergreen Truthful Heterogeneous Economically Unbiased Market”
+is an Ethical DeFi-friendly Blockchain (built on Substrate) working on achieving
+mass adoption, security, scalability, affordability, inclusivity and ethical DeFi Governance.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/paritytech/shasper&#34;&gt;Shasper&lt;/a&gt;.
 Parity Shasper beacon chain implementation using the Substrate
 framework.&lt;/li&gt;
@@ -11241,11 +11245,11 @@ Zinc zk smart contract language.&lt;/li&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/pingcap/raft-rs&#34;&gt;Raft&lt;/a&gt;.
 Raft distributed consensus algorithm implemented in Rust.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/maidsafe/parsec&#34;&gt;parsec&lt;/a&gt;.
-Protocol for Asynchronous, Reliable, Secure and Efficient Consensus.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/poanetwork/hbbft&#34;&gt;Honey Badger&lt;/a&gt;.
 An implementation of the paper &amp;ldquo;Honey Badger of BFT Protocols&amp;rdquo; in
 Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/MystenLabs/narwhal&#34;&gt;Narwhal&lt;/a&gt;.
+The consensus layer used by Sui.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;p2p-network-libraries&#34;&gt;P2P Network Libraries&lt;/h2&gt;
 &lt;ul&gt;
@@ -11305,6 +11309,7 @@ A decentralized exchange built on Solana.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/second-state/SewUp&#34;&gt;SewUp&lt;/a&gt;.
 A library to help you build your Ethereum webassembly contract with
 Rust and just like develop in a common backend.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/SiennaNetwork/SiennaNetwork&#34;&gt;Sienna Network&lt;/a&gt; - Sienna is a privacy-first and cross-chain decentralized finance platform where you can privately swap, lend and convert your tokens into their private equivalent.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;other&#34;&gt;Other&lt;/h2&gt;
 &lt;ul&gt;
