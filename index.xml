@@ -11948,6 +11948,8 @@ DAG, PoS, snark smart contracts (substrate based).&lt;/li&gt;
 PoS blockchain with privacy.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/be-cash/bitcoin-cash&#34;&gt;Bitcoin Cash&lt;/a&gt;.
 A library for creating and parsing Bitcoin Cash trasactions.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/casper-network/casper-node&#34;&gt;Casper&lt;/a&gt;.
+A decentralized L1 PoS blockchain designed to accelerate enterprise and developer adoption.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/cryptape/cita&#34;&gt;CITA&lt;/a&gt;.
 A high performance blockchain kernel for enterprise users.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/CodeChain-io/codechain&#34;&gt;CodeChain&lt;/a&gt;.
