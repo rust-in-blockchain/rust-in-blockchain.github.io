@@ -11946,6 +11946,8 @@ Leo is a rust flavoured zk language.&lt;/li&gt;
 DAG, PoS, snark smart contracts (substrate based).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://anoma.network/&#34;&gt;Anoma.network&lt;/a&gt;.
 PoS blockchain with privacy.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aptoslabs.com/&#34;&gt;Aptos Network&lt;/a&gt;.
+Building the safest and most scalable Layer 1 blockchain..&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/be-cash/bitcoin-cash&#34;&gt;Bitcoin Cash&lt;/a&gt;.
 A library for creating and parsing Bitcoin Cash trasactions.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/casper-network/casper-node&#34;&gt;Casper&lt;/a&gt;.
@@ -12038,6 +12040,10 @@ framework.&lt;/li&gt;
 Blockchain Rebuilt for Scale.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/blockstack/stacks-blockchain&#34;&gt;Stacks 2.0&lt;/a&gt;.
 Proof of Transfer blockchain from Blockstack.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sui.io/&#34;&gt;Sui Network&lt;/a&gt;.
+A next-generation smart contract platform with high throughput, low
+latency, and an asset-oriented programming model powered by the Move
+programming language.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/tari-project&#34;&gt;Tari&lt;/a&gt;.
 The Tari Digital Assets Protocol.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/tendermint-rs&#34;&gt;Tendermint&lt;/a&gt;.
