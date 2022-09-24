@@ -12523,6 +12523,8 @@ Tendermint ABCI server, written in the Rust programming language.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nomic-io/orga&#34;&gt;Orga&lt;/a&gt;.
 A high-performance state machine engine designed for
 Tendermint-based blockchain applications.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/coral-xyz/anchor&#34;&gt;Anchor&lt;/a&gt;
+is a framework for Solana&amp;rsquo;s Sealevel runtime providing several convenient developer tools for writing smart contracts.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;cross-chain&#34;&gt;Cross-Chain&lt;/h2&gt;
 &lt;ul&gt;
