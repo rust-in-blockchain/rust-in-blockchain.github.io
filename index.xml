@@ -13344,6 +13344,9 @@ infrastructure.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/interledger-rs/interledger-rs&#34;&gt;Interledger&lt;/a&gt;.
 An easy-to-use, high-performance Interledger implementation written
 in Rust.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dfinity/ic&#34;&gt;Internet Computer Protocol (ICP)&lt;/a&gt;.
+The world’s first blockchain that runs at web speed and can increase
+its capacity without bound.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/Internet-of-People/iop-rs&#34;&gt;Internet of People&lt;/a&gt;.
 Decentralized software stack that provides the building blocks and
 tools to support a decentralized society.&lt;/li&gt;
