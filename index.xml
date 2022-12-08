@@ -61,7 +61,7 @@ by submitting a PR to the &lt;a href=&#34;https://github.com/rust-in-blockchain/
 &lt;h2 id=&#34;project-spotlight&#34;&gt;Project Spotlight&lt;/h2&gt;
 &lt;p&gt;Each month we like to shine a light on a notable Rust blockchain project. This month that project is…&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/ava-labs/avalanche-types-rs&#34;&gt;avalanche-types&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The behavior of Avalanch subnets is defined by customized VMs,
+&lt;p&gt;The behavior of Avalanche subnets is defined by customized VMs,
 which communicate with the Avalanche node over RPC.
 Avalanche VMs are typically written in Go.
 This is an official SDK for developing Avalanche VMs in Rust.&lt;/p&gt;
