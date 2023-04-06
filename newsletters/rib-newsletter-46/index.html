@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RiB Newsletter #46 - Rust in Blockchain ❤ rib.rs</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="March 2023">
+	<meta property="og:title" content="RiB Newsletter #46" />
+<meta property="og:description" content="March 2023" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rustinblockchain.org/newsletters/rib-newsletter-46/" /><meta property="article:section" content="newsletters" />
+<meta property="article:published_time" content="2023-04-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-04-05T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RiB Newsletter #46"/>
+<meta name="twitter:description" content="March 2023"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i">
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/custom.css">
+	<link rel="shortcut icon" href="../../favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-140591727-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="../../" title="Rust in Blockchain ❤ rib.rs" rel="home">
+				<div class="logo__title">Rust in Blockchain ❤ rib.rs</div>
+				<div class="logo__tagline">Bringing engineering insight and experience to blockchain technology.</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../newsletters">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Newsletters</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../blogposts">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Blog Posts</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../awesome-blockchain-rust">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Awesome RiB</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../job-board">
+				<i class='fa fa-road'></i>
+				<span class="menu__text">Job Board</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../learning">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Learning</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../contributing">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">Contributing</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../about">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">About Us</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../index.xml">
+				<i class='fa fa-heart'></i>
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">RiB Newsletter #46</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2023-04-05T00:00:00Z">April 05, 2023</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="../../categories/newsletters/" rel="category">newsletters</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>Welcome to the #46 edition of Rust in Blockchain, the monthly
+newsletter about Rust, distributed systems, cryptography, and other
+industry topics.
+<a href="../../newsletters/rib-newsletter-45/">Previous: #45</a>.</p>
+<p> </p>
+<h2 id="thanks">Thanks</h2>
+<p>Thanks to contributors:
+<a href="https://github.com/acdibble">Andrew Dibble</a>,
+<a href="https://github.com/brson">Brian Anderson</a> and <a href="https://github.com/Aimeedeer">Aimee Zhu</a>.
+Thank you for your help!</p>
+<p>RiB needs help to keep up with Rust blockchain projects.
+If you follow a particular project, or otherwise find information
+that is beneficial to the Rust &amp; blockchain community,
+please contribute to the next issue
+by submitting a PR to the <a href="https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft">next draft</a>.</p>
+<p> </p>
+<h2 id="project-spotlight">Project Spotlight</h2>
+<p>Each month we like to shine a light on a notable Rust blockchain project. This month that project is…</p>
+<ul>
+<li><a href="https://github.com/HigherOrderCO/kind">Kind</a> and <a href="https://github.com/HigherOrderCO/HVM">HVM</a></li>
+</ul>
+<p>Kind is a lazy, functional, but non-garbage-collected language, in the spirit of Haskell.
+It runs on HVM, the &ldquo;Higher-order Virtual Machine&rdquo;, and is based on
+a model of computation called <a href="https://www.sciencedirect.com/science/article/pii/S0890540197926432?ref=pdf_download&amp;fr=RR-2&amp;rr=7b358c408c0c1f2d">Interaction Nets</a>.
+It features automatic parallelism and is said to be &ldquo;beta-optimal&rdquo;,
+in some cases resulting in faster performance than Haskell&rsquo;s GHC.</p>
+<p>They are components of <a href="https://github.com/HigherOrderCO/Kindelia">Kindelia</a>,
+a proof-of-work computation network that is not backed by a cryptocurrency.</p>
+<p> </p>
+<h2 id="interesting-things">Interesting Things</h2>
+<h4 id="blog-posts">Blog Posts</h4>
+<ul>
+<li><a href="https://www.kalos.xyz/blog/security-considerations-for-precompiled-contracts">Security Considerations for Precompiled Contracts</a></li>
+<li><a href="https://brson.github.io/2023/03/12/move-on-llvm">Writing an LLVM backend for the Move language in Rust</a></li>
+<li><a href="https://stonecoldpat.substack.com/p/settlement-layers-ethereum-rollups">Settlement Layers? Ethereum Rollups? Sovereign Rollups?</a></li>
+<li><a href="https://www.notamonadtutorial.com/using-metal-and-rust-to-make-fft-even-faster/">Using Metal and Rust to make FFT even faster</a></li>
+<li><a href="https://penumbra.zone/blog/zkproofs-intro/">Bringing Zero-Knowledge Proofs to Penumbra</a></li>
+<li><a href="https://worldcoin.org/blog/engineering/intro-to-zkml">An Introduction To Zero-knowledge Machine Learning (ZKML)</a></li>
+<li><a href="https://blog.trailofbits.com/2023/03/22/codex-and-gpt4-cant-beat-humans-on-smart-contract-audits/">Codex (and GPT-4) can’t beat humans on smart contract audits</a></li>
+<li><a href="https://decentralizedthoughts.github.io/2023-04-01-hotstuff-2/">What is the difference between PBFT, Tendermint, HotStuff, and HotStuff-2?</a></li>
+<li><a href="https://zecsec.com/posts/risk-analysis-of-intel-sgx-and-other-tees/">Risk Analysis of Intel&rsquo;s SGX and Other TEEs</a></li>
+</ul>
+<h4 id="papers">Papers</h4>
+<ul>
+<li><a href="https://eprint.iacr.org/2023/397">Extended Abstract: HotStuff-2: Optimal Two-Phase Responsive BFT</a></li>
+<li><a href="https://eprint.iacr.org/2023/463">Simplex Consensus: A Simple and Fast Consensus Protocol</a></li>
+<li><a href="https://drive.google.com/file/d/1tylpowpaqcOhKQtYolPlqvx6R2Gv4IzE/view">The Cost of Intelligence: Proving Machine Learning Inference with Zero-Knowledge</a></li>
+</ul>
+<h4 id="projects">Projects</h4>
+<ul>
+<li><a href="https://github.com/zkoranges/zkPoEX">zkPoEX</a> enables white hat
+hackers to report live vulnerabilities in smart contracts while
+maintaining the confidentiality of the exploit, facilitating
+efficient communication and collaboration between hackers and
+project owners for a more secure DeFi ecosystem.</li>
+<li><a href="https://github.com/zkonduit/ezkl">EZKL</a> is a library and
+command-line tool for doing inference for deep learning models and
+other computational graphs in a zk-snark.</li>
+</ul>
+<p> </p>
+<h2 id="most-active-in-march">Most Active in March</h2>
+<p><a href="https://github.com/MystenLabs">Sui</a>:
+1115 merged PRs,
+167 closed issues,
+102 open issues</p>
+<p><a href="https://github.com/paritytech">Parity</a>:
+504 merged PRs,
+236 closed issues,
+172 open issues</p>
+<p><a href="https://github.com/aptos-labs">Aptos</a>:
+442 merged PRs,
+92 closed issues,
+75 open issues</p>
+<p><a href="https://github.com/starkware-libs">Starkware</a>:
+341 merged PRs,
+24 closed issues,
+12 open issues</p>
+<p><a href="https://github.com/solana-labs/solana">Solana</a>:
+335 merged PRs,
+54 closed issues,
+33 open issues</p>
+<p> </p>
+<h2 id="project-updates">Project Updates</h2>
+<!-- raw HTML omitted -->
+<h4 id="aleohttpsgithubcomaleohq"><a href="https://github.com/AleoHQ">Aleo</a></h4>
+<p>39 merged PRs (<a href="https://github.com/AleoHQ/aleo/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/AleoHQ/aleo-std/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/AleoHQ/leo/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/AleoHQ/snarkOS/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/AleoHQ/snarkVM/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/AleoHQ/welcome/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>),
+14 closed issues (<a href="https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/AleoHQ/snarkVM/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/AleoHQ/welcome/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>),
+7 open issues (<a href="https://github.com/AleoHQ/leo/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/AleoHQ/snarkOS/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<h4 id="anomahttpsgithubcomanoma"><a href="https://github.com/anoma">Anoma</a></h4>
+<p>53 merged PRs (<a href="https://github.com/anoma/namada/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/anoma/vamp-ir/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/anoma/taiga/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+22 closed issues (<a href="https://github.com/anoma/namada/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/anoma/vamp-ir/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/anoma/taiga/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+46 open issues (<a href="https://github.com/anoma/namada/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/anoma/vamp-ir/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/anoma/taiga/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>)</p>
+<h4 id="aptoshttpsgithubcomaptos-labs"><a href="https://github.com/aptos-labs">Aptos</a></h4>
+<p>442 merged PRs (<a href="https://github.com/aptos-labs/aptos-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+92 closed issues (<a href="https://github.com/aptos-labs/aptos-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+75 open issues (<a href="https://github.com/aptos-labs/aptos-core/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="casperhttpsgithubcomcasper-network"><a href="https://github.com/casper-network">Casper</a></h4>
+<p>78 merged PRs (<a href="https://github.com/casper-network/casper-node/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/casper-network/docs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+67 closed issues (<a href="https://github.com/casper-network/casper-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/casper-network/docs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+43 open issues (<a href="https://github.com/casper-network/casper-node/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/casper-network/docs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<h4 id="comithttpsgithubcomcomit-network"><a href="https://github.com/comit-network">COMIT</a></h4>
+<p>1 merged PRs (<a href="https://github.com/comit-network/xmr-btc-swap/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 closed issues,
+1 open issues (<a href="https://github.com/comit-network/xmr-btc-swap/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="concordiumhttpsgithubcomconcordium"><a href="https://github.com/Concordium">Concordium</a></h4>
+<p>77 merged PRs (<a href="https://github.com/Concordium/concordium-rust-smart-contracts/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/Concordium/concordium-contracts-common/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/Concordium/concordium-rust-sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/Concordium/concordium-base/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/Concordium/concordium-transaction-logger/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/Concordium/concordium-use-case-examples/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/Concordium/concordium-node/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>),
+29 closed issues (<a href="https://github.com/Concordium/concordium-rust-smart-contracts/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/Concordium/concordium-contracts-common/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/Concordium/concordium-base/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/Concordium/concordium-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>),
+14 open issues (<a href="https://github.com/Concordium/concordium-rust-smart-contracts/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/Concordium/concordium-base/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/Concordium/concordium-node/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>)</p>
+<h4 id="confluxhttpsgithubcomconflux-chain"><a href="https://github.com/Conflux-Chain">Conflux</a></h4>
+<p>11 merged PRs (<a href="https://github.com/Conflux-Chain/conflux-rust/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+5 closed issues (<a href="https://github.com/Conflux-Chain/conflux-rust/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+1 open issues (<a href="https://github.com/Conflux-Chain/conflux-rust/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="darkfihttpsdarkfi"><a href="https://dark.fi">DarkFi</a></h4>
+<p>3 merged PRs (<a href="https://github.com/darkrenaissance/darkfi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+3 closed issues (<a href="https://github.com/darkrenaissance/darkfi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 open issues</p>
+<h4 id="dfinityhttpsgithubcomdfinity"><a href="https://github.com/dfinity">Dfinity</a></h4>
+<p>89 merged PRs (<a href="https://github.com/dfinity/sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/dfinity/agent-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/dfinity/cdk-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/dfinity/candid/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/dfinity/quill/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/dfinity/vessel/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>),
+16 closed issues (<a href="https://github.com/dfinity/agent-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/dfinity/candid/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/dfinity/quill/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/dfinity/experimental-minting-tool/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>),
+7 open issues (<a href="https://github.com/dfinity/sdk/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/dfinity/candid/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/dfinity/vessel/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>)</p>
+<ul>
+<li><a href="https://medium.com/dfinity/chain-key-bitcoin-a-decentralized-bitcoin-twin-ceb8f4ddf95e">Chain-Key Bitcoin: A Decentralized Bitcoin Twin</a></li>
+<li><a href="https://medium.com/dfinity/understanding-the-ethereum-virtual-machine-canister-evmc-a-beginners-guide-df4fd69c8ad4">Understanding the Ethereum Virtual Machine Canister (EVMC): A Beginner’s Guide</a></li>
+</ul>
+<h4 id="dusk-networkhttpsgithubcomdusk-network"><a href="https://github.com/dusk-network">Dusk Network</a></h4>
+<p>12 merged PRs (<a href="https://github.com/dusk-network/plonk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/dusk-network/rusk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+13 closed issues (<a href="https://github.com/dusk-network/plonk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/dusk-network/rusk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+4 open issues (<a href="https://github.com/dusk-network/rusk/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="espresso-systemshttpsgithubcomespressosystems"><a href="https://github.com/EspressoSystems">Espresso Systems</a></h4>
+<p>26 merged PRs (<a href="https://github.com/EspressoSystems/jellyfish/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/EspressoSystems/HotShot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+30 closed issues (<a href="https://github.com/EspressoSystems/jellyfish/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/EspressoSystems/HotShot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+37 open issues (<a href="https://github.com/EspressoSystems/jellyfish/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/EspressoSystems/HotShot/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<h4 id="filecoinhttpsgithubcomfilecoin-project"><a href="https://github.com/filecoin-project">Filecoin</a></h4>
+<p>136 merged PRs (<a href="https://github.com/filecoin-project/builtin-actors/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/filecoin-project/ec-gpu/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/filecoin-project/filecoin-ffi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/lurk-lab/neptune/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/filecoin-project/ref-fvm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/filecoin-project/rust-filecoin-proofs-api/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/filecoin-project/rust-fil-proofs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>, <a href="https://github.com/ChainSafe/forest/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">8</a>),
+79 closed issues (<a href="https://github.com/filecoin-project/builtin-actors/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/filecoin-project/ec-gpu/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/filecoin-project/filecoin-ffi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/filecoin-project/ref-fvm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/filecoin-project/rust-fil-proofs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/filecoin-project/rust-gpu-tools/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/ChainSafe/forest/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>),
+46 open issues (<a href="https://github.com/filecoin-project/builtin-actors/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/filecoin-project/ec-gpu/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/filecoin-project/ref-fvm/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/filecoin-project/rust-fil-proofs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/ChainSafe/forest/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>)</p>
+<ul>
+<li><a href="https://filecoin.io/blog/posts/fvm-is-live-on-mainnet/">The Filecoin Virtual Machine (FVM) is live on Mainnet!</a></li>
+<li><a href="https://filecoin.io/blog/posts/refreshing-the-filecoin-bug-bounty-program/">Refreshing the Filecoin Bug Bounty Program</a></li>
+</ul>
+<h4 id="findorahttpsgithubcomfindoranetwork"><a href="https://github.com/FindoraNetwork">Findora</a></h4>
+<p>48 merged PRs (<a href="https://github.com/FindoraNetwork/platform/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/FindoraNetwork/findora-scanner/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/FindoraNetwork/noah/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+0 closed issues,
+0 open issues</p>
+<h4 id="fluencehttpsgithubcomfluencelabs"><a href="https://github.com/fluencelabs">Fluence</a></h4>
+<p>146 merged PRs (<a href="https://github.com/fluencelabs/marine/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/fluencelabs/aquavm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/fluencelabs/examples/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/fluencelabs/registry/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/fluencelabs/trust-graph/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/fluencelabs/aqua-ipfs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/fluencelabs/rust-peer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>),
+1 closed issues (<a href="https://github.com/fluencelabs/marine/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 open issues</p>
+<h4 id="fuelhttpsgithubcomfuellabs"><a href="https://github.com/FuelLabs">Fuel</a></h4>
+<p>238 merged PRs (<a href="https://github.com/FuelLabs/faucet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/FuelLabs/forc-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/FuelLabs/fuel-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/FuelLabs/fuel-indexer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/FuelLabs/fuel-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/FuelLabs/fuels-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/FuelLabs/fuelup/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>, <a href="https://github.com/FuelLabs/sway/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">8</a>),
+166 closed issues (<a href="https://github.com/FuelLabs/forc-wallet/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/FuelLabs/fuel-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/FuelLabs/fuel-indexer/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/FuelLabs/fuel-merkle/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/FuelLabs/fuel-vm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/FuelLabs/fuels-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/FuelLabs/fuelup/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>, <a href="https://github.com/FuelLabs/sway/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">8</a>),
+102 open issues (<a href="https://github.com/FuelLabs/faucet/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/FuelLabs/forc-wallet/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/FuelLabs/fuel-core/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/FuelLabs/fuel-indexer/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/FuelLabs/fuel-vm/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/FuelLabs/fuels-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/FuelLabs/fuelup/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>, <a href="https://github.com/FuelLabs/sway/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">8</a>)</p>
+<ul>
+<li><a href="https://jtriley.substack.com/p/fuel-vm-binary-analysis">Fuel VM Binary Analysis</a></li>
+</ul>
+<h4 id="golemhttpsgithubcomgolemfactory"><a href="https://github.com/golemfactory">Golem</a></h4>
+<p>25 merged PRs (<a href="https://github.com/golemfactory/yagna/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/golemfactory/ya-client/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/golemfactory/ya-relay/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+34 closed issues (<a href="https://github.com/golemfactory/yagna/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/golemfactory/ya-relay/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+11 open issues (<a href="https://github.com/golemfactory/yagna/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/golemfactory/ya-relay/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<h4 id="grinhttpsgithubcommimblewimblegrin"><a href="https://github.com/mimblewimble/grin">Grin</a></h4>
+<p>3 merged PRs (<a href="https://github.com/mimblewimble/grin-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+2 closed issues (<a href="https://github.com/mimblewimble/grin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/mimblewimble/grin-wallet/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+0 open issues</p>
+<h4 id="heliumhttpsgithubcomhelium"><a href="https://github.com/helium">Helium</a></h4>
+<p>33 merged PRs (<a href="https://github.com/helium/gateway-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/helium/semtech-udp/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/helium/helium-crypto-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/helium/helium-wallet-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>),
+3 closed issues (<a href="https://github.com/helium/gateway-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/helium/helium-wallet-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+1 open issues (<a href="https://github.com/helium/gateway-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<ul>
+<li><a href="https://blog.helium.com/an-update-on-the-helium-networks-migration-to-solana-4550e20552a9">An Update on the Helium Network’s Migration to Solana</a></li>
+</ul>
+<h4 id="holochainhttpsgithubcomholochain"><a href="https://github.com/holochain/">Holochain</a></h4>
+<p>100 merged PRs (<a href="https://github.com/holochain/holochain/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/holochain/launcher/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+18 closed issues (<a href="https://github.com/holochain/holochain/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/holochain/launcher/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+9 open issues (<a href="https://github.com/holochain/holochain/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/holochain/launcher/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<ul>
+<li><a href="https://blog.holochain.org/hc-cli-test-run-and-package-your-happ/">hc CLI: Test, Run, and Package Your hApp</a></li>
+</ul>
+<h4 id="iotahttpsgithubcomiotaledger"><a href="https://github.com/iotaledger">IOTA</a></h4>
+<p>87 merged PRs (<a href="https://github.com/iotaledger/wallet.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/iotaledger/iota.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/iotaledger/identity.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/iotaledger/cli-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/iotaledger/stronghold.rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>),
+62 closed issues (<a href="https://github.com/iotaledger/wallet.rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/iotaledger/iota.rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/iotaledger/identity.rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+4 open issues (<a href="https://github.com/iotaledger/bee/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/iotaledger/identity.rs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<h4 id="maidsafehttpsgithubcommaidsafe"><a href="https://github.com/maidsafe">Maidsafe</a></h4>
+<p>116 merged PRs (<a href="https://github.com/maidsafe/sn_dbc/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/maidsafe/safe_network/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/maidsafe/qp2p/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/maidsafe/sn_consensus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/maidsafe/self_encryption/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>),
+3 closed issues (<a href="https://github.com/maidsafe/safe_network/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/maidsafe/bls_dkg/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+3 open issues (<a href="https://github.com/maidsafe/safe_network/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="minahttpsgithubcomminaprotocol"><a href="https://github.com/MinaProtocol">Mina</a></h4>
+<p>0 merged PRs,
+0 closed issues,
+1 open issues (<a href="https://github.com/openmina/openmina/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<ul>
+<li><a href="https://www.cryptologie.net/article/589/zkvms-are-cool-but-have-you-heard-of-zkcpus/">zkVMs are cool, but have you heard of zkCPUs?</a></li>
+</ul>
+<h4 id="mobilecoinhttpsgithubcommobilecoinfoundation"><a href="https://github.com/mobilecoinfoundation">MobileCoin</a></h4>
+<p>51 merged PRs (<a href="https://github.com/mobilecoinfoundation/mobilecoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/mobilecoinfoundation/mc-oblivious/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+19 closed issues (<a href="https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/mobilecoinfoundation/mc-oblivious/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+18 open issues (<a href="https://github.com/mobilecoinfoundation/mobilecoin/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="multiversxhttpsgithubcommultiversx"><a href="https://github.com/multiversx">MultiversX</a></h4>
+<p>49 merged PRs (<a href="https://github.com/multiversx/mx-sdk-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/multiversx/mx-exchange-sc/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/multiversx/mx-bridge-eth-sc-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+2 closed issues (<a href="https://github.com/multiversx/mx-sdk-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 open issues</p>
+<h4 id="nearhttpsgithubcomnearprotocolnearcore"><a href="https://github.com/nearprotocol/nearcore">NEAR</a></h4>
+<p>140 merged PRs (<a href="https://github.com/near/nearcore/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/near/near-cli-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/near/near-jsonrpc-client-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/near/near-lake-framework-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/near/near-lake-indexer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/near/borsh-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/near/near-indexer-for-explorer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>),
+29 closed issues (<a href="https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/near/near-sdk-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/near/near-lake-framework-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/near/near-indexer-for-explorer/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>),
+44 open issues (<a href="https://github.com/near/workspaces-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/near/nearcore/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/near/near-sdk-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>)</p>
+<ul>
+<li><a href="https://near.org/blog/near-announces-the-blockchain-operation-system/">Near Announces the Blockchain Operation System</a></li>
+</ul>
+<h4 id="nervoshttpsgithubcomnervosnetwork"><a href="https://github.com/nervosnetwork">Nervos</a></h4>
+<p>53 merged PRs (<a href="https://github.com/nervosnetwork/ckb/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/nervosnetwork/ckb-vm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/nervosnetwork/molecule/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/nervosnetwork/ckb-indexer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/godwokenrises/godwoken/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/godwokenrises/godwoken-tests/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>),
+17 closed issues (<a href="https://github.com/nervosnetwork/ckb/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/nervosnetwork/ckb-vm/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/godwokenrises/godwoken/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+6 open issues (<a href="https://github.com/nervosnetwork/ckb/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/nervosnetwork/ckb-vm/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/nervosnetwork/capsule/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>)</p>
+<h4 id="oasishttpsgithubcomoasisprotocol"><a href="https://github.com/oasisprotocol">Oasis</a></h4>
+<p>12 merged PRs (<a href="https://github.com/oasisprotocol/oasis-sdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/oasisprotocol/emerald-paratime/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+2 closed issues (<a href="https://github.com/oasisprotocol/oasis-sdk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 open issues</p>
+<h4 id="parityhttpsgithubcomparitytech"><a href="https://github.com/paritytech">Parity</a></h4>
+<p>504 merged PRs (<a href="https://github.com/paritytech/substrate/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/paritytech/polkadot/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/paritytech/cumulus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/paritytech/parity-signer/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/paritytech/ink/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/paritytech/subxt/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/paritytech/jsonrpsee/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>, <a href="https://github.com/paritytech/frontier/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">8</a>, <a href="https://github.com/paritytech/cargo-contract/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">9</a>, <a href="https://github.com/paritytech/ink-playground/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">10</a>, <a href="https://github.com/paritytech/metadata-portal/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">11</a>, <a href="https://github.com/paritytech/parity-bridges-common/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">12</a>),
+236 closed issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/paritytech/parity-signer/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/paritytech/subxt/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/paritytech/jsonrpsee/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>, <a href="https://github.com/paritytech/frontier/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">8</a>, <a href="https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">9</a>, <a href="https://github.com/paritytech/substrate-contracts-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">10</a>, <a href="https://github.com/paritytech/metadata-portal/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">11</a>, <a href="https://github.com/paritytech/parity-bridges-common/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">12</a>),
+172 open issues (<a href="https://github.com/paritytech/substrate/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/paritytech/polkadot/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/paritytech/cumulus/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/paritytech/parity-signer/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/paritytech/smoldot/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/paritytech/ink/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>, <a href="https://github.com/paritytech/subxt/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">7</a>, <a href="https://github.com/paritytech/jsonrpsee/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">8</a>, <a href="https://github.com/paritytech/frontier/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">9</a>, <a href="https://github.com/paritytech/cargo-contract/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">10</a>, <a href="https://github.com/paritytech/metadata-portal/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">11</a>, <a href="https://github.com/paritytech/parity-bridges-common/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">12</a>)</p>
+<h4 id="radixhttpsgithubcomradixdlt"><a href="https://github.com/radixdlt">Radix</a></h4>
+<p>96 merged PRs (<a href="https://github.com/radixdlt/community-scrypto-examples/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/radixdlt/radixdlt-scrypto/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/radixdlt/scrypto-challenges/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/radixdlt/scrypto-demos/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/radixdlt/scrypto-examples/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>),
+1 closed issues (<a href="https://github.com/radixdlt/radixdlt-scrypto/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+1 open issues (<a href="https://github.com/radixdlt/radixdlt-scrypto/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="secret-networkhttpsgithubcomenigmampcsecretnetwork"><a href="https://github.com/enigmampc/SecretNetwork">Secret Network</a></h4>
+<p>24 merged PRs (<a href="https://github.com/scrtlabs/SecretNetwork/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/scrtlabs/secret-toolkit/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/scrtlabs/snip20-reference-impl/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+3 closed issues (<a href="https://github.com/scrtlabs/SecretNetwork/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/scrtlabs/snip20-reference-impl/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+2 open issues (<a href="https://github.com/scrtlabs/snip20-reference-impl/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="solanahttpsgithubcomsolana-labssolana"><a href="https://github.com/solana-labs/solana">Solana</a></h4>
+<p>335 merged PRs (<a href="https://github.com/solana-labs/solana/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/solana-labs/solana-program-library/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+54 closed issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+33 open issues (<a href="https://github.com/solana-labs/solana/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/solana-labs/solana-program-library/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<h4 id="subspace-networkhttpsgithubcomsubspace"><a href="https://github.com/subspace">Subspace Network</a></h4>
+<p>76 merged PRs (<a href="https://github.com/subspace/subspace/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+31 closed issues (<a href="https://github.com/subspace/subspace/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+38 open issues (<a href="https://github.com/subspace/subspace/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="suihttpsgithubcommystenlabs"><a href="https://github.com/MystenLabs">Sui</a></h4>
+<p>1115 merged PRs (<a href="https://github.com/MystenLabs/sui/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+167 closed issues (<a href="https://github.com/MystenLabs/sui/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+102 open issues (<a href="https://github.com/MystenLabs/sui/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="zcashhttpsgithubcomzcash"><a href="https://github.com/zcash">Zcash</a></h4>
+<p>58 merged PRs (<a href="https://github.com/ZcashFoundation/zebra/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/zcash/halo2/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/zcash/incrementalmerkletree/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/zcash/librustzcash/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/zcash/orchard/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/zcash/pasta_curves/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>),
+29 closed issues (<a href="https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/zcash/incrementalmerkletree/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/zcash/orchard/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/zcash/pasta_curves/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>),
+32 open issues (<a href="https://github.com/ZcashFoundation/zebra/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/zcash/halo2/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/zcash/librustzcash/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/zcash/orchard/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>)</p>
+<ul>
+<li><a href="https://zecsec.com/posts/making-zcash-light-wallets-faster-and-more-private/">Making Zcash Light Wallets Faster and More Private</a></li>
+</ul>
+<p> </p>
+<h3 id="rust-in-bitcoin">Rust in Bitcoin</h3>
+<p>For discussion join the <a href="https://t.me/rust_in_bitcoin">Rust in Bitcoin Telegram group</a>.</p>
+<h4 id="aluvmhttpsgithubcomaluvm"><a href="https://github.com/AluVM">AluVM</a></h4>
+<p>1 merged PRs (<a href="https://github.com/AluVM/rust-aluvm/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 closed issues,
+1 open issues (<a href="https://github.com/AluVM/rust-aluvm/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="bdkhttpsgithubcombitcoindevkitbdk"><a href="https://github.com/bitcoindevkit/bdk">BDK</a></h4>
+<p>23 merged PRs (<a href="https://github.com/bitcoindevkit/bdk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/bitcoindevkit/bdk-cli/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/bitcoindevkit/bdk-ffi/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/bitcoindevkit/rust-electrum-client/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>),
+28 closed issues (<a href="https://github.com/bitcoindevkit/bdk/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/bitcoindevkit/bdk-cli/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/bitcoindevkit/bdk-ffi/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/bitcoindevkit/rust-electrum-client/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>),
+26 open issues (<a href="https://github.com/bitcoindevkit/bdk/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/bitcoindevkit/bdk-cli/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/bitcoindevkit/bdk-ffi/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>)</p>
+<h4 id="bitmaskhttpsgithubcomdiba-iobitmask-core"><a href="https://github.com/diba-io/bitmask-core">BitMask</a></h4>
+<p>1 merged PRs (<a href="https://github.com/diba-io/bitmask-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 closed issues,
+1 open issues (<a href="https://github.com/diba-io/bitmask-core/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="electrshttpsgithubcomromanzelectrs"><a href="https://github.com/romanz/electrs">Electrs</a></h4>
+<p>6 merged PRs (<a href="https://github.com/romanz/electrs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+4 closed issues (<a href="https://github.com/romanz/electrs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+4 open issues (<a href="https://github.com/romanz/electrs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="fediminthttpsgithubcomfedimintfedimint"><a href="https://github.com/fedimint/fedimint">Fedimint</a></h4>
+<p>168 merged PRs (<a href="https://github.com/fedimint/fedimint/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+38 closed issues (<a href="https://github.com/fedimint/fedimint/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+51 open issues (<a href="https://github.com/fedimint/fedimint/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="ldkhttpsgithubcomlightningdevkitrust-lightning"><a href="https://github.com/lightningdevkit/rust-lightning">LDK</a></h4>
+<p>53 merged PRs (<a href="https://github.com/lightningdevkit/rust-lightning/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/lightningdevkit/ldk-sample/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/lightningdevkit/ldk-c-bindings/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+15 closed issues (<a href="https://github.com/lightningdevkit/rust-lightning/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+14 open issues (<a href="https://github.com/lightningdevkit/rust-lightning/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="lnpbphttpsgithubcomlnp-bp"><a href="https://github.com/LNP-BP">LNP/BP</a></h4>
+<p>3 merged PRs (<a href="https://github.com/LNP-BP/invoices/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/BP-WG/descriptor-wallet/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+4 closed issues (<a href="https://github.com/LNP-BP/rust-lnpbp/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/LNP-BP/invoices/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/BP-WG/bp-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+2 open issues (<a href="https://github.com/rust-amplify/rust-amplify/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="lnp-wghttpsgithubcomlnp-wg"><a href="https://github.com/LNP-WG">LNP WG</a></h4>
+<p>9 merged PRs (<a href="https://github.com/LNP-WG/lnp-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/LNP-WG/lnp-node/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/LNP-WG/lightning_encoding/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+3 closed issues (<a href="https://github.com/LNP-WG/lightning_encoding/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+1 open issues (<a href="https://github.com/LNP-WG/lnp-core/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="nomichttpsgithubcomnomic-io"><a href="https://github.com/nomic-io">Nomic</a></h4>
+<p>19 merged PRs (<a href="https://github.com/nomic-io/nomic/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/nomic-io/merk/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/nomic-io/orga/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+7 closed issues (<a href="https://github.com/nomic-io/nomic/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 open issues</p>
+<h4 id="rgbhttpsgithubcomrgb-wg"><a href="https://github.com/rgb-wg">RGB</a></h4>
+<p>3 merged PRs (<a href="https://github.com/RGB-WG/rgb-core/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+7 closed issues (<a href="https://github.com/RGB-WG/rgb-core/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/RGB-WG/rgb-node/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+2 open issues (<a href="https://github.com/RGB-WG/rgb-core/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="rust-bitcoinhttpsgithubcomrust-bitcoinrust-bitcoin"><a href="https://github.com/rust-bitcoin/rust-bitcoin">Rust Bitcoin</a></h4>
+<p>61 merged PRs (<a href="https://github.com/rust-bitcoin/rust-bitcoin/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/rust-bitcoin/rust-secp256k1/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/rust-bitcoin/rust-bip39/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>),
+26 closed issues (<a href="https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/rust-bitcoin/rust-secp256k1/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/rust-bitcoin/rust-bip39/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>, <a href="https://github.com/jean-airoldie/zeromq-src-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">6</a>),
+14 open issues (<a href="https://github.com/rust-bitcoin/rust-bitcoin/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/rust-bitcoin/rust-secp256k1/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/rust-bitcoin/rust-miniscript/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>, <a href="https://github.com/rust-bitcoin/rust-bitcoincore-rpc/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">4</a>, <a href="https://github.com/rust-bitcoin/rust-bip39/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">5</a>)</p>
+<h4 id="rust-simplicityhttpsgithubcomblockstreamresearchrust-simplicity"><a href="https://github.com/BlockstreamResearch/rust-simplicity">Rust Simplicity</a></h4>
+<p>7 merged PRs (<a href="https://github.com/BlockstreamResearch/rust-simplicity/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+3 closed issues (<a href="https://github.com/BlockstreamResearch/rust-simplicity/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 open issues</p>
+<h4 id="talaiahttpsgithubcomtalaia-labsrust-teos"><a href="https://github.com/talaia-labs/rust-teos">Talaia</a></h4>
+<p>3 merged PRs (<a href="https://github.com/talaia-labs/rust-teos/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+2 closed issues (<a href="https://github.com/talaia-labs/rust-teos/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+6 open issues (<a href="https://github.com/talaia-labs/rust-teos/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<p>If we&rsquo;ve missed any other notable Rust Bitcoin projects or ecosystems, feel free to contribute!</p>
+<p> </p>
+<h3 id="rust-in-ethereum">Rust in Ethereum</h3>
+<h4 id="ethers-rshttpsgithubcomgakonstethers-rs"><a href="https://github.com/gakonst/ethers-rs">Ethers-rs</a></h4>
+<p>47 merged PRs (<a href="https://github.com/gakonst/ethers-rs/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+16 closed issues (<a href="https://github.com/gakonst/ethers-rs/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+16 open issues (<a href="https://github.com/gakonst/ethers-rs/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="foundryhttpsgithubcomfoundry-rsfoundry"><a href="https://github.com/foundry-rs/foundry">Foundry</a></h4>
+<p>71 merged PRs (<a href="https://github.com/foundry-rs/foundry/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+96 closed issues (<a href="https://github.com/foundry-rs/foundry/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+77 open issues (<a href="https://github.com/foundry-rs/foundry/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="lighthousehttpsgithubcomsigplighthouse"><a href="https://github.com/sigp/lighthouse">Lighthouse</a></h4>
+<p>29 merged PRs (<a href="https://github.com/sigp/lighthouse/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/sigp/discv5/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+30 closed issues (<a href="https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+19 open issues (<a href="https://github.com/sigp/lighthouse/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/sigp/discv5/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>)</p>
+<h4 id="mir-protocolhttpsgithubcommir-protocol"><a href="https://github.com/mir-protocol">Mir Protocol</a></h4>
+<p>56 merged PRs (<a href="https://github.com/mir-protocol/plonky2/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/mir-protocol/eth_trie_utils/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/mir-protocol/evm-tests/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+0 closed issues,
+2 open issues (<a href="https://github.com/mir-protocol/plonky2/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="rethhttpsgithubcomparadigmxyzreth"><a href="https://github.com/paradigmxyz/reth">Reth</a></h4>
+<p>318 merged PRs (<a href="https://github.com/paradigmxyz/reth/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+120 closed issues (<a href="https://github.com/paradigmxyz/reth/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+40 open issues (<a href="https://github.com/paradigmxyz/reth/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="rust-web3httpsgithubcomtomusdrwrust-web3"><a href="https://github.com/tomusdrw/rust-web3">Rust Web3</a></h4>
+<p>2 merged PRs (<a href="https://github.com/tomusdrw/rust-web3/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+0 closed issues,
+1 open issues (<a href="https://github.com/tomusdrw/rust-web3/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<h4 id="starkwarehttpsgithubcomstarkware-libs"><a href="https://github.com/starkware-libs">Starkware</a></h4>
+<p>341 merged PRs (<a href="https://github.com/starkware-libs/cairo/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/starkware-libs/papyrus/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/starkware-libs/starknet-api/pulls?q=is%3Apr+is%3Aclosed+merged%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>),
+24 closed issues (<a href="https://github.com/starkware-libs/cairo/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/starkware-libs/papyrus/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>),
+12 open issues (<a href="https://github.com/starkware-libs/cairo/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>, <a href="https://github.com/starkware-libs/papyrus/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">2</a>, <a href="https://github.com/starkware-libs/starknet-api/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">3</a>)</p>
+<ul>
+<li><a href="https://medium.com/starkware/starknet-alpha-v0-11-0-the-transition-to-cairo-1-0-begins-30442d494515">Starknet Alpha v0.11.0: The Transition to Cairo 1.0 Begins</a></li>
+</ul>
+<h4 id="zksynchttpsgithubcommatter-labszksync"><a href="https://github.com/matter-labs/zksync">zkSync</a></h4>
+<p>0 merged PRs,
+3 closed issues (<a href="https://github.com/matter-labs/zksync/issues?q=is%3Aissue+is%3Aclosed+closed%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>),
+10 open issues (<a href="https://github.com/matter-labs/zksync/issues?q=is%3Aissue+is%3Aopen+created%3A2023-03-01..2023-03-31%20-author:app/dependabot">1</a>)</p>
+<ul>
+<li><a href="https://blog.matter-labs.io/gm-zkevm-171b12a26b36">gm zkEVM!</a></li>
+</ul>
+<p>If we&rsquo;ve missed any other notable Rust Ethereum projects or ecosystems, feel free to contribute!</p>
+<p> </p>
+<h2 id="events">Events</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Apr 28 - Jun 9 | Online | <a href="https://chain.link/hackathon">Chainlink Hackathon Spring 2023</a></p>
+<p>May 1-5 | Bol, Brač, Croatia | <a href="https://fc23.ifca.ai/">Financial Cryptography and Data Security 2023</a></p>
+<p>May 20-21 | Amsterdam, Netherlands | <a href="https://www.ethdam.com/">ETHDam</a></p>
+<p>Jun 3-5 | Prague, Czech Republic | <a href="https://gateway.events/">Gateway to Cosmos 2023</a></p>
+<p>Jun 17-20 | Paris, France | <a href="https://www.ethcc.io/">EthCC</a></p>
+<p>Aug 28-30 | Palo Alto, CA, US | <a href="https://cbr.stanford.edu/sbc23/">The Science of Blockchain Conference 2023</a></p>
+<p>Sep 11-13 | Berlin, Germany | <a href="https://www.dappcon.io/">DappCon</a></p>
+<p>Sep 12-15 | Albuquerque, NM &amp; Online | <a href="https://rustconf.com/">RustConf 2023</a></p>
+<p> </p>
+<h2 id="careers">Careers</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Chainflip Labs GmbH | Berlin</p>
+<ul>
+<li><a href="https://angel.co/company/chainflip/jobs/1644220-senior-rust-engineer">Senior Rust Engineer</a></li>
+</ul>
+<p>More jobs can be found at <a href="https://rustinblockchain.org/job-board/">Job Board</a>.</p>
+<p> </p>
+<p>Want to be included in the next issue? Feel free to submit a PR to the
+<a href="https://github.com/rust-in-blockchain/Rust-in-Blockchain/tree/master/draft">next draft</a>.</p>
+<p><strong>Join the discussion on <a href="https://t.me/rustinblockchain">RiB telegram group</a></strong> <strong>❤️</strong></p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../newsletters/rib-newsletter-45/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">RiB Newsletter #45</p>
+		</a>
+	</div>
+</nav>
+
+
+<section class="comments">
+  <script src="https://utteranc.es/client.js"
+          repo="rust-in-blockchain/rust-in-blockchain"
+          issue-term="url"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+
+</section>
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<h4 class="widget__title">Subscribe</h4>
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	 
+</style>
+	<div id="mc_embed_signup">
+	<form action="https://rustinblockchain.us20.list-manage.com/subscribe/post?u=1ac6f6cdd5c25b48064506045&amp;id=efe2948d57" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+		<div id="mc_embed_signup_scroll">
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+	    
+	    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1ac6f6cdd5c25b48064506045_efe2948d57" tabindex="-1" value=""></div>
+	    <div class="clear">
+				<input class="widget-subscribe-btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+				</div>
+	    </div>
+	</form>
+	</div>
+</div>
+
+<div class="widget-text widget">
+	<h4 class="widget__title">Support us</h4>
+	<div class="widget__content">
+	  <ul class="widget__list">
+	    <li class="widget__item">
+	      <b>BTC:</b> bc1qrl00ya0p0fg2s27lmws908cfmzapa4fa2uyk8n
+	    </li>
+	    <li class="widget__item">
+	      <b>ETH:</b> 0xE35D48926663dc02B7b4226d6AC044D4c6a30410
+	    </li>
+	    <li class="widget__item">
+	      <b>CKB:</b> ckb1qyqtgdktk9s52pd9q3f5wpqykee6eawz3dnsu8pcex
+	    </li>
+            <li class="widget__item">
+	      <b>NEAR:</b> @rib.near
+	    </li>
+            <li class="widget__item">
+	      <b>Zcash:</b> t1dvAmgCUWpFW4LccbE4MXag4Y6SBr4k5vD
+	    </li>
+	  </ul>
+	</div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer"
+				href="https://twitter.com/rust_blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer"
+				href="https://t.me/rustinblockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
+				<span>Telegram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Reddit" rel="noopener noreferrer"
+				href="https://www.reddit.com/r/RustInBlockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-reddit" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"></path></svg>
+
+
+				<span>Reddit</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer"
+				href="https://github.com/rust-in-blockchain" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:hi@rib.rs">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>hi@rib.rs</span>
+			</a>
+		</div>
+
+
+		
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2023 Rust in Blockchain.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+
+	</div>
+<script async defer src="../../js/menu.js"></script>
+<script src="../../js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
