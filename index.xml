@@ -20002,6 +20002,8 @@ Global currency and financial infrastructure that empowers billions
 of people.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/sigp/lighthouse&#34;&gt;Lighthouse&lt;/a&gt;.
 Fast and secure Ethereum 2.0 client.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/anoma/namada&#34;&gt;Namada&lt;/a&gt;.
+Proof-of-Stake L1 for interchain asset-agnostic privacy.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nearprotocol/nearcore&#34;&gt;NEAR&lt;/a&gt;.
 NEAR Protocol - scalable and usable blockchain.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/nervosnetwork/ckb&#34;&gt;Nervos CKB&lt;/a&gt;.
@@ -20090,6 +20092,8 @@ An open protocol facilitating trustless cross-blockchain applications.&lt;/li&gt
 Rust implementation of the Inter-Blockchain Communication (IBC) protocol.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/informalsystems/hermes&#34;&gt;Hermes&lt;/a&gt;.
 Rust implementation of an Inter-Blockchain Communication (IBC) relayer.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hyperlane-xyz/hyperlane-monorepo&#34;&gt;Hyperlane&lt;/a&gt;.
+Framework for permissionless, modular interoperability. The offchain clients are written in Rust, as well as the smart contracts for Solana VM and CosmWasm.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;virtual-machines&#34;&gt;Virtual Machines&lt;/h2&gt;
 &lt;ul&gt;
